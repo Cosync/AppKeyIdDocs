@@ -21,21 +21,6 @@
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "tutorial-basics/create-a-blog-post",
-              "path": "/docs/tutorial-basics/create-a-blog-post",
-              "sidebar": "tutorialSidebar"
-            },
-            {
-              "id": "tutorial-basics/create-a-document",
-              "path": "/docs/tutorial-basics/create-a-document",
-              "sidebar": "tutorialSidebar"
-            },
-            {
-              "id": "tutorial-basics/create-a-page",
-              "path": "/docs/tutorial-basics/create-a-page",
-              "sidebar": "tutorialSidebar"
-            },
-            {
               "id": "tutorial-basics/deploy-your-site",
               "path": "/docs/tutorial-basics/deploy-your-site",
               "sidebar": "tutorialSidebar"
@@ -43,6 +28,21 @@
             {
               "id": "tutorial-basics/markdown-features",
               "path": "/docs/tutorial-basics/markdown-features",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "tutorial-basics/signup-to-appkeyid",
+              "path": "/docs/tutorial-basics/signup-to-appkeyid",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "tutorial-basics/signup-using-apple",
+              "path": "/docs/tutorial-basics/signup-using-apple",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "tutorial-basics/signup-using-google",
+              "path": "/docs/tutorial-basics/signup-using-google",
               "sidebar": "tutorialSidebar"
             },
             {

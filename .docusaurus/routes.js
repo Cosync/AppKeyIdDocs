@@ -114,15 +114,15 @@ export default [
   },
   {
     path: '/docs',
-    component: ComponentCreator('/docs', 'bf1'),
+    component: ComponentCreator('/docs', '019'),
     routes: [
       {
         path: '/docs',
-        component: ComponentCreator('/docs', '61e'),
+        component: ComponentCreator('/docs', 'f7f'),
         routes: [
           {
             path: '/docs',
-            component: ComponentCreator('/docs', '776'),
+            component: ComponentCreator('/docs', '68c'),
             routes: [
               {
                 path: '/docs/category/tutorial---basics',
@@ -149,24 +149,6 @@ export default [
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/docs/tutorial-basics/create-a-blog-post',
-                component: ComponentCreator('/docs/tutorial-basics/create-a-blog-post', 'c2a'),
-                exact: true,
-                sidebar: "tutorialSidebar"
-              },
-              {
-                path: '/docs/tutorial-basics/create-a-document',
-                component: ComponentCreator('/docs/tutorial-basics/create-a-document', '920'),
-                exact: true,
-                sidebar: "tutorialSidebar"
-              },
-              {
-                path: '/docs/tutorial-basics/create-a-page',
-                component: ComponentCreator('/docs/tutorial-basics/create-a-page', '539'),
-                exact: true,
-                sidebar: "tutorialSidebar"
-              },
-              {
                 path: '/docs/tutorial-basics/deploy-your-site',
                 component: ComponentCreator('/docs/tutorial-basics/deploy-your-site', 'feb'),
                 exact: true,
@@ -175,6 +157,24 @@ export default [
               {
                 path: '/docs/tutorial-basics/markdown-features',
                 component: ComponentCreator('/docs/tutorial-basics/markdown-features', 'b05'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/tutorial-basics/signup-to-appkeyid',
+                component: ComponentCreator('/docs/tutorial-basics/signup-to-appkeyid', '7b1'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/tutorial-basics/signup-using-apple',
+                component: ComponentCreator('/docs/tutorial-basics/signup-using-apple', 'e20'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/tutorial-basics/signup-using-google',
+                component: ComponentCreator('/docs/tutorial-basics/signup-using-google', 'a6d'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },

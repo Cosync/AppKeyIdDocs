@@ -138,3 +138,63 @@
   color: #8f86e8;
   font-weight: 600;
 }
+
+/* Markdown content links */
+.markdown a {
+  color: #4638ab;
+}
+
+.markdown a:hover {
+  color: #382d8a;
+  text-decoration: underline;
+}
+
+/* Dark mode Markdown links */
+[data-theme='dark'] .markdown a {
+  color: #9b92f0;
+}
+
+[data-theme='dark'] .markdown a:hover {
+  color: #c4bfff;
+  text-decoration: underline;
+}
+
+/* Light mode: Previous / Next buttons at bottom of docs pages */
+.pagination-nav__link {
+  border-color: #4638ab;
+}
+
+.pagination-nav__link:hover {
+  border-color: #4638ab;
+  text-decoration: none;
+  background-color: rgba(70, 56, 171, 0.08);
+}
+
+.pagination-nav__label {
+  color: #4638ab;
+}
+
+.pagination-nav__link:hover .pagination-nav__label,
+.pagination-nav__link:hover .pagination-nav__sublabel {
+  color: #4638ab;
+}
+
+/* Dark mode */
+[data-theme='dark'] .pagination-nav__link {
+  border-color: #8f86e8;
+}
+
+[data-theme='dark'] .pagination-nav__link:hover {
+  border-color: #8f86e8;
+  background-color: rgba(143, 134, 232, 0.16);
+  text-decoration: none;
+}
+
+[data-theme='dark'] .pagination-nav__label {
+  color: #8f86e8;
+}
+
+[data-theme='dark'] .pagination-nav__link:hover .pagination-nav__label,
+[data-theme='dark'] .pagination-nav__link:hover .pagination-nav__sublabel {
+  color: #8f86e8;
+}
