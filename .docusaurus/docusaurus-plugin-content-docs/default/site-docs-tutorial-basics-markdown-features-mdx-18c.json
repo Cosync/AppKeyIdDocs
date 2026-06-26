@@ -1,7 +1,7 @@
 {
   "id": "tutorial-basics/markdown-features",
-  "title": "Markdown Features",
-  "description": "Docusaurus supports Markdown and a few additional features.",
+  "title": "Creating Your First Card",
+  "description": "Now that your AppKeyId account is ready, you can begin using it to share and acknowledge information.",
   "source": "@site/docs/tutorial-basics/markdown-features.mdx",
   "sourceDirName": "tutorial-basics",
   "slug": "/tutorial-basics/markdown-features",

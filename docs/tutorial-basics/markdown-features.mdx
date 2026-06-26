@@ -2,167 +2,173 @@
 sidebar_position: 4
 ---
 
-# Markdown Features
+# Creating Your First Card
 
-Docusaurus supports **[Markdown](https://daringfireball.net/projects/markdown/syntax)** and a few **additional features**.
+Now that your AppKeyId account is ready, you can begin using it to share and acknowledge information.
 
-## Front Matter
+In this tutorial, you will:
 
-Markdown documents have metadata at the top called [Front Matter](https://jekyllrb.com/docs/front-matter/):
+1. Create your first card.
 
-```text title="my-doc.md"
-// highlight-start
----
-id: my-doc-id
-title: My document title
-description: My document description
-slug: /my-custom-url
----
-// highlight-end
+2. Share the card with yourself.
 
-Markdown content
-```
+3. Receive the card in your AppKeyId inbox and email inbox.
 
-## Headings {/* #my-heading-id */}
+4. Acknowledge the card using your passkey.
 
-Markdown headings are supported using the standard “#” syntax and are automatically added to the table of contents. The number of `#` corresponds to the heading level.
+5. Review the card’s acknowledgement information.
 
-```md
-## Headings
+## Understanding Cards
 
-My text
-```
+Cards are the basic unit of shared information within AppKeyId.
 
-### Heading Ids {/* #my-custom-id */}
+A card contains:
 
-Add `{/* #my-custom-id */}` after the heading text to assign it an explicit anchor id, used for linking.
+- A **title**
 
-```md
-### Heading Ids {/_ #my-custom-id _/}
-```
+- A **content** or body section written in Markdown
 
-## Links
+- A list of **members** with whom the card is shared
 
-Regular Markdown links are supported, using url paths or relative file paths.
+Cards are organized into two primary areas, much like email:
 
-```md
-Let's see how to [Create a page](/create-a-page).
-```
+- **Inbox** — Cards that have been shared with you
 
-```md
-Let's see how to [Create a page](./create-a-page.mdx).
-```
+- **Outbox** — Cards that you created and shared with others
 
-**Result:** Let's see how to [Create a page](./create-a-page.mdx).
+## Understanding Contacts
 
-## Images
+Each AppKeyId account has a set of contacts. Contacts are other AppKeyId users with whom you have established a trusted connection.
 
-Regular Markdown images are supported.
+A contact relationship is symmetric, meaning that both users must agree to establish the connection.
 
-You can use absolute paths to reference images in the static directory (`static/img/docusaurus.png`):
+When your account is created, AppKeyId automatically establishes a default contact relationship with yourself.
 
-```md
-![Docusaurus logo](/img/docusaurus.png)
-```
+![Default contact relationship](./img/appkeyid-default-self-contact.png)
 
-![Docusaurus logo](/img/docusaurus.png)
+For this tutorial, you will create a card and share it with yourself.
 
-You can reference images relative to the current file as well. This is particularly useful to colocate images close to the Markdown files using them:
+## Step 1: Open the Outbox
 
-```md
-![Docusaurus logo](./img/docusaurus.png)
-```
+From the AppKeyId navigation menu, select **Cards** and then **Outbox**.
 
-## Code Blocks
+Click the **Create** button.
 
-Markdown code blocks are supported with Syntax highlighting.
+![Create a card from the Outbox](./img/appkeyid-outbox-create-button.png)
 
-````md
-```jsx title="src/components/HelloDocusaurus.js"
-function HelloDocusaurus() {
-  return <h1>Hello, Docusaurus!</h1>;
-}
-```
-````
+## Step 2: Select Card
 
-```jsx title="src/components/HelloDocusaurus.js"
-function HelloDocusaurus() {
-  return <h1>Hello, Docusaurus!</h1>;
-}
-```
+AppKeyId allows you to create either a card or a deck.
 
-## Admonitions
+Select **Card**.
 
-Docusaurus has a special syntax to create admonitions and callouts:
+![Select Card instead of Deck](./img/appkeyid-select-card.png)
 
-```md
-:::tip[My tip]
 
-Use this awesome feature option
+## Step 3: Enter the Card Content
 
-:::
+Enter the following information:
 
-:::danger[Take care]
+- **Title:** `First Card`
 
-This action is dangerous
+- **Content:** `**Hello World!**`
 
-:::
-```
+The double asterisks are Markdown syntax that display the text in bold.
 
-:::tip[My tip]
+![Enter the First Card title and content](./img/appkeyid-first-card-content.png)
 
-Use this awesome feature option
+Click **Create** and validate the action using your passkey.
 
-:::
+## Step 4: View Your New Card
 
-:::danger[Take care]
+Your first card has now been created.
 
-This action is dangerous
+The Markdown content is rendered as a bold **Hello World!** message.
 
-:::
+![First Card created](./img/appkeyid-first-card-created.png)
 
-## MDX and React Components
+At this point, the card exists in your Outbox, but it has not yet been shared with anyone.
 
-[MDX](https://mdxjs.com/) can make your documentation more **interactive** and allows using any **React components inside Markdown**:
+## Step 5: Edit the Card Members
 
-```jsx
-export const Highlight = ({children, color}) => (
-  <span
-    style={{
-      backgroundColor: color,
-      borderRadius: '20px',
-      color: '#fff',
-      padding: '10px',
-      cursor: 'pointer',
-    }}
-    onClick={() => {
-      alert(`You clicked the color ${color} with label ${children}`)
-    }}>
-    {children}
-  </span>
-);
+Open the card and click **Edit Members**.
 
-This is <Highlight color="#25c2a0">Docusaurus green</Highlight> !
+![Edit the card members](./img/appkeyid-edit-card-members.png)
 
-This is <Highlight color="#1877F2">Facebook blue</Highlight> !
-```
+Click **Add Contacts**.
 
-export const Highlight = ({children, color}) => (
-  <span
-    style={{
-      backgroundColor: color,
-      borderRadius: '20px',
-      color: '#fff',
-      padding: '10px',
-      cursor: 'pointer',
-    }}
-    onClick={() => {
-      alert(`You clicked the color ${color} with label ${children}`);
-    }}>
-    {children}
-  </span>
-);
+## Step 6: Share the Card with Yourself
 
-This is <Highlight color="#25c2a0">Docusaurus green</Highlight> !
+Select yourself from the list of available contacts.
 
-This is <Highlight color="#1877F2">Facebook blue</Highlight> !
+![Select yourself as a card member](./img/appkeyid-add-self-as-member.png)
+
+You are now a member of the card, and the card is shared with your own AppKeyId account.
+
+## Step 7: Verify the Card in Your Inbox
+
+Go to **Cards** and select **Inbox**.
+
+Verify that **First Card** appears in your Inbox.
+
+![First Card in the Inbox](./img/appkeyid-first-card-inbox.png)
+
+The Inbox confirms that the card has been successfully shared with you.
+
+## Step 8: Acknowledge the Card from AppKeyId
+
+You can acknowledge the card directly from your Inbox.
+
+Click the **QR** button located to the right of the card and follow the acknowledgement instructions.
+
+![Acknowledge the card from the Inbox](./img/appkeyid-card-qr-acknowledgement.png)
+
+You will be asked to validate the acknowledgement using your passkey.
+
+## Step 9: View the Card in Your Email
+
+AppKeyId also sends the shared card to the email address associated with your account.
+
+Open your email inbox and locate the AppKeyId message.
+
+![Card received by email](./img/appkeyid-card-email-inbox.png)
+
+The email contains:
+
+- The card title
+
+- The card content
+
+- A link for acknowledging the card
+
+- A QR code that can also be used to acknowledge the card
+
+## Step 10: Review the Acknowledgement
+
+After the card has been acknowledged, a red notification indicator appears next to **Outbox**.
+
+Select **Outbox** to view the acknowledged card.
+
+![Acknowledged card in the Outbox](./img/appkeyid-card-acknowledgement-details.png)
+
+Click the acknowledgement icon associated with the card.
+
+AppKeyId displays information about the acknowledgement, including:
+
+- Who acknowledged the card
+
+- When the card was acknowledged
+
+- Where the acknowledgement occurred
+
+- Any comment entered by the recipient
+
+![Card acknowledgement information](./img/appkeyid-card-acknowledgement-details.png)
+
+## Your First Attested Communication
+
+You have now completed your first attested communication with AppKeyId.
+
+Although you shared this card with yourself for demonstration purposes, the acknowledgement follows the same secure process used when sharing a card with another contact.
+
+The acknowledgement record provides strong evidence that the card was acknowledged by the intended member using that member’s passkey. Because the acknowledgement requires passkey authentication, it 
