@@ -114,15 +114,15 @@ export default [
   },
   {
     path: '/docs',
-    component: ComponentCreator('/docs', '019'),
+    component: ComponentCreator('/docs', '35c'),
     routes: [
       {
         path: '/docs',
-        component: ComponentCreator('/docs', 'f7f'),
+        component: ComponentCreator('/docs', 'e91'),
         routes: [
           {
             path: '/docs',
-            component: ComponentCreator('/docs', '68c'),
+            component: ComponentCreator('/docs', 'c77'),
             routes: [
               {
                 path: '/docs/category/tutorial---basics',
@@ -149,14 +149,14 @@ export default [
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/docs/tutorial-basics/deploy-your-site',
-                component: ComponentCreator('/docs/tutorial-basics/deploy-your-site', 'feb'),
+                path: '/docs/tutorial-basics/create-first-card',
+                component: ComponentCreator('/docs/tutorial-basics/create-first-card', 'fe5'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/docs/tutorial-basics/markdown-features',
-                component: ComponentCreator('/docs/tutorial-basics/markdown-features', 'b05'),
+                path: '/docs/tutorial-basics/deploy-your-site',
+                component: ComponentCreator('/docs/tutorial-basics/deploy-your-site', 'feb'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
