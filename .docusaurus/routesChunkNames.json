@@ -249,18 +249,26 @@
     },
     "content": "content---markdown-page-4-c-6-c89"
   },
-  "/docs-35c": {
+  "/docs-516": {
     "__comp": "__comp---theme-docs-root-5-e-9-0b6",
     "__context": {
       "plugin": "plugin---docsaba-d7c"
     }
   },
-  "/docs-e91": {
+  "/docs-b09": {
     "__comp": "__comp---theme-doc-version-roota-7-b-5de",
     "__props": "__props---docs-005-788"
   },
-  "/docs-c77": {
+  "/docs-5e9": {
     "__comp": "__comp---theme-doc-roota-94-67a"
+  },
+  "/docs/category/foundation-c6a": {
+    "__comp": "__comp---theme-doc-category-generated-index-page-14-e-640",
+    "__props": "__props---docs-category-foundation-4-f-6-630"
+  },
+  "/docs/category/the-problem-490": {
+    "__comp": "__comp---theme-doc-category-generated-index-page-14-e-640",
+    "__props": "__props---docs-category-the-problemb-28-910"
   },
   "/docs/category/tutorial---basics-20e": {
     "__comp": "__comp---theme-doc-category-generated-index-page-14-e-640",
@@ -270,41 +278,65 @@
     "__comp": "__comp---theme-doc-category-generated-index-page-14-e-640",
     "__props": "__props---docs-category-tutorial-extras-6-bb-a82"
   },
-  "/docs/intro-89a": {
+  "/docs/concepts/foundation/passkeys-explained-b01": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-introf-84-2b4"
+    "content": "content---docs-concepts-foundation-passkeys-explaineddc-3-596"
   },
-  "/docs/tutorial-basics/congratulations-93d": {
+  "/docs/concepts/foundation/zero-trust-identity-8ee": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-tutorial-basics-congratulationsd-20-b14"
+    "content": "content---docs-concepts-foundation-zero-trust-identity-5-da-b0d"
   },
-  "/docs/tutorial-basics/create-first-card-fe5": {
+  "/docs/concepts/intro-154": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-tutorial-basics-create-first-cardadf-25e"
+    "content": "content---docs-concepts-intro-70-f-b34"
   },
-  "/docs/tutorial-basics/deploy-your-site-feb": {
+  "/docs/concepts/problem/appkeyid-solution-e7c": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-tutorial-basics-deploy-your-site-8-b-4-c45"
+    "content": "content---docs-concepts-problem-appkeyid-solution-40-e-67c"
   },
-  "/docs/tutorial-basics/signup-to-appkeyid-7b1": {
+  "/docs/concepts/problem/why-ai-breaks-digital-bc9": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-tutorial-basics-signup-to-appkeyid-844-213"
+    "content": "content---docs-concepts-problem-why-ai-breaks-digitalcc-2-d91"
   },
-  "/docs/tutorial-basics/signup-using-apple-e20": {
+  "/docs/concepts/problem/why-email-and-messaging-fb7": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-tutorial-basics-signup-using-apple-7-d-6-f72"
+    "content": "content---docs-concepts-problem-why-email-and-messaging-538-00b"
   },
-  "/docs/tutorial-basics/signup-using-google-a6d": {
+  "/docs/tutorial/intro-f1d": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-tutorial-basics-signup-using-googlefa-2-4d4"
+    "content": "content---docs-tutorial-introa-0-f-691"
   },
-  "/docs/tutorial-extras/manage-docs-versions-5a2": {
+  "/docs/tutorial/tutorial-basics/congratulations-85b": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-tutorial-extras-manage-docs-versionsaf-3-232"
+    "content": "content---docs-tutorial-tutorial-basics-congratulations-1-d-6-c63"
   },
-  "/docs/tutorial-extras/translate-your-site-d21": {
+  "/docs/tutorial/tutorial-basics/create-first-card-ea1": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-tutorial-extras-translate-your-site-25-a-725"
+    "content": "content---docs-tutorial-tutorial-basics-create-first-card-8-d-1-10d"
+  },
+  "/docs/tutorial/tutorial-basics/deploy-your-site-e7e": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-tutorial-tutorial-basics-deploy-your-site-4-bc-380"
+  },
+  "/docs/tutorial/tutorial-basics/signup-to-appkeyid-614": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-tutorial-tutorial-basics-signup-to-appkeyid-5-b-0-b8e"
+  },
+  "/docs/tutorial/tutorial-basics/signup-using-apple-338": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-tutorial-tutorial-basics-signup-using-apple-716-42c"
+  },
+  "/docs/tutorial/tutorial-basics/signup-using-google-eb3": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-tutorial-tutorial-basics-signup-using-googleb-98-5c3"
+  },
+  "/docs/tutorial/tutorial-extras/manage-docs-versions-130": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-tutorial-tutorial-extras-manage-docs-versionsf-81-704"
+  },
+  "/docs/tutorial/tutorial-extras/translate-your-site-e69": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-tutorial-tutorial-extras-translate-your-siteb-46-4c4"
   },
   "/-2e1": {
     "__comp": "__comp---site-src-pages-index-jsc-4-f-f99",

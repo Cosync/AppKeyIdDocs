@@ -1,0 +1,22 @@
+{
+  "id": "concepts/intro",
+  "title": "Concepts",
+  "description": "",
+  "source": "@site/docs/concepts/intro.mdx",
+  "sourceDirName": "concepts",
+  "slug": "/concepts/intro",
+  "permalink": "/docs/concepts/intro",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1
+  },
+  "sidebar": "conceptsSidebar",
+  "next": {
+    "title": "The Problem",
+    "permalink": "/docs/category/the-problem"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "concepts/foundation/passkeys-explained",
+  "title": "Passkeys Explained",
+  "description": "",
+  "source": "@site/docs/concepts/foundation/passkeys-explained.mdx",
+  "sourceDirName": "concepts/foundation",
+  "slug": "/concepts/foundation/passkeys-explained",
+  "permalink": "/docs/concepts/foundation/passkeys-explained",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "sidebar_position": 2
+  },
+  "sidebar": "conceptsSidebar",
+  "previous": {
+    "title": "Zero Trust Identity",
+    "permalink": "/docs/concepts/foundation/zero-trust-identity"
+  }
+}

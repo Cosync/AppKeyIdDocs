@@ -1,0 +1,26 @@
+{
+  "id": "concepts/problem/congratulations",
+  "title": "Congratulations!",
+  "description": "You have just learned the basics of Docusaurus and made some changes to the initial template.",
+  "source": "@site/docs/concepts/problem/congratulations.mdx",
+  "sourceDirName": "concepts/problem",
+  "slug": "/concepts/problem/congratulations",
+  "permalink": "/docs/concepts/problem/congratulations",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 6,
+  "frontMatter": {
+    "sidebar_position": 6
+  },
+  "sidebar": "conceptsSidebar",
+  "previous": {
+    "title": "Deploy your site",
+    "permalink": "/docs/concepts/problem/deploy-your-site"
+  },
+  "next": {
+    "title": "Foundation",
+    "permalink": "/docs/category/foundation"
+  }
+}

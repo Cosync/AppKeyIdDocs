@@ -1,0 +1,26 @@
+{
+  "id": "concepts/problem/create-first-card",
+  "title": "Creating Your First Card",
+  "description": "Now that your AppKeyId account is ready, you can begin using it to share and acknowledge information.",
+  "source": "@site/docs/concepts/problem/create-first-card.mdx",
+  "sourceDirName": "concepts/problem",
+  "slug": "/concepts/problem/create-first-card",
+  "permalink": "/docs/concepts/problem/create-first-card",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "sidebar_position": 4
+  },
+  "sidebar": "conceptsSidebar",
+  "previous": {
+    "title": "Why AI Breaks Digital Trust",
+    "permalink": "/docs/concepts/problem/why-ai-breaks-digita"
+  },
+  "next": {
+    "title": "Foundation",
+    "permalink": "/docs/category/foundation"
+  }
+}

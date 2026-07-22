@@ -89,6 +89,12 @@ export default {
           "label": "Tutorial"
         },
         {
+          "type": "docSidebar",
+          "sidebarId": "conceptsSidebar",
+          "position": "left",
+          "label": "Concepts"
+        },
+        {
           "to": "/blog",
           "label": "Blog",
           "position": "left"
@@ -104,13 +110,9 @@ export default {
           "items": [
             {
               "label": "Tutorial",
-              "to": "/docs/intro"
+              "to": "/docs/tutorial/intro"
             }
           ]
-        },
-        {
-          "title": "Community",
-          "items": []
         },
         {
           "title": "More",

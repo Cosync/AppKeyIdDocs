@@ -1,0 +1,26 @@
+{
+  "id": "concepts/foundation/zero-trust-identity",
+  "title": "Zero Trust Identity",
+  "description": "",
+  "source": "@site/docs/concepts/foundation/zero-trust-identity.mdx",
+  "sourceDirName": "concepts/foundation",
+  "slug": "/concepts/foundation/zero-trust-identity",
+  "permalink": "/docs/concepts/foundation/zero-trust-identity",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1
+  },
+  "sidebar": "conceptsSidebar",
+  "previous": {
+    "title": "Foundation",
+    "permalink": "/docs/category/foundation"
+  },
+  "next": {
+    "title": "Passkeys Explained",
+    "permalink": "/docs/concepts/foundation/passkeys-explained"
+  }
+}

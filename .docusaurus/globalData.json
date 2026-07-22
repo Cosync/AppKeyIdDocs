@@ -8,51 +8,81 @@
           "label": "Next",
           "isLast": true,
           "path": "/docs",
-          "mainDocId": "intro",
+          "mainDocId": "tutorial/intro",
           "docs": [
             {
-              "id": "intro",
-              "path": "/docs/intro",
+              "id": "concepts/foundation/passkeys-explained",
+              "path": "/docs/concepts/foundation/passkeys-explained",
+              "sidebar": "conceptsSidebar"
+            },
+            {
+              "id": "concepts/foundation/zero-trust-identity",
+              "path": "/docs/concepts/foundation/zero-trust-identity",
+              "sidebar": "conceptsSidebar"
+            },
+            {
+              "id": "concepts/intro",
+              "path": "/docs/concepts/intro",
+              "sidebar": "conceptsSidebar"
+            },
+            {
+              "id": "concepts/problem/appkeyid-solution",
+              "path": "/docs/concepts/problem/appkeyid-solution",
+              "sidebar": "conceptsSidebar"
+            },
+            {
+              "id": "concepts/problem/why-ai-breaks-digital",
+              "path": "/docs/concepts/problem/why-ai-breaks-digital",
+              "sidebar": "conceptsSidebar"
+            },
+            {
+              "id": "concepts/problem/why-email-and-messaging",
+              "path": "/docs/concepts/problem/why-email-and-messaging",
+              "sidebar": "conceptsSidebar"
+            },
+            {
+              "id": "tutorial/intro",
+              "path": "/docs/tutorial/intro",
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "tutorial-basics/congratulations",
-              "path": "/docs/tutorial-basics/congratulations",
+              "id": "tutorial/tutorial-basics/congratulations",
+              "path": "/docs/tutorial/tutorial-basics/congratulations",
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "tutorial-basics/create-first-card",
-              "path": "/docs/tutorial-basics/create-first-card",
+              "id": "tutorial/tutorial-basics/create-first-card",
+              "path": "/docs/tutorial/tutorial-basics/create-first-card",
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "tutorial-basics/deploy-your-site",
-              "path": "/docs/tutorial-basics/deploy-your-site",
+              "id": "tutorial/tutorial-basics/deploy-your-site",
+              "path": "/docs/tutorial/tutorial-basics/deploy-your-site",
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "tutorial-basics/signup-to-appkeyid",
-              "path": "/docs/tutorial-basics/signup-to-appkeyid",
+              "id": "tutorial/tutorial-basics/signup-to-appkeyid",
+              "path": "/docs/tutorial/tutorial-basics/signup-to-appkeyid",
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "tutorial-basics/signup-using-apple",
-              "path": "/docs/tutorial-basics/signup-using-apple",
+              "id": "tutorial/tutorial-basics/signup-using-apple",
+              "path": "/docs/tutorial/tutorial-basics/signup-using-apple",
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "tutorial-basics/signup-using-google",
-              "path": "/docs/tutorial-basics/signup-using-google",
+              "id": "tutorial/tutorial-basics/signup-using-google",
+              "path": "/docs/tutorial/tutorial-basics/signup-using-google",
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "tutorial-extras/manage-docs-versions",
-              "path": "/docs/tutorial-extras/manage-docs-versions",
+              "id": "tutorial/tutorial-extras/manage-docs-versions",
+              "path": "/docs/tutorial/tutorial-extras/manage-docs-versions",
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "tutorial-extras/translate-your-site",
-              "path": "/docs/tutorial-extras/translate-your-site",
+              "id": "tutorial/tutorial-extras/translate-your-site",
+              "path": "/docs/tutorial/tutorial-extras/translate-your-site",
               "sidebar": "tutorialSidebar"
             },
             {
@@ -64,14 +94,30 @@
               "id": "/category/tutorial---extras",
               "path": "/docs/category/tutorial---extras",
               "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "/category/the-problem",
+              "path": "/docs/category/the-problem",
+              "sidebar": "conceptsSidebar"
+            },
+            {
+              "id": "/category/foundation",
+              "path": "/docs/category/foundation",
+              "sidebar": "conceptsSidebar"
             }
           ],
           "draftIds": [],
           "sidebars": {
             "tutorialSidebar": {
               "link": {
-                "path": "/docs/intro",
-                "label": "intro"
+                "path": "/docs/tutorial/intro",
+                "label": "tutorial/intro"
+              }
+            },
+            "conceptsSidebar": {
+              "link": {
+                "path": "/docs/concepts/intro",
+                "label": "concepts/intro"
               }
             }
           }

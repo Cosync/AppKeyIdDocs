@@ -1,0 +1,26 @@
+{
+  "id": "concepts/tutorial-basics/congratulations",
+  "title": "Congratulations!",
+  "description": "You have just learned the basics of Docusaurus and made some changes to the initial template.",
+  "source": "@site/docs/concepts/tutorial-basics/congratulations.mdx",
+  "sourceDirName": "concepts/tutorial-basics",
+  "slug": "/concepts/tutorial-basics/congratulations",
+  "permalink": "/docs/concepts/tutorial-basics/congratulations",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 6,
+  "frontMatter": {
+    "sidebar_position": 6
+  },
+  "sidebar": "conceptsSidebar",
+  "previous": {
+    "title": "Deploy your site",
+    "permalink": "/docs/concepts/tutorial-basics/deploy-your-site"
+  },
+  "next": {
+    "title": "Tutorial - Extras",
+    "permalink": "/docs/category/tutorial---extras-1"
+  }
+}

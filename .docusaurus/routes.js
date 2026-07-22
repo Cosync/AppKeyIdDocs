@@ -114,16 +114,28 @@ export default [
   },
   {
     path: '/docs',
-    component: ComponentCreator('/docs', '35c'),
+    component: ComponentCreator('/docs', '516'),
     routes: [
       {
         path: '/docs',
-        component: ComponentCreator('/docs', 'e91'),
+        component: ComponentCreator('/docs', 'b09'),
         routes: [
           {
             path: '/docs',
-            component: ComponentCreator('/docs', 'c77'),
+            component: ComponentCreator('/docs', '5e9'),
             routes: [
+              {
+                path: '/docs/category/foundation',
+                component: ComponentCreator('/docs/category/foundation', 'c6a'),
+                exact: true,
+                sidebar: "conceptsSidebar"
+              },
+              {
+                path: '/docs/category/the-problem',
+                component: ComponentCreator('/docs/category/the-problem', '490'),
+                exact: true,
+                sidebar: "conceptsSidebar"
+              },
               {
                 path: '/docs/category/tutorial---basics',
                 component: ComponentCreator('/docs/category/tutorial---basics', '20e'),
@@ -137,56 +149,92 @@ export default [
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/docs/intro',
-                component: ComponentCreator('/docs/intro', '89a'),
+                path: '/docs/concepts/foundation/passkeys-explained',
+                component: ComponentCreator('/docs/concepts/foundation/passkeys-explained', 'b01'),
+                exact: true,
+                sidebar: "conceptsSidebar"
+              },
+              {
+                path: '/docs/concepts/foundation/zero-trust-identity',
+                component: ComponentCreator('/docs/concepts/foundation/zero-trust-identity', '8ee'),
+                exact: true,
+                sidebar: "conceptsSidebar"
+              },
+              {
+                path: '/docs/concepts/intro',
+                component: ComponentCreator('/docs/concepts/intro', '154'),
+                exact: true,
+                sidebar: "conceptsSidebar"
+              },
+              {
+                path: '/docs/concepts/problem/appkeyid-solution',
+                component: ComponentCreator('/docs/concepts/problem/appkeyid-solution', 'e7c'),
+                exact: true,
+                sidebar: "conceptsSidebar"
+              },
+              {
+                path: '/docs/concepts/problem/why-ai-breaks-digital',
+                component: ComponentCreator('/docs/concepts/problem/why-ai-breaks-digital', 'bc9'),
+                exact: true,
+                sidebar: "conceptsSidebar"
+              },
+              {
+                path: '/docs/concepts/problem/why-email-and-messaging',
+                component: ComponentCreator('/docs/concepts/problem/why-email-and-messaging', 'fb7'),
+                exact: true,
+                sidebar: "conceptsSidebar"
+              },
+              {
+                path: '/docs/tutorial/intro',
+                component: ComponentCreator('/docs/tutorial/intro', 'f1d'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/docs/tutorial-basics/congratulations',
-                component: ComponentCreator('/docs/tutorial-basics/congratulations', '93d'),
+                path: '/docs/tutorial/tutorial-basics/congratulations',
+                component: ComponentCreator('/docs/tutorial/tutorial-basics/congratulations', '85b'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/docs/tutorial-basics/create-first-card',
-                component: ComponentCreator('/docs/tutorial-basics/create-first-card', 'fe5'),
+                path: '/docs/tutorial/tutorial-basics/create-first-card',
+                component: ComponentCreator('/docs/tutorial/tutorial-basics/create-first-card', 'ea1'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/docs/tutorial-basics/deploy-your-site',
-                component: ComponentCreator('/docs/tutorial-basics/deploy-your-site', 'feb'),
+                path: '/docs/tutorial/tutorial-basics/deploy-your-site',
+                component: ComponentCreator('/docs/tutorial/tutorial-basics/deploy-your-site', 'e7e'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/docs/tutorial-basics/signup-to-appkeyid',
-                component: ComponentCreator('/docs/tutorial-basics/signup-to-appkeyid', '7b1'),
+                path: '/docs/tutorial/tutorial-basics/signup-to-appkeyid',
+                component: ComponentCreator('/docs/tutorial/tutorial-basics/signup-to-appkeyid', '614'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/docs/tutorial-basics/signup-using-apple',
-                component: ComponentCreator('/docs/tutorial-basics/signup-using-apple', 'e20'),
+                path: '/docs/tutorial/tutorial-basics/signup-using-apple',
+                component: ComponentCreator('/docs/tutorial/tutorial-basics/signup-using-apple', '338'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/docs/tutorial-basics/signup-using-google',
-                component: ComponentCreator('/docs/tutorial-basics/signup-using-google', 'a6d'),
+                path: '/docs/tutorial/tutorial-basics/signup-using-google',
+                component: ComponentCreator('/docs/tutorial/tutorial-basics/signup-using-google', 'eb3'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/docs/tutorial-extras/manage-docs-versions',
-                component: ComponentCreator('/docs/tutorial-extras/manage-docs-versions', '5a2'),
+                path: '/docs/tutorial/tutorial-extras/manage-docs-versions',
+                component: ComponentCreator('/docs/tutorial/tutorial-extras/manage-docs-versions', '130'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/docs/tutorial-extras/translate-your-site',
-                component: ComponentCreator('/docs/tutorial-extras/translate-your-site', 'd21'),
+                path: '/docs/tutorial/tutorial-extras/translate-your-site',
+                component: ComponentCreator('/docs/tutorial/tutorial-extras/translate-your-site', 'e69'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               }

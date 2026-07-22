@@ -1,0 +1,26 @@
+{
+  "id": "tutorial/tutorial-basics/signup-using-google",
+  "title": "Signing Up with Google",
+  "description": "This tutorial walks you through the process of creating a new AppKeyId account using Sign in with Google.",
+  "source": "@site/docs/tutorial/tutorial-basics/signup-using-google.mdx",
+  "sourceDirName": "tutorial/tutorial-basics",
+  "slug": "/tutorial/tutorial-basics/signup-using-google",
+  "permalink": "/docs/tutorial/tutorial-basics/signup-using-google",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "sidebar_position": 2
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Signing Up with Email",
+    "permalink": "/docs/tutorial/tutorial-basics/signup-to-appkeyid"
+  },
+  "next": {
+    "title": "Signing Up with Apple ID",
+    "permalink": "/docs/tutorial/tutorial-basics/signup-using-apple"
+  }
+}
