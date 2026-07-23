@@ -1,0 +1,8 @@
+{
+  "label": "Attested Communication",
+  "position": 4,
+  "link": {
+    "type": "generated-index",
+    "description": "Attested Communication uses passkeys to prove who actually acknowledged a message, QR code, or digital action."
+  }
+}

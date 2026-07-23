@@ -1,0 +1,26 @@
+{
+  "id": "concepts/attested-communication/what-is-attested-communication",
+  "title": "What is Attested Communication",
+  "description": "Attested communication means that a communication event is not merely sent, opened, or clicked.",
+  "source": "@site/docs/concepts/attested-communication/what-is-attested-communication.mdx",
+  "sourceDirName": "concepts/attested-communication",
+  "slug": "/concepts/attested-communication/what-is-attested-communication",
+  "permalink": "/docs/concepts/attested-communication/what-is-attested-communication",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1
+  },
+  "sidebar": "conceptsSidebar",
+  "previous": {
+    "title": "Attested Communication",
+    "permalink": "/docs/category/attested-communication"
+  },
+  "next": {
+    "title": "What is a Card?",
+    "permalink": "/docs/concepts/attested-communication/what-is-a-card"
+  }
+}

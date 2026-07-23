@@ -1,0 +1,26 @@
+{
+  "id": "concepts/attested-communication/what-is-a-card",
+  "title": "What is a Card?",
+  "description": "A Card is the basic unit of communication in AppKeyId. It is similar to a lightweight email, memo,",
+  "source": "@site/docs/concepts/attested-communication/what-is-a-card.mdx",
+  "sourceDirName": "concepts/attested-communication",
+  "slug": "/concepts/attested-communication/what-is-a-card",
+  "permalink": "/docs/concepts/attested-communication/what-is-a-card",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "sidebar_position": 2
+  },
+  "sidebar": "conceptsSidebar",
+  "previous": {
+    "title": "What is Attested Communication",
+    "permalink": "/docs/concepts/attested-communication/what-is-attested-communication"
+  },
+  "next": {
+    "title": "Why Acknowledgements Matter",
+    "permalink": "/docs/concepts/attested-communication/why-acknowlegement"
+  }
+}

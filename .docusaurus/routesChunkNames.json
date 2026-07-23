@@ -249,18 +249,22 @@
     },
     "content": "content---markdown-page-4-c-6-c89"
   },
-  "/docs-516": {
+  "/docs-379": {
     "__comp": "__comp---theme-docs-root-5-e-9-0b6",
     "__context": {
       "plugin": "plugin---docsaba-d7c"
     }
   },
-  "/docs-b09": {
+  "/docs-b58": {
     "__comp": "__comp---theme-doc-version-roota-7-b-5de",
     "__props": "__props---docs-005-788"
   },
-  "/docs-5e9": {
+  "/docs-538": {
     "__comp": "__comp---theme-doc-roota-94-67a"
+  },
+  "/docs/category/attested-communication-b56": {
+    "__comp": "__comp---theme-doc-category-generated-index-page-14-e-640",
+    "__props": "__props---docs-category-attested-communicationf-37-3eb"
   },
   "/docs/category/foundation-c6a": {
     "__comp": "__comp---theme-doc-category-generated-index-page-14-e-640",
@@ -277,6 +281,22 @@
   "/docs/category/tutorial---extras-9ad": {
     "__comp": "__comp---theme-doc-category-generated-index-page-14-e-640",
     "__props": "__props---docs-category-tutorial-extras-6-bb-a82"
+  },
+  "/docs/concepts/attested-communication/chain-of-custody-4b5": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-concepts-attested-communication-chain-of-custodybea-9c8"
+  },
+  "/docs/concepts/attested-communication/what-is-a-card-354": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-concepts-attested-communication-what-is-a-carddb-9-9cb"
+  },
+  "/docs/concepts/attested-communication/what-is-attested-communication-243": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-concepts-attested-communication-what-is-attested-communication-038-f9c"
+  },
+  "/docs/concepts/attested-communication/why-acknowlegement-86a": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-concepts-attested-communication-why-acknowlegementeeb-503"
   },
   "/docs/concepts/foundation/passkeys-explained-b01": {
     "__comp": "__comp---theme-doc-item-178-a40",

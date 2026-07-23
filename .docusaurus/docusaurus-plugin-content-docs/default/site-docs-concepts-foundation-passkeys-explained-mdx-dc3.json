@@ -18,5 +18,9 @@
   "previous": {
     "title": "Zero Trust Identity",
     "permalink": "/docs/concepts/foundation/zero-trust-identity"
+  },
+  "next": {
+    "title": "Attested Communication",
+    "permalink": "/docs/category/attested-communication"
   }
 }

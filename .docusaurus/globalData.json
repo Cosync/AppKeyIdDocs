@@ -11,6 +11,26 @@
           "mainDocId": "tutorial/intro",
           "docs": [
             {
+              "id": "concepts/attested-communication/chain-of-custody",
+              "path": "/docs/concepts/attested-communication/chain-of-custody",
+              "sidebar": "conceptsSidebar"
+            },
+            {
+              "id": "concepts/attested-communication/what-is-a-card",
+              "path": "/docs/concepts/attested-communication/what-is-a-card",
+              "sidebar": "conceptsSidebar"
+            },
+            {
+              "id": "concepts/attested-communication/what-is-attested-communication",
+              "path": "/docs/concepts/attested-communication/what-is-attested-communication",
+              "sidebar": "conceptsSidebar"
+            },
+            {
+              "id": "concepts/attested-communication/why-acknowlegement",
+              "path": "/docs/concepts/attested-communication/why-acknowlegement",
+              "sidebar": "conceptsSidebar"
+            },
+            {
               "id": "concepts/foundation/passkeys-explained",
               "path": "/docs/concepts/foundation/passkeys-explained",
               "sidebar": "conceptsSidebar"
@@ -103,6 +123,11 @@
             {
               "id": "/category/foundation",
               "path": "/docs/category/foundation",
+              "sidebar": "conceptsSidebar"
+            },
+            {
+              "id": "/category/attested-communication",
+              "path": "/docs/category/attested-communication",
               "sidebar": "conceptsSidebar"
             }
           ],

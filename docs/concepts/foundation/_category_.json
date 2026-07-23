@@ -2,6 +2,7 @@
   "label": "Foundation",
   "position": 3,
   "link": {
-    "type": "generated-index"
+    "type": "generated-index",
+    "description": "This section provides the foundations for AppKeyId - Zero Trust Identity and FIDO2 Passkeys."
   }
 }

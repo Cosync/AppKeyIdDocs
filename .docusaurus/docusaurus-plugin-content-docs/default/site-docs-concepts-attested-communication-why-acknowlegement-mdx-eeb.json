@@ -1,0 +1,26 @@
+{
+  "id": "concepts/attested-communication/why-acknowlegement",
+  "title": "Why Acknowledgements Matter",
+  "description": "",
+  "source": "@site/docs/concepts/attested-communication/why-acknowlegement.mdx",
+  "sourceDirName": "concepts/attested-communication",
+  "slug": "/concepts/attested-communication/why-acknowlegement",
+  "permalink": "/docs/concepts/attested-communication/why-acknowlegement",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "sidebar_position": 3
+  },
+  "sidebar": "conceptsSidebar",
+  "previous": {
+    "title": "What is a Card?",
+    "permalink": "/docs/concepts/attested-communication/what-is-a-card"
+  },
+  "next": {
+    "title": "Chain of Custody",
+    "permalink": "/docs/concepts/attested-communication/chain-of-custody"
+  }
+}

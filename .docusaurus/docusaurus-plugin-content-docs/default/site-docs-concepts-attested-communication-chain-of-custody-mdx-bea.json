@@ -1,0 +1,22 @@
+{
+  "id": "concepts/attested-communication/chain-of-custody",
+  "title": "Chain of Custody",
+  "description": "",
+  "source": "@site/docs/concepts/attested-communication/chain-of-custody.mdx",
+  "sourceDirName": "concepts/attested-communication",
+  "slug": "/concepts/attested-communication/chain-of-custody",
+  "permalink": "/docs/concepts/attested-communication/chain-of-custody",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "sidebar_position": 4
+  },
+  "sidebar": "conceptsSidebar",
+  "previous": {
+    "title": "Why Acknowledgements Matter",
+    "permalink": "/docs/concepts/attested-communication/why-acknowlegement"
+  }
+}

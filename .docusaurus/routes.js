@@ -114,16 +114,22 @@ export default [
   },
   {
     path: '/docs',
-    component: ComponentCreator('/docs', '516'),
+    component: ComponentCreator('/docs', '379'),
     routes: [
       {
         path: '/docs',
-        component: ComponentCreator('/docs', 'b09'),
+        component: ComponentCreator('/docs', 'b58'),
         routes: [
           {
             path: '/docs',
-            component: ComponentCreator('/docs', '5e9'),
+            component: ComponentCreator('/docs', '538'),
             routes: [
+              {
+                path: '/docs/category/attested-communication',
+                component: ComponentCreator('/docs/category/attested-communication', 'b56'),
+                exact: true,
+                sidebar: "conceptsSidebar"
+              },
               {
                 path: '/docs/category/foundation',
                 component: ComponentCreator('/docs/category/foundation', 'c6a'),
@@ -147,6 +153,30 @@ export default [
                 component: ComponentCreator('/docs/category/tutorial---extras', '9ad'),
                 exact: true,
                 sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/concepts/attested-communication/chain-of-custody',
+                component: ComponentCreator('/docs/concepts/attested-communication/chain-of-custody', '4b5'),
+                exact: true,
+                sidebar: "conceptsSidebar"
+              },
+              {
+                path: '/docs/concepts/attested-communication/what-is-a-card',
+                component: ComponentCreator('/docs/concepts/attested-communication/what-is-a-card', '354'),
+                exact: true,
+                sidebar: "conceptsSidebar"
+              },
+              {
+                path: '/docs/concepts/attested-communication/what-is-attested-communication',
+                component: ComponentCreator('/docs/concepts/attested-communication/what-is-attested-communication', '243'),
+                exact: true,
+                sidebar: "conceptsSidebar"
+              },
+              {
+                path: '/docs/concepts/attested-communication/why-acknowlegement',
+                component: ComponentCreator('/docs/concepts/attested-communication/why-acknowlegement', '86a'),
+                exact: true,
+                sidebar: "conceptsSidebar"
               },
               {
                 path: '/docs/concepts/foundation/passkeys-explained',
