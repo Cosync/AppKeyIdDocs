@@ -1,7 +1,7 @@
 {
   "id": "concepts/foundation/passkeys-explained",
   "title": "Passkeys Explained",
-  "description": "",
+  "description": "The emergence of FIDO2 passkeys changes what is possible.",
   "source": "@site/docs/concepts/foundation/passkeys-explained.mdx",
   "sourceDirName": "concepts/foundation",
   "slug": "/concepts/foundation/passkeys-explained",

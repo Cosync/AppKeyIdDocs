@@ -1,7 +1,7 @@
 {
   "id": "concepts/foundation/zero-trust-identity",
   "title": "Zero Trust Identity",
-  "description": "",
+  "description": "AppKeyId applies Zero Trust principles to digital communication.",
   "source": "@site/docs/concepts/foundation/zero-trust-identity.mdx",
   "sourceDirName": "concepts/foundation",
   "slug": "/concepts/foundation/zero-trust-identity",
