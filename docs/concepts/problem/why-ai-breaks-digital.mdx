@@ -51,3 +51,42 @@ The result is a trust gap.
 AI makes impersonation scalable. Passwords remain vulnerable. Email accounts can be compromised. 
 Phone numbers can be hijacked. Human judgment is increasingly unreliable. 
 The internet needs a stronger mechanism for confirming identity at the point of interaction.
+
+## AppKeyId as a Defense Against AI Impersonation
+
+AI impersonation attacks exploit the gap between appearance and identity.
+
+- An attacker may be able to imitate a person's voice.
+- An attacker may be able to imitate a writing style.
+- An attacker may be able to generate a convincing profile image.
+- An attacker may even be able to produce a real-time video deepfake.
+
+But an attacker should not be able to produce a valid AppKeyId passkey acknowledgment unless they 
+possess or control the legitimate user's passkey and can satisfy the user verification requirement 
+on the associated device, passkey provider, or hardware authenticator.
+
+This changes the security model.
+
+Instead of asking users to decide whether a message "looks real," AppKeyId gives users and organizations 
+a mechanism to require passkey-backed acknowledgment before trusting sensitive communications or actions.
+
+For example, a company executive may receive a message requesting an urgent wire transfer. 
+Rather than relying on the apparent sender's email address, writing style, or voice message, 
+the company can require an AppKeyId Card acknowledgment by the authorized person.
+
+A family member may receive a suspicious message (or phone call) claiming to be from a relative 
+in distress. Instead of trusting the message content, they can request an AppKeyId acknowledgment 
+from the known passkey-backed identity.
+
+A school, event, or organization may post a QR code for attendance, consent, or access. 
+Instead of simply tracking scans, AppKeyId can require each participant to authenticate before 
+acknowledgment.
+
+A user may receive an account recovery request. Instead of trusting email access, SMS codes, 
+or phone-based 2FA alone, AppKeyId can require passkey-attested confirmation by the 
+registered identity.
+
+The key idea is simple:
+
+**In the AI era, identity must be proven cryptographically, not inferred visually, verbally, 
+emotionally, or socially.**
