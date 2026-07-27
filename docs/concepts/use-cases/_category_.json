@@ -1,0 +1,8 @@
+{
+  "label": "Use Cases",
+  "position": 2,
+  "link": {
+    "type": "generated-index",
+    "description": "This section describes the use cases that AppKeyId solves. It is intended to provide context for the solution, and to help you understand why AppKeyId is necessary."
+  }
+}

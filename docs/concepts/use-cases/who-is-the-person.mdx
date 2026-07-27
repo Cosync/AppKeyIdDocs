@@ -1,0 +1,133 @@
+---
+sidebar_position: 1
+---
+
+# Who Is the Person?
+
+Who are you really? 
+
+Computers have become very good at moving information from one place to another. 
+They have become much less reliable at proving who is actually participating in the exchange.
+
+<div align="center">
+<img
+  src={require('./img/person.png').default}
+  alt="Who is the Person?"
+  style={{ maxWidth: '500px', width: '100%', height: 'auto' }}
+/>
+</div>
+
+## Problem of Trust
+Many applications depend on knowing the identity of a person before an action can be trusted. 
+Approving a contract, acknowledging a policy, opening a secure door, authorizing a payment, 
+accessing medical records, or admitting someone to an event all require more than simply knowing 
+that a message was delivered. They require knowing who performed the action.
+
+Historically, this has been difficult to achieve over the Internet. Passwords identify accounts, 
+not people. Email addresses and phone numbers can be stolen or transferred. Even two-factor 
+authentication ultimately proves possession of a device rather than the identity of the 
+individual using it.
+
+Biometric authentication has existed for many years, but until recently it was largely been 
+confined to unlocking a device. There was no widely adopted, standards-based mechanism for 
+carrying that proof of identity across the network to another computer.
+
+## Enabling technologies
+
+Two developments have changed this.
+
+The first is that nearly every modern smartphone now contains secure biometric hardware. 
+Fingerprint and facial recognition have become commonplace, and users routinely authenticate 
+themselves with them.
+
+The second is the adoption of the FIDO2 passkey standard. A passkey stores a private cryptographic 
+key on the user’s device. The key never leaves the device and can only be used after the user 
+has authenticated locally, typically through biometrics. The corresponding public key allows a 
+remote server to verify the user’s identity without relying on passwords or shared secrets.
+
+Together, these technologies make something practical that was previously difficult: a remote 
+system can obtain cryptographic proof that a specific individual authorized a specific action.
+
+This capability is what we call **Attested Communication.**
+
+Attested Communication extends authentication beyond the login process. Instead of merely proving who 
+signed into a service, it proves who created a message, acknowledged a document, approved a request, 
+scanned a QR code, or performed another meaningful action. Every attestation is cryptographically 
+bound to the user’s identity, the specific action, and the time at which it occurred. Optionally, 
+additional information such as location or comments may also be recorded.
+
+Authentication answers the question, **Who logged in?** Attested Communication answers the more useful question, 
+**Who performed this specific action?**
+
+## New Class of Attested Applications
+
+That distinction enables an entirely new class of applications.
+
+### Proof of Life
+
+Determine that you are communicating with a real, verified individual rather than an AI agent, 
+impersonator, or compromised account. The recipient authenticates with a passkey before responding, 
+providing cryptographic proof of identity.
+
+### Confidential Communication
+
+Send a message that can only be opened by a specific verified individual. 
+Even if the message or link is forwarded, intercepted, or copied, only the intended recipient can 
+authenticate and access its contents.
+
+### Verified Acknowledgements
+
+Publish a message, policy, or announcement and record exactly who acknowledged it. Instead of relying 
+on delivery receipts or read receipts, the sender receives a verifiable list of authenticated recipients.
+
+### Group Enrollment
+
+Allow users to securely join a team, organization, event, or mailing list by scanning an 
+authenticated QR code or following a secure invitation. Every membership is tied to a verified identity.
+
+### Time and Attendance
+
+Replace traditional time clocks with authenticated check-in and check-out. Each attendance record 
+is signed by the employee’s passkey, providing an accurate and auditable record of who was present 
+and when.
+
+### Event Tickets
+
+Issue digital tickets that are bound to a verified individual rather than to a barcode alone. 
+Admission requires passkey authentication, preventing ticket sharing, duplication, and impersonation.
+
+### Access Control
+
+Grant access to buildings, equipment, restricted areas, or digital resources only after the user 
+has authenticated. Every access event is recorded as a verified action.
+
+### Approval Workflows
+
+Require authenticated approval of contracts, purchase orders, engineering changes, compliance documents, 
+or safety inspections. Every approval is attributable to a specific verified individual.
+
+### Authenticated QR Codes
+
+Transform an ordinary QR code into a secure action. Scanning the code is only the first step; the 
+user must authenticate before the action is performed, whether that action is logging in, unlocking a door, 
+joining a group, making a payment, or confirming delivery.
+
+### Chain of Custody
+
+Maintain a complete, verifiable record showing who created, viewed, acknowledged, approved, or 
+modified information throughout its lifetime. Every step is cryptographically authenticated and 
+can be independently audited.
+
+These applications appear different on the surface, but they all rely on the same underlying capability: 
+the ability to associate a meaningful action with a verified human identity.
+
+AppKeyId is a platform built around this idea. It combines FIDO2 passkeys with messages, 
+documents, QR codes, approvals, tickets, and other communication objects so that every 
+important interaction can be authenticated by the individual performing it. The result is 
+a verifiable chain of communication in which identity is no longer inferred from an account 
+or a password, but is cryptographically attested at the moment each action occurs.
+
+The widespread adoption of passkeys marks more than the replacement of passwords. 
+It introduces a new primitive for distributed systems: the ability to prove, cryptographically, 
+that a particular person performed a particular action. Attested Communication is the practical 
+application of that primitive.

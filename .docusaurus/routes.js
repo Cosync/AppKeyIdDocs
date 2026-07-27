@@ -114,15 +114,15 @@ export default [
   },
   {
     path: '/docs',
-    component: ComponentCreator('/docs', '379'),
+    component: ComponentCreator('/docs', '138'),
     routes: [
       {
         path: '/docs',
-        component: ComponentCreator('/docs', 'b58'),
+        component: ComponentCreator('/docs', '1ac'),
         routes: [
           {
             path: '/docs',
-            component: ComponentCreator('/docs', '538'),
+            component: ComponentCreator('/docs', '821'),
             routes: [
               {
                 path: '/docs/category/attested-communication',
@@ -137,12 +137,6 @@ export default [
                 sidebar: "conceptsSidebar"
               },
               {
-                path: '/docs/category/the-problem',
-                component: ComponentCreator('/docs/category/the-problem', '490'),
-                exact: true,
-                sidebar: "conceptsSidebar"
-              },
-              {
                 path: '/docs/category/tutorial---basics',
                 component: ComponentCreator('/docs/category/tutorial---basics', '20e'),
                 exact: true,
@@ -153,6 +147,12 @@ export default [
                 component: ComponentCreator('/docs/category/tutorial---extras', '9ad'),
                 exact: true,
                 sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/category/use-cases',
+                component: ComponentCreator('/docs/category/use-cases', '08d'),
+                exact: true,
+                sidebar: "conceptsSidebar"
               },
               {
                 path: '/docs/concepts/attested-communication/chain-of-custody',
@@ -197,20 +197,26 @@ export default [
                 sidebar: "conceptsSidebar"
               },
               {
-                path: '/docs/concepts/problem/appkeyid-solution',
-                component: ComponentCreator('/docs/concepts/problem/appkeyid-solution', 'e7c'),
+                path: '/docs/concepts/use-cases/appkeyid-solution',
+                component: ComponentCreator('/docs/concepts/use-cases/appkeyid-solution', '72a'),
                 exact: true,
                 sidebar: "conceptsSidebar"
               },
               {
-                path: '/docs/concepts/problem/why-ai-breaks-digital',
-                component: ComponentCreator('/docs/concepts/problem/why-ai-breaks-digital', 'bc9'),
+                path: '/docs/concepts/use-cases/who-is-the-person',
+                component: ComponentCreator('/docs/concepts/use-cases/who-is-the-person', '45e'),
                 exact: true,
                 sidebar: "conceptsSidebar"
               },
               {
-                path: '/docs/concepts/problem/why-email-and-messaging',
-                component: ComponentCreator('/docs/concepts/problem/why-email-and-messaging', 'fb7'),
+                path: '/docs/concepts/use-cases/why-ai-breaks-digital',
+                component: ComponentCreator('/docs/concepts/use-cases/why-ai-breaks-digital', 'ec2'),
+                exact: true,
+                sidebar: "conceptsSidebar"
+              },
+              {
+                path: '/docs/concepts/use-cases/why-email-and-messaging',
+                component: ComponentCreator('/docs/concepts/use-cases/why-email-and-messaging', '8ff'),
                 exact: true,
                 sidebar: "conceptsSidebar"
               },

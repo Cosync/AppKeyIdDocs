@@ -1,0 +1,26 @@
+{
+  "id": "concepts/use-cases/why-ai-breaks-digital",
+  "title": "Why AI Breaks Digital Trust",
+  "description": "Digital Trust",
+  "source": "@site/docs/concepts/use-cases/why-ai-breaks-digital.mdx",
+  "sourceDirName": "concepts/use-cases",
+  "slug": "/concepts/use-cases/why-ai-breaks-digital",
+  "permalink": "/docs/concepts/use-cases/why-ai-breaks-digital",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "sidebar_position": 2
+  },
+  "sidebar": "conceptsSidebar",
+  "previous": {
+    "title": "Who Is the Person?",
+    "permalink": "/docs/concepts/use-cases/who-is-the-person"
+  },
+  "next": {
+    "title": "Why Email and Messaging Aren't Enough",
+    "permalink": "/docs/concepts/use-cases/why-email-and-messaging"
+  }
+}

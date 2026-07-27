@@ -1,0 +1,26 @@
+{
+  "id": "concepts/use-cases/appkeyid-solution copy",
+  "title": "AppKeyId is the solution",
+  "description": "AppKeyId Architecture",
+  "source": "@site/docs/concepts/use-cases/appkeyid-solution copy.mdx",
+  "sourceDirName": "concepts/use-cases",
+  "slug": "/concepts/use-cases/appkeyid-solution copy",
+  "permalink": "/docs/concepts/use-cases/appkeyid-solution copy",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "sidebar_position": 4
+  },
+  "sidebar": "conceptsSidebar",
+  "previous": {
+    "title": "Why Email and Messaging Aren't Enough",
+    "permalink": "/docs/concepts/use-cases/why-email-and-messaging"
+  },
+  "next": {
+    "title": "AppKeyId is the solution",
+    "permalink": "/docs/concepts/use-cases/appkeyid-solution"
+  }
+}

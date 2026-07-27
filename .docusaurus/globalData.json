@@ -46,18 +46,23 @@
               "sidebar": "conceptsSidebar"
             },
             {
-              "id": "concepts/problem/appkeyid-solution",
-              "path": "/docs/concepts/problem/appkeyid-solution",
+              "id": "concepts/use-cases/appkeyid-solution",
+              "path": "/docs/concepts/use-cases/appkeyid-solution",
               "sidebar": "conceptsSidebar"
             },
             {
-              "id": "concepts/problem/why-ai-breaks-digital",
-              "path": "/docs/concepts/problem/why-ai-breaks-digital",
+              "id": "concepts/use-cases/who-is-the-person",
+              "path": "/docs/concepts/use-cases/who-is-the-person",
               "sidebar": "conceptsSidebar"
             },
             {
-              "id": "concepts/problem/why-email-and-messaging",
-              "path": "/docs/concepts/problem/why-email-and-messaging",
+              "id": "concepts/use-cases/why-ai-breaks-digital",
+              "path": "/docs/concepts/use-cases/why-ai-breaks-digital",
+              "sidebar": "conceptsSidebar"
+            },
+            {
+              "id": "concepts/use-cases/why-email-and-messaging",
+              "path": "/docs/concepts/use-cases/why-email-and-messaging",
               "sidebar": "conceptsSidebar"
             },
             {
@@ -116,8 +121,8 @@
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "/category/the-problem",
-              "path": "/docs/category/the-problem",
+              "id": "/category/use-cases",
+              "path": "/docs/category/use-cases",
               "sidebar": "conceptsSidebar"
             },
             {
