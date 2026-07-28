@@ -4,3 +4,50 @@ sidebar_position: 1
 
 # Concepts
 
+Attested Communication is a new capability made possible by the widespread adoption of biometric 
+authentication and FIDO2 passkeys. It enables applications that require more than simply knowing that 
+a user is logged in—they require knowing who performed a specific action.
+
+Traditional Internet applications authenticate users once, typically at login, and then assume subsequent 
+actions are performed by the same individual. Attested Communication extends authentication beyond login 
+by cryptographically verifying each important action. Every acknowledgement, approval, scan, or 
+authorization can be tied to a verified individual, creating a trustworthy and auditable chain of 
+communication.
+
+This section introduces the concepts that form the foundation of AppKeyId. It is organized into three 
+parts.
+
+## Why — Use Cases
+
+Every new technology exists because it solves problems that were previously difficult or impossible to solve.
+This section explores the real-world applications of Attested Communication, including proof of life,
+confidential messaging, verified acknowledgements, authenticated QR codes, access control, time 
+and attendance, event tickets, and approval workflows.
+
+Although these applications appear different, they all depend on the same fundamental requirement:
+
+> **The system must know who performed a specific action.**
+
+## How — Foundation
+
+Attested Communication became practical only after two technologies reached widespread adoption.
+
+Modern smartphones now include secure biometric authentication, allowing users to prove their identity 
+using fingerprints or facial recognition. At the same time, the FIDO2 passkey standard provides a 
+universal, cryptographic method for proving that identity to remote systems without passwords or 
+shared secrets.
+
+This section explains how these technologies work together to provide a secure foundation for Attested 
+Communication.
+
+## What — Attested Communication
+
+With the foundation in place, we can define Attested Communication itself.
+
+Rather than authenticating a user only when they sign in, Attested Communication authenticates 
+individual actions. A message can be acknowledged, a document approved, a QR code scanned, 
+a ticket redeemed, or an access request authorized with cryptographic proof of the identity 
+of the person performing the action.
+
+The result is a verifiable chain of custody that records **who** performed an action, **what** they acted 
+upon, when it occurred, and, where appropriate, **where** it occurred.
