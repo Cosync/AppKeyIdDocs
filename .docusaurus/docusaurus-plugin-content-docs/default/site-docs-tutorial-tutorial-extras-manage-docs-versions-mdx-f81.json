@@ -5,7 +5,7 @@
   "source": "@site/docs/tutorial/tutorial-extras/manage-docs-versions.mdx",
   "sourceDirName": "tutorial/tutorial-extras",
   "slug": "/tutorial/tutorial-extras/manage-docs-versions",
-  "permalink": "/docs/tutorial/tutorial-extras/manage-docs-versions",
+  "permalink": "/AppKeyIdDocs/docs/tutorial/tutorial-extras/manage-docs-versions",
   "draft": false,
   "unlisted": false,
   "tags": [],
@@ -17,10 +17,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "Tutorial - Extras",
-    "permalink": "/docs/category/tutorial---extras"
+    "permalink": "/AppKeyIdDocs/docs/category/tutorial---extras"
   },
   "next": {
     "title": "Translate your site",
-    "permalink": "/docs/tutorial/tutorial-extras/translate-your-site"
+    "permalink": "/AppKeyIdDocs/docs/tutorial/tutorial-extras/translate-your-site"
   }
 }

@@ -1,138 +1,138 @@
 {
   "docusaurus-plugin-content-docs": {
     "default": {
-      "path": "/docs",
+      "path": "/AppKeyIdDocs/docs",
       "versions": [
         {
           "name": "current",
           "label": "Next",
           "isLast": true,
-          "path": "/docs",
+          "path": "/AppKeyIdDocs/docs",
           "mainDocId": "tutorial/intro",
           "docs": [
             {
               "id": "concepts/attested-communication/chain-of-custody",
-              "path": "/docs/concepts/attested-communication/chain-of-custody",
+              "path": "/AppKeyIdDocs/docs/concepts/attested-communication/chain-of-custody",
               "sidebar": "conceptsSidebar"
             },
             {
               "id": "concepts/attested-communication/what-is-a-card",
-              "path": "/docs/concepts/attested-communication/what-is-a-card",
+              "path": "/AppKeyIdDocs/docs/concepts/attested-communication/what-is-a-card",
               "sidebar": "conceptsSidebar"
             },
             {
               "id": "concepts/attested-communication/what-is-attested-communication",
-              "path": "/docs/concepts/attested-communication/what-is-attested-communication",
+              "path": "/AppKeyIdDocs/docs/concepts/attested-communication/what-is-attested-communication",
               "sidebar": "conceptsSidebar"
             },
             {
               "id": "concepts/attested-communication/why-acknowlegement",
-              "path": "/docs/concepts/attested-communication/why-acknowlegement",
+              "path": "/AppKeyIdDocs/docs/concepts/attested-communication/why-acknowlegement",
               "sidebar": "conceptsSidebar"
             },
             {
               "id": "concepts/foundation/passkeys-explained",
-              "path": "/docs/concepts/foundation/passkeys-explained",
+              "path": "/AppKeyIdDocs/docs/concepts/foundation/passkeys-explained",
               "sidebar": "conceptsSidebar"
             },
             {
               "id": "concepts/foundation/zero-trust-identity",
-              "path": "/docs/concepts/foundation/zero-trust-identity",
+              "path": "/AppKeyIdDocs/docs/concepts/foundation/zero-trust-identity",
               "sidebar": "conceptsSidebar"
             },
             {
               "id": "concepts/intro",
-              "path": "/docs/concepts/intro",
+              "path": "/AppKeyIdDocs/docs/concepts/intro",
               "sidebar": "conceptsSidebar"
             },
             {
               "id": "concepts/use-cases/appkeyid-solution",
-              "path": "/docs/concepts/use-cases/appkeyid-solution",
+              "path": "/AppKeyIdDocs/docs/concepts/use-cases/appkeyid-solution",
               "sidebar": "conceptsSidebar"
             },
             {
               "id": "concepts/use-cases/who-is-the-person",
-              "path": "/docs/concepts/use-cases/who-is-the-person",
+              "path": "/AppKeyIdDocs/docs/concepts/use-cases/who-is-the-person",
               "sidebar": "conceptsSidebar"
             },
             {
               "id": "concepts/use-cases/why-ai-breaks-digital",
-              "path": "/docs/concepts/use-cases/why-ai-breaks-digital",
+              "path": "/AppKeyIdDocs/docs/concepts/use-cases/why-ai-breaks-digital",
               "sidebar": "conceptsSidebar"
             },
             {
               "id": "concepts/use-cases/why-email-and-messaging",
-              "path": "/docs/concepts/use-cases/why-email-and-messaging",
+              "path": "/AppKeyIdDocs/docs/concepts/use-cases/why-email-and-messaging",
               "sidebar": "conceptsSidebar"
             },
             {
               "id": "tutorial/intro",
-              "path": "/docs/tutorial/intro",
+              "path": "/AppKeyIdDocs/docs/tutorial/intro",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "tutorial/tutorial-basics/congratulations",
-              "path": "/docs/tutorial/tutorial-basics/congratulations",
+              "path": "/AppKeyIdDocs/docs/tutorial/tutorial-basics/congratulations",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "tutorial/tutorial-basics/create-first-card",
-              "path": "/docs/tutorial/tutorial-basics/create-first-card",
+              "path": "/AppKeyIdDocs/docs/tutorial/tutorial-basics/create-first-card",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "tutorial/tutorial-basics/deploy-your-site",
-              "path": "/docs/tutorial/tutorial-basics/deploy-your-site",
+              "path": "/AppKeyIdDocs/docs/tutorial/tutorial-basics/deploy-your-site",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "tutorial/tutorial-basics/signup-to-appkeyid",
-              "path": "/docs/tutorial/tutorial-basics/signup-to-appkeyid",
+              "path": "/AppKeyIdDocs/docs/tutorial/tutorial-basics/signup-to-appkeyid",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "tutorial/tutorial-basics/signup-using-apple",
-              "path": "/docs/tutorial/tutorial-basics/signup-using-apple",
+              "path": "/AppKeyIdDocs/docs/tutorial/tutorial-basics/signup-using-apple",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "tutorial/tutorial-basics/signup-using-google",
-              "path": "/docs/tutorial/tutorial-basics/signup-using-google",
+              "path": "/AppKeyIdDocs/docs/tutorial/tutorial-basics/signup-using-google",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "tutorial/tutorial-extras/manage-docs-versions",
-              "path": "/docs/tutorial/tutorial-extras/manage-docs-versions",
+              "path": "/AppKeyIdDocs/docs/tutorial/tutorial-extras/manage-docs-versions",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "tutorial/tutorial-extras/translate-your-site",
-              "path": "/docs/tutorial/tutorial-extras/translate-your-site",
+              "path": "/AppKeyIdDocs/docs/tutorial/tutorial-extras/translate-your-site",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "/category/tutorial---basics",
-              "path": "/docs/category/tutorial---basics",
+              "path": "/AppKeyIdDocs/docs/category/tutorial---basics",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "/category/tutorial---extras",
-              "path": "/docs/category/tutorial---extras",
+              "path": "/AppKeyIdDocs/docs/category/tutorial---extras",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "/category/use-cases",
-              "path": "/docs/category/use-cases",
+              "path": "/AppKeyIdDocs/docs/category/use-cases",
               "sidebar": "conceptsSidebar"
             },
             {
               "id": "/category/foundation",
-              "path": "/docs/category/foundation",
+              "path": "/AppKeyIdDocs/docs/category/foundation",
               "sidebar": "conceptsSidebar"
             },
             {
               "id": "/category/attested-communication",
-              "path": "/docs/category/attested-communication",
+              "path": "/AppKeyIdDocs/docs/category/attested-communication",
               "sidebar": "conceptsSidebar"
             }
           ],
@@ -140,13 +140,13 @@
           "sidebars": {
             "tutorialSidebar": {
               "link": {
-                "path": "/docs/tutorial/intro",
+                "path": "/AppKeyIdDocs/docs/tutorial/intro",
                 "label": "tutorial/intro"
               }
             },
             "conceptsSidebar": {
               "link": {
-                "path": "/docs/concepts/intro",
+                "path": "/AppKeyIdDocs/docs/concepts/intro",
                 "label": "concepts/intro"
               }
             }

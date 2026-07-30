@@ -5,7 +5,7 @@
   "source": "@site/docs/concepts/attested-communication/what-is-attested-communication.mdx",
   "sourceDirName": "concepts/attested-communication",
   "slug": "/concepts/attested-communication/what-is-attested-communication",
-  "permalink": "/docs/concepts/attested-communication/what-is-attested-communication",
+  "permalink": "/AppKeyIdDocs/docs/concepts/attested-communication/what-is-attested-communication",
   "draft": false,
   "unlisted": false,
   "tags": [],
@@ -17,10 +17,10 @@
   "sidebar": "conceptsSidebar",
   "previous": {
     "title": "Attested Communication",
-    "permalink": "/docs/category/attested-communication"
+    "permalink": "/AppKeyIdDocs/docs/category/attested-communication"
   },
   "next": {
     "title": "What is a Card?",
-    "permalink": "/docs/concepts/attested-communication/what-is-a-card"
+    "permalink": "/AppKeyIdDocs/docs/concepts/attested-communication/what-is-a-card"
   }
 }

@@ -29,10 +29,10 @@ export default {
       "gitEagerVcs": true
     }
   },
-  "url": "https://your-docusaurus-site.example.com",
-  "baseUrl": "/",
-  "organizationName": "facebook",
-  "projectName": "docusaurus",
+  "url": "https://cosync.github.io",
+  "baseUrl": "/AppKeyIdDocs/",
+  "organizationName": "Cosync",
+  "projectName": "AppKeyIdDocs",
   "onBrokenLinks": "throw",
   "i18n": {
     "defaultLocale": "en",

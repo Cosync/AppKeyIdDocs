@@ -5,7 +5,7 @@
   "source": "@site/docs/concepts/intro.mdx",
   "sourceDirName": "concepts",
   "slug": "/concepts/intro",
-  "permalink": "/docs/concepts/intro",
+  "permalink": "/AppKeyIdDocs/docs/concepts/intro",
   "draft": false,
   "unlisted": false,
   "tags": [],
@@ -17,6 +17,6 @@
   "sidebar": "conceptsSidebar",
   "next": {
     "title": "Use Cases",
-    "permalink": "/docs/category/use-cases"
+    "permalink": "/AppKeyIdDocs/docs/category/use-cases"
   }
 }
