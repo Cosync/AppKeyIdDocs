@@ -1,0 +1,26 @@
+{
+  "id": "manual/contacts/inviting",
+  "title": "Inviting to AppKeyId",
+  "description": "",
+  "source": "@site/docs/manual/contacts/inviting.mdx",
+  "sourceDirName": "manual/contacts",
+  "slug": "/manual/contacts/inviting",
+  "permalink": "/AppKeyIdDocs/docs/manual/contacts/inviting",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "sidebar_position": 4
+  },
+  "sidebar": "manualSidebar",
+  "previous": {
+    "title": "Chatting with Contacts",
+    "permalink": "/AppKeyIdDocs/docs/manual/contacts/chatting"
+  },
+  "next": {
+    "title": "Blocking Users",
+    "permalink": "/AppKeyIdDocs/docs/manual/contacts/blocking"
+  }
+}

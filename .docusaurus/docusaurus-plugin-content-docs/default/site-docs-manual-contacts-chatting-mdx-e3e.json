@@ -1,0 +1,26 @@
+{
+  "id": "manual/contacts/chatting",
+  "title": "Chatting with Contacts",
+  "description": "",
+  "source": "@site/docs/manual/contacts/chatting.mdx",
+  "sourceDirName": "manual/contacts",
+  "slug": "/manual/contacts/chatting",
+  "permalink": "/AppKeyIdDocs/docs/manual/contacts/chatting",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "sidebar_position": 3
+  },
+  "sidebar": "manualSidebar",
+  "previous": {
+    "title": "Finding Contacts",
+    "permalink": "/AppKeyIdDocs/docs/manual/contacts/finding"
+  },
+  "next": {
+    "title": "Inviting to AppKeyId",
+    "permalink": "/AppKeyIdDocs/docs/manual/contacts/inviting"
+  }
+}

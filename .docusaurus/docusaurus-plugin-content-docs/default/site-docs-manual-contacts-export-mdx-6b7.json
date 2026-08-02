@@ -1,0 +1,22 @@
+{
+  "id": "manual/contacts/export",
+  "title": "Exporting Contacts",
+  "description": "",
+  "source": "@site/docs/manual/contacts/export.mdx",
+  "sourceDirName": "manual/contacts",
+  "slug": "/manual/contacts/export",
+  "permalink": "/AppKeyIdDocs/docs/manual/contacts/export",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 6,
+  "frontMatter": {
+    "sidebar_position": 6
+  },
+  "sidebar": "manualSidebar",
+  "previous": {
+    "title": "Blocking Users",
+    "permalink": "/AppKeyIdDocs/docs/manual/contacts/blocking"
+  }
+}

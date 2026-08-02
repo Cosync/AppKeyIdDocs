@@ -1,0 +1,8 @@
+{
+  "label": "Card Types",
+  "position": 3,
+  "link": {
+    "type": "generated-index",
+    "description": "This section describes the different card types supported in AppKeyId."
+  }
+}

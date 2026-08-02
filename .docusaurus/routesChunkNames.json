@@ -249,22 +249,34 @@
     },
     "content": "content---app-key-id-docs-markdown-page-4-c-6-07b"
   },
-  "/AppKeyIdDocs/docs-b96": {
+  "/AppKeyIdDocs/docs-926": {
     "__comp": "__comp---theme-docs-root-5-e-9-0b6",
     "__context": {
       "plugin": "plugin---app-key-id-docs-docsaba-cf2"
     }
   },
-  "/AppKeyIdDocs/docs-1d9": {
+  "/AppKeyIdDocs/docs-ca9": {
     "__comp": "__comp---theme-doc-version-roota-7-b-5de",
     "__props": "__props---app-key-id-docs-docs-30-a-338"
   },
-  "/AppKeyIdDocs/docs-8c6": {
+  "/AppKeyIdDocs/docs-fdd": {
     "__comp": "__comp---theme-doc-roota-94-67a"
   },
   "/AppKeyIdDocs/docs/category/attested-communication-992": {
     "__comp": "__comp---theme-doc-category-generated-index-page-14-e-640",
     "__props": "__props---app-key-id-docs-docs-category-attested-communication-90-b-709"
+  },
+  "/AppKeyIdDocs/docs/category/card-types-5ce": {
+    "__comp": "__comp---theme-doc-category-generated-index-page-14-e-640",
+    "__props": "__props---app-key-id-docs-docs-category-card-types-051-94f"
+  },
+  "/AppKeyIdDocs/docs/category/cards-5d5": {
+    "__comp": "__comp---theme-doc-category-generated-index-page-14-e-640",
+    "__props": "__props---app-key-id-docs-docs-category-cardsac-1-5dc"
+  },
+  "/AppKeyIdDocs/docs/category/contacts-72d": {
+    "__comp": "__comp---theme-doc-category-generated-index-page-14-e-640",
+    "__props": "__props---app-key-id-docs-docs-category-contactsfb-2-775"
   },
   "/AppKeyIdDocs/docs/category/foundation-4be": {
     "__comp": "__comp---theme-doc-category-generated-index-page-14-e-640",
@@ -325,6 +337,58 @@
   "/AppKeyIdDocs/docs/concepts/use-cases/why-email-and-messaging-a92": {
     "__comp": "__comp---theme-doc-item-178-a40",
     "content": "content---app-key-id-docs-docs-concepts-use-cases-why-email-and-messaging-65-c-05b"
+  },
+  "/AppKeyIdDocs/docs/manual/cards/inbox-c52": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---app-key-id-docs-docs-manual-cards-inbox-751-2f2"
+  },
+  "/AppKeyIdDocs/docs/manual/cards/outbox-33e": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---app-key-id-docs-docs-manual-cards-outbox-2-b-4-654"
+  },
+  "/AppKeyIdDocs/docs/manual/cardtypes/capture-162": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---app-key-id-docs-docs-manual-cardtypes-capturecba-ed0"
+  },
+  "/AppKeyIdDocs/docs/manual/cardtypes/deck-a11": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---app-key-id-docs-docs-manual-cardtypes-decka-39-7f0"
+  },
+  "/AppKeyIdDocs/docs/manual/cardtypes/message-bc2": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---app-key-id-docs-docs-manual-cardtypes-message-9-a-7-2fb"
+  },
+  "/AppKeyIdDocs/docs/manual/cardtypes/public-319": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---app-key-id-docs-docs-manual-cardtypes-publicd-0-b-ebc"
+  },
+  "/AppKeyIdDocs/docs/manual/contacts/-6e9": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---app-key-id-docs-docs-manual-contacts-1-ad-18b"
+  },
+  "/AppKeyIdDocs/docs/manual/contacts/blocking-3ad": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---app-key-id-docs-docs-manual-contacts-blocking-56-d-f6e"
+  },
+  "/AppKeyIdDocs/docs/manual/contacts/chatting-f95": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---app-key-id-docs-docs-manual-contacts-chattinge-3-e-a06"
+  },
+  "/AppKeyIdDocs/docs/manual/contacts/export-e13": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---app-key-id-docs-docs-manual-contacts-export-6-b-7-75d"
+  },
+  "/AppKeyIdDocs/docs/manual/contacts/finding-d8d": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---app-key-id-docs-docs-manual-contacts-finding-8-ff-e67"
+  },
+  "/AppKeyIdDocs/docs/manual/contacts/inviting-617": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---app-key-id-docs-docs-manual-contacts-inviting-840-d98"
+  },
+  "/AppKeyIdDocs/docs/manual/intro-964": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---app-key-id-docs-docs-manual-introaf-3-96c"
   },
   "/AppKeyIdDocs/docs/tutorial/intro-0ec": {
     "__comp": "__comp---theme-doc-item-178-a40",

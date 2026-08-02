@@ -1,0 +1,17 @@
+{
+  "id": "manual/attested-communication/why-acknowlegement",
+  "title": "Why Acknowledgements Matter",
+  "description": "Acknowledgements",
+  "source": "@site/docs/manual/attested-communication/why-acknowlegement.mdx",
+  "sourceDirName": "manual/attested-communication",
+  "slug": "/manual/attested-communication/why-acknowlegement",
+  "permalink": "/AppKeyIdDocs/docs/manual/attested-communication/why-acknowlegement",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "sidebar_position": 3
+  }
+}

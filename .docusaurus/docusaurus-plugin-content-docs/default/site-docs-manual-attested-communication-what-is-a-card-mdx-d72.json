@@ -1,0 +1,17 @@
+{
+  "id": "manual/attested-communication/what-is-a-card",
+  "title": "What is a Card?",
+  "description": "A Card is the basic unit of communication in AppKeyId. It is similar to a lightweight email, memo,",
+  "source": "@site/docs/manual/attested-communication/what-is-a-card.mdx",
+  "sourceDirName": "manual/attested-communication",
+  "slug": "/manual/attested-communication/what-is-a-card",
+  "permalink": "/AppKeyIdDocs/docs/manual/attested-communication/what-is-a-card",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "sidebar_position": 2
+  }
+}

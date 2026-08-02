@@ -1,0 +1,17 @@
+{
+  "id": "manual/cards/appkeyid-solution",
+  "title": "AppKeyId is the solution",
+  "description": "AppKeyId Architecture",
+  "source": "@site/docs/manual/cards/appkeyid-solution.mdx",
+  "sourceDirName": "manual/cards",
+  "slug": "/manual/cards/appkeyid-solution",
+  "permalink": "/AppKeyIdDocs/docs/manual/cards/appkeyid-solution",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "sidebar_position": 4
+  }
+}

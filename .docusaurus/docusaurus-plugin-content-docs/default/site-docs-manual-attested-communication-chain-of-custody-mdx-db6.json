@@ -1,0 +1,17 @@
+{
+  "id": "manual/attested-communication/chain-of-custody",
+  "title": "Chain of Custody",
+  "description": "A first fundamental principle of AppKeyId is that communication should be as auditable as any financial",
+  "source": "@site/docs/manual/attested-communication/chain-of-custody.mdx",
+  "sourceDirName": "manual/attested-communication",
+  "slug": "/manual/attested-communication/chain-of-custody",
+  "permalink": "/AppKeyIdDocs/docs/manual/attested-communication/chain-of-custody",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "sidebar_position": 4
+  }
+}

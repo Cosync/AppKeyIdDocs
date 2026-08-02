@@ -1,0 +1,26 @@
+{
+  "id": "manual/cardtypes/capture",
+  "title": "Capture Card Type",
+  "description": "",
+  "source": "@site/docs/manual/cardtypes/capture.mdx",
+  "sourceDirName": "manual/cardtypes",
+  "slug": "/manual/cardtypes/capture",
+  "permalink": "/AppKeyIdDocs/docs/manual/cardtypes/capture",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "sidebar_position": 3
+  },
+  "sidebar": "manualSidebar",
+  "previous": {
+    "title": "Public Card Type",
+    "permalink": "/AppKeyIdDocs/docs/manual/cardtypes/public"
+  },
+  "next": {
+    "title": "Deck Card Type",
+    "permalink": "/AppKeyIdDocs/docs/manual/cardtypes/deck"
+  }
+}

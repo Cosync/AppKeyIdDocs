@@ -1,0 +1,8 @@
+{
+  "label": "Cards",
+  "position": 2,
+  "link": {
+    "type": "generated-index",
+    "description": "This section describes Cards as the primary communication objects in AppKeyId."
+  }
+}

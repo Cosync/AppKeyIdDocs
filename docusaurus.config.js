@@ -108,6 +108,12 @@ const config = {
             position: 'left',
             label: 'Concepts',
           },
+          {
+            type: 'docSidebar',
+            sidebarId: 'manualSidebar',
+            position: 'left',
+            label: 'User Manual',
+          },
           {to: '/blog', label: 'Blog', position: 'left'},
           // {
           //   href: 'https://github.com/facebook/docusaurus',

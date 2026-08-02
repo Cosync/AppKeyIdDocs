@@ -1,0 +1,26 @@
+{
+  "id": "manual/contacts/finding",
+  "title": "Finding Contacts",
+  "description": "",
+  "source": "@site/docs/manual/contacts/finding.mdx",
+  "sourceDirName": "manual/contacts",
+  "slug": "/manual/contacts/finding",
+  "permalink": "/AppKeyIdDocs/docs/manual/contacts/finding",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "sidebar_position": 2
+  },
+  "sidebar": "manualSidebar",
+  "previous": {
+    "title": "Managing Contacts",
+    "permalink": "/AppKeyIdDocs/docs/manual/contacts/"
+  },
+  "next": {
+    "title": "Chatting with Contacts",
+    "permalink": "/AppKeyIdDocs/docs/manual/contacts/chatting"
+  }
+}

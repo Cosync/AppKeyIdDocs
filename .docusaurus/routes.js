@@ -114,21 +114,39 @@ export default [
   },
   {
     path: '/AppKeyIdDocs/docs',
-    component: ComponentCreator('/AppKeyIdDocs/docs', 'b96'),
+    component: ComponentCreator('/AppKeyIdDocs/docs', '926'),
     routes: [
       {
         path: '/AppKeyIdDocs/docs',
-        component: ComponentCreator('/AppKeyIdDocs/docs', '1d9'),
+        component: ComponentCreator('/AppKeyIdDocs/docs', 'ca9'),
         routes: [
           {
             path: '/AppKeyIdDocs/docs',
-            component: ComponentCreator('/AppKeyIdDocs/docs', '8c6'),
+            component: ComponentCreator('/AppKeyIdDocs/docs', 'fdd'),
             routes: [
               {
                 path: '/AppKeyIdDocs/docs/category/attested-communication',
                 component: ComponentCreator('/AppKeyIdDocs/docs/category/attested-communication', '992'),
                 exact: true,
                 sidebar: "conceptsSidebar"
+              },
+              {
+                path: '/AppKeyIdDocs/docs/category/card-types',
+                component: ComponentCreator('/AppKeyIdDocs/docs/category/card-types', '5ce'),
+                exact: true,
+                sidebar: "manualSidebar"
+              },
+              {
+                path: '/AppKeyIdDocs/docs/category/cards',
+                component: ComponentCreator('/AppKeyIdDocs/docs/category/cards', '5d5'),
+                exact: true,
+                sidebar: "manualSidebar"
+              },
+              {
+                path: '/AppKeyIdDocs/docs/category/contacts',
+                component: ComponentCreator('/AppKeyIdDocs/docs/category/contacts', '72d'),
+                exact: true,
+                sidebar: "manualSidebar"
               },
               {
                 path: '/AppKeyIdDocs/docs/category/foundation',
@@ -219,6 +237,84 @@ export default [
                 component: ComponentCreator('/AppKeyIdDocs/docs/concepts/use-cases/why-email-and-messaging', 'a92'),
                 exact: true,
                 sidebar: "conceptsSidebar"
+              },
+              {
+                path: '/AppKeyIdDocs/docs/manual/cards/inbox',
+                component: ComponentCreator('/AppKeyIdDocs/docs/manual/cards/inbox', 'c52'),
+                exact: true,
+                sidebar: "manualSidebar"
+              },
+              {
+                path: '/AppKeyIdDocs/docs/manual/cards/outbox',
+                component: ComponentCreator('/AppKeyIdDocs/docs/manual/cards/outbox', '33e'),
+                exact: true,
+                sidebar: "manualSidebar"
+              },
+              {
+                path: '/AppKeyIdDocs/docs/manual/cardtypes/capture',
+                component: ComponentCreator('/AppKeyIdDocs/docs/manual/cardtypes/capture', '162'),
+                exact: true,
+                sidebar: "manualSidebar"
+              },
+              {
+                path: '/AppKeyIdDocs/docs/manual/cardtypes/deck',
+                component: ComponentCreator('/AppKeyIdDocs/docs/manual/cardtypes/deck', 'a11'),
+                exact: true,
+                sidebar: "manualSidebar"
+              },
+              {
+                path: '/AppKeyIdDocs/docs/manual/cardtypes/message',
+                component: ComponentCreator('/AppKeyIdDocs/docs/manual/cardtypes/message', 'bc2'),
+                exact: true,
+                sidebar: "manualSidebar"
+              },
+              {
+                path: '/AppKeyIdDocs/docs/manual/cardtypes/public',
+                component: ComponentCreator('/AppKeyIdDocs/docs/manual/cardtypes/public', '319'),
+                exact: true,
+                sidebar: "manualSidebar"
+              },
+              {
+                path: '/AppKeyIdDocs/docs/manual/contacts/',
+                component: ComponentCreator('/AppKeyIdDocs/docs/manual/contacts/', '6e9'),
+                exact: true,
+                sidebar: "manualSidebar"
+              },
+              {
+                path: '/AppKeyIdDocs/docs/manual/contacts/blocking',
+                component: ComponentCreator('/AppKeyIdDocs/docs/manual/contacts/blocking', '3ad'),
+                exact: true,
+                sidebar: "manualSidebar"
+              },
+              {
+                path: '/AppKeyIdDocs/docs/manual/contacts/chatting',
+                component: ComponentCreator('/AppKeyIdDocs/docs/manual/contacts/chatting', 'f95'),
+                exact: true,
+                sidebar: "manualSidebar"
+              },
+              {
+                path: '/AppKeyIdDocs/docs/manual/contacts/export',
+                component: ComponentCreator('/AppKeyIdDocs/docs/manual/contacts/export', 'e13'),
+                exact: true,
+                sidebar: "manualSidebar"
+              },
+              {
+                path: '/AppKeyIdDocs/docs/manual/contacts/finding',
+                component: ComponentCreator('/AppKeyIdDocs/docs/manual/contacts/finding', 'd8d'),
+                exact: true,
+                sidebar: "manualSidebar"
+              },
+              {
+                path: '/AppKeyIdDocs/docs/manual/contacts/inviting',
+                component: ComponentCreator('/AppKeyIdDocs/docs/manual/contacts/inviting', '617'),
+                exact: true,
+                sidebar: "manualSidebar"
+              },
+              {
+                path: '/AppKeyIdDocs/docs/manual/intro',
+                component: ComponentCreator('/AppKeyIdDocs/docs/manual/intro', '964'),
+                exact: true,
+                sidebar: "manualSidebar"
               },
               {
                 path: '/AppKeyIdDocs/docs/tutorial/intro',

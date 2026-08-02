@@ -112,6 +112,12 @@ export default {
           "label": "Concepts"
         },
         {
+          "type": "docSidebar",
+          "sidebarId": "manualSidebar",
+          "position": "left",
+          "label": "User Manual"
+        },
+        {
           "to": "/blog",
           "label": "Blog",
           "position": "left"

@@ -1,0 +1,26 @@
+{
+  "id": "manual/cards/outbox",
+  "title": "What is the outbox",
+  "description": "",
+  "source": "@site/docs/manual/cards/outbox.mdx",
+  "sourceDirName": "manual/cards",
+  "slug": "/manual/cards/outbox",
+  "permalink": "/AppKeyIdDocs/docs/manual/cards/outbox",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "sidebar_position": 2
+  },
+  "sidebar": "manualSidebar",
+  "previous": {
+    "title": "What is the Inbox",
+    "permalink": "/AppKeyIdDocs/docs/manual/cards/inbox"
+  },
+  "next": {
+    "title": "Card Types",
+    "permalink": "/AppKeyIdDocs/docs/category/card-types"
+  }
+}

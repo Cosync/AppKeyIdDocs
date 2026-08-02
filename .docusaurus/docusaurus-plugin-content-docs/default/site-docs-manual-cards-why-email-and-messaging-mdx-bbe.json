@@ -1,0 +1,17 @@
+{
+  "id": "manual/cards/why-email-and-messaging",
+  "title": "Why Email and Messaging Aren't Enough",
+  "description": "Hacked Email & Sim Swap",
+  "source": "@site/docs/manual/cards/why-email-and-messaging.mdx",
+  "sourceDirName": "manual/cards",
+  "slug": "/manual/cards/why-email-and-messaging",
+  "permalink": "/AppKeyIdDocs/docs/manual/cards/why-email-and-messaging",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "sidebar_position": 3
+  }
+}
