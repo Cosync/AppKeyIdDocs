@@ -1,0 +1,26 @@
+{
+  "id": "manual/teams/export",
+  "title": "Exporting Team Members",
+  "description": "",
+  "source": "@site/docs/manual/teams/export.mdx",
+  "sourceDirName": "manual/teams",
+  "slug": "/manual/teams/export",
+  "permalink": "/AppKeyIdDocs/docs/manual/teams/export",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "sidebar_position": 4
+  },
+  "sidebar": "manualSidebar",
+  "previous": {
+    "title": "Manage Team Properties",
+    "permalink": "/AppKeyIdDocs/docs/manual/teams/properties"
+  },
+  "next": {
+    "title": "Teams and Capture Cards",
+    "permalink": "/AppKeyIdDocs/docs/manual/teams/capture"
+  }
+}

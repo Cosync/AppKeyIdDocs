@@ -1,0 +1,26 @@
+{
+  "id": "manual/profilemenu/profile",
+  "title": "Profile",
+  "description": "Profile Picture",
+  "source": "@site/docs/manual/profilemenu/profile.mdx",
+  "sourceDirName": "manual/profilemenu",
+  "slug": "/manual/profilemenu/profile",
+  "permalink": "/AppKeyIdDocs/docs/manual/profilemenu/profile",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1
+  },
+  "sidebar": "manualSidebar",
+  "previous": {
+    "title": "Profile Menu",
+    "permalink": "/AppKeyIdDocs/docs/category/profile-menu"
+  },
+  "next": {
+    "title": "AppKeyId Passkeys",
+    "permalink": "/AppKeyIdDocs/docs/manual/profilemenu/passkeys"
+  }
+}

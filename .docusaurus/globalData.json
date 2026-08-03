@@ -131,23 +131,63 @@
               "sidebar": "manualSidebar"
             },
             {
+              "id": "manual/profilemenu/logs",
+              "path": "/AppKeyIdDocs/docs/manual/profilemenu/logs",
+              "sidebar": "manualSidebar"
+            },
+            {
+              "id": "manual/profilemenu/passkeys",
+              "path": "/AppKeyIdDocs/docs/manual/profilemenu/passkeys",
+              "sidebar": "manualSidebar"
+            },
+            {
+              "id": "manual/profilemenu/profile",
+              "path": "/AppKeyIdDocs/docs/manual/profilemenu/profile",
+              "sidebar": "manualSidebar"
+            },
+            {
+              "id": "manual/profilemenu/settings",
+              "path": "/AppKeyIdDocs/docs/manual/profilemenu/settings",
+              "sidebar": "manualSidebar"
+            },
+            {
+              "id": "manual/teams/addmembers",
+              "path": "/AppKeyIdDocs/docs/manual/teams/addmembers",
+              "sidebar": "manualSidebar"
+            },
+            {
+              "id": "manual/teams/belongteam",
+              "path": "/AppKeyIdDocs/docs/manual/teams/belongteam",
+              "sidebar": "manualSidebar"
+            },
+            {
+              "id": "manual/teams/capture",
+              "path": "/AppKeyIdDocs/docs/manual/teams/capture",
+              "sidebar": "manualSidebar"
+            },
+            {
+              "id": "manual/teams/createteam",
+              "path": "/AppKeyIdDocs/docs/manual/teams/createteam",
+              "sidebar": "manualSidebar"
+            },
+            {
+              "id": "manual/teams/export",
+              "path": "/AppKeyIdDocs/docs/manual/teams/export",
+              "sidebar": "manualSidebar"
+            },
+            {
+              "id": "manual/teams/properties",
+              "path": "/AppKeyIdDocs/docs/manual/teams/properties",
+              "sidebar": "manualSidebar"
+            },
+            {
               "id": "tutorial/intro",
               "path": "/AppKeyIdDocs/docs/tutorial/intro",
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "tutorial/tutorial-basics/congratulations",
-              "path": "/AppKeyIdDocs/docs/tutorial/tutorial-basics/congratulations",
-              "sidebar": "tutorialSidebar"
-            },
-            {
               "id": "tutorial/tutorial-basics/create-first-card",
               "path": "/AppKeyIdDocs/docs/tutorial/tutorial-basics/create-first-card",
-              "sidebar": "tutorialSidebar"
-            },
-            {
-              "id": "tutorial/tutorial-basics/deploy-your-site",
-              "path": "/AppKeyIdDocs/docs/tutorial/tutorial-basics/deploy-your-site",
               "sidebar": "tutorialSidebar"
             },
             {
@@ -213,6 +253,16 @@
             {
               "id": "/category/contacts",
               "path": "/AppKeyIdDocs/docs/category/contacts",
+              "sidebar": "manualSidebar"
+            },
+            {
+              "id": "/category/teams",
+              "path": "/AppKeyIdDocs/docs/category/teams",
+              "sidebar": "manualSidebar"
+            },
+            {
+              "id": "/category/profile-menu",
+              "path": "/AppKeyIdDocs/docs/category/profile-menu",
               "sidebar": "manualSidebar"
             }
           ],

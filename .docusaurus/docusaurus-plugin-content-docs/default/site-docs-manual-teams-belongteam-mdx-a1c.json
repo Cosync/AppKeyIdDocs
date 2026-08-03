@@ -1,0 +1,26 @@
+{
+  "id": "manual/teams/belongteam",
+  "title": "Teams I belong to",
+  "description": "",
+  "source": "@site/docs/manual/teams/belongteam.mdx",
+  "sourceDirName": "manual/teams",
+  "slug": "/manual/teams/belongteam",
+  "permalink": "/AppKeyIdDocs/docs/manual/teams/belongteam",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 6,
+  "frontMatter": {
+    "sidebar_position": 6
+  },
+  "sidebar": "manualSidebar",
+  "previous": {
+    "title": "Teams and Capture Cards",
+    "permalink": "/AppKeyIdDocs/docs/manual/teams/capture"
+  },
+  "next": {
+    "title": "Profile Menu",
+    "permalink": "/AppKeyIdDocs/docs/category/profile-menu"
+  }
+}

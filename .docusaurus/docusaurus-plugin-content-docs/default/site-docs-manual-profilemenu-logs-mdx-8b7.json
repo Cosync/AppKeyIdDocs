@@ -1,0 +1,22 @@
+{
+  "id": "manual/profilemenu/logs",
+  "title": "Logs",
+  "description": "",
+  "source": "@site/docs/manual/profilemenu/logs.mdx",
+  "sourceDirName": "manual/profilemenu",
+  "slug": "/manual/profilemenu/logs",
+  "permalink": "/AppKeyIdDocs/docs/manual/profilemenu/logs",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "sidebar_position": 4
+  },
+  "sidebar": "manualSidebar",
+  "previous": {
+    "title": "AppKeyId Settings",
+    "permalink": "/AppKeyIdDocs/docs/manual/profilemenu/settings"
+  }
+}

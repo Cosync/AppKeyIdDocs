@@ -1,0 +1,26 @@
+{
+  "id": "manual/teams/properties",
+  "title": "Manage Team Properties",
+  "description": "",
+  "source": "@site/docs/manual/teams/properties.mdx",
+  "sourceDirName": "manual/teams",
+  "slug": "/manual/teams/properties",
+  "permalink": "/AppKeyIdDocs/docs/manual/teams/properties",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "sidebar_position": 3
+  },
+  "sidebar": "manualSidebar",
+  "previous": {
+    "title": "Add Team Members",
+    "permalink": "/AppKeyIdDocs/docs/manual/teams/addmembers"
+  },
+  "next": {
+    "title": "Exporting Team Members",
+    "permalink": "/AppKeyIdDocs/docs/manual/teams/export"
+  }
+}

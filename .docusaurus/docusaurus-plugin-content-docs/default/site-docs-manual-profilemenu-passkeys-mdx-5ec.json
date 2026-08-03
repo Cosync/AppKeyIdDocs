@@ -1,0 +1,26 @@
+{
+  "id": "manual/profilemenu/passkeys",
+  "title": "AppKeyId Passkeys",
+  "description": "",
+  "source": "@site/docs/manual/profilemenu/passkeys.mdx",
+  "sourceDirName": "manual/profilemenu",
+  "slug": "/manual/profilemenu/passkeys",
+  "permalink": "/AppKeyIdDocs/docs/manual/profilemenu/passkeys",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "sidebar_position": 2
+  },
+  "sidebar": "manualSidebar",
+  "previous": {
+    "title": "Profile",
+    "permalink": "/AppKeyIdDocs/docs/manual/profilemenu/profile"
+  },
+  "next": {
+    "title": "AppKeyId Settings",
+    "permalink": "/AppKeyIdDocs/docs/manual/profilemenu/settings"
+  }
+}

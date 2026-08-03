@@ -1,0 +1,26 @@
+{
+  "id": "manual/teams/capture",
+  "title": "Teams and Capture Cards",
+  "description": "",
+  "source": "@site/docs/manual/teams/capture.mdx",
+  "sourceDirName": "manual/teams",
+  "slug": "/manual/teams/capture",
+  "permalink": "/AppKeyIdDocs/docs/manual/teams/capture",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 5,
+  "frontMatter": {
+    "sidebar_position": 5
+  },
+  "sidebar": "manualSidebar",
+  "previous": {
+    "title": "Exporting Team Members",
+    "permalink": "/AppKeyIdDocs/docs/manual/teams/export"
+  },
+  "next": {
+    "title": "Teams I belong to",
+    "permalink": "/AppKeyIdDocs/docs/manual/teams/belongteam"
+  }
+}

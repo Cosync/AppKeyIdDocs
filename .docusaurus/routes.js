@@ -114,15 +114,15 @@ export default [
   },
   {
     path: '/AppKeyIdDocs/docs',
-    component: ComponentCreator('/AppKeyIdDocs/docs', '926'),
+    component: ComponentCreator('/AppKeyIdDocs/docs', 'bdc'),
     routes: [
       {
         path: '/AppKeyIdDocs/docs',
-        component: ComponentCreator('/AppKeyIdDocs/docs', 'ca9'),
+        component: ComponentCreator('/AppKeyIdDocs/docs', '372'),
         routes: [
           {
             path: '/AppKeyIdDocs/docs',
-            component: ComponentCreator('/AppKeyIdDocs/docs', 'fdd'),
+            component: ComponentCreator('/AppKeyIdDocs/docs', '940'),
             routes: [
               {
                 path: '/AppKeyIdDocs/docs/category/attested-communication',
@@ -153,6 +153,18 @@ export default [
                 component: ComponentCreator('/AppKeyIdDocs/docs/category/foundation', '4be'),
                 exact: true,
                 sidebar: "conceptsSidebar"
+              },
+              {
+                path: '/AppKeyIdDocs/docs/category/profile-menu',
+                component: ComponentCreator('/AppKeyIdDocs/docs/category/profile-menu', 'afb'),
+                exact: true,
+                sidebar: "manualSidebar"
+              },
+              {
+                path: '/AppKeyIdDocs/docs/category/teams',
+                component: ComponentCreator('/AppKeyIdDocs/docs/category/teams', 'f75'),
+                exact: true,
+                sidebar: "manualSidebar"
               },
               {
                 path: '/AppKeyIdDocs/docs/category/tutorial---basics',
@@ -317,26 +329,74 @@ export default [
                 sidebar: "manualSidebar"
               },
               {
+                path: '/AppKeyIdDocs/docs/manual/profilemenu/logs',
+                component: ComponentCreator('/AppKeyIdDocs/docs/manual/profilemenu/logs', 'bcd'),
+                exact: true,
+                sidebar: "manualSidebar"
+              },
+              {
+                path: '/AppKeyIdDocs/docs/manual/profilemenu/passkeys',
+                component: ComponentCreator('/AppKeyIdDocs/docs/manual/profilemenu/passkeys', '615'),
+                exact: true,
+                sidebar: "manualSidebar"
+              },
+              {
+                path: '/AppKeyIdDocs/docs/manual/profilemenu/profile',
+                component: ComponentCreator('/AppKeyIdDocs/docs/manual/profilemenu/profile', 'd14'),
+                exact: true,
+                sidebar: "manualSidebar"
+              },
+              {
+                path: '/AppKeyIdDocs/docs/manual/profilemenu/settings',
+                component: ComponentCreator('/AppKeyIdDocs/docs/manual/profilemenu/settings', '659'),
+                exact: true,
+                sidebar: "manualSidebar"
+              },
+              {
+                path: '/AppKeyIdDocs/docs/manual/teams/addmembers',
+                component: ComponentCreator('/AppKeyIdDocs/docs/manual/teams/addmembers', '978'),
+                exact: true,
+                sidebar: "manualSidebar"
+              },
+              {
+                path: '/AppKeyIdDocs/docs/manual/teams/belongteam',
+                component: ComponentCreator('/AppKeyIdDocs/docs/manual/teams/belongteam', '8f8'),
+                exact: true,
+                sidebar: "manualSidebar"
+              },
+              {
+                path: '/AppKeyIdDocs/docs/manual/teams/capture',
+                component: ComponentCreator('/AppKeyIdDocs/docs/manual/teams/capture', '169'),
+                exact: true,
+                sidebar: "manualSidebar"
+              },
+              {
+                path: '/AppKeyIdDocs/docs/manual/teams/createteam',
+                component: ComponentCreator('/AppKeyIdDocs/docs/manual/teams/createteam', '6de'),
+                exact: true,
+                sidebar: "manualSidebar"
+              },
+              {
+                path: '/AppKeyIdDocs/docs/manual/teams/export',
+                component: ComponentCreator('/AppKeyIdDocs/docs/manual/teams/export', '4e6'),
+                exact: true,
+                sidebar: "manualSidebar"
+              },
+              {
+                path: '/AppKeyIdDocs/docs/manual/teams/properties',
+                component: ComponentCreator('/AppKeyIdDocs/docs/manual/teams/properties', 'ec0'),
+                exact: true,
+                sidebar: "manualSidebar"
+              },
+              {
                 path: '/AppKeyIdDocs/docs/tutorial/intro',
                 component: ComponentCreator('/AppKeyIdDocs/docs/tutorial/intro', '0ec'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/AppKeyIdDocs/docs/tutorial/tutorial-basics/congratulations',
-                component: ComponentCreator('/AppKeyIdDocs/docs/tutorial/tutorial-basics/congratulations', 'eab'),
-                exact: true,
-                sidebar: "tutorialSidebar"
-              },
-              {
                 path: '/AppKeyIdDocs/docs/tutorial/tutorial-basics/create-first-card',
                 component: ComponentCreator('/AppKeyIdDocs/docs/tutorial/tutorial-basics/create-first-card', 'ca7'),
-                exact: true,
-                sidebar: "tutorialSidebar"
-              },
-              {
-                path: '/AppKeyIdDocs/docs/tutorial/tutorial-basics/deploy-your-site',
-                component: ComponentCreator('/AppKeyIdDocs/docs/tutorial/tutorial-basics/deploy-your-site', '585'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },

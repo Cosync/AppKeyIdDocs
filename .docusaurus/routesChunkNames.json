@@ -249,17 +249,17 @@
     },
     "content": "content---app-key-id-docs-markdown-page-4-c-6-07b"
   },
-  "/AppKeyIdDocs/docs-926": {
+  "/AppKeyIdDocs/docs-bdc": {
     "__comp": "__comp---theme-docs-root-5-e-9-0b6",
     "__context": {
       "plugin": "plugin---app-key-id-docs-docsaba-cf2"
     }
   },
-  "/AppKeyIdDocs/docs-ca9": {
+  "/AppKeyIdDocs/docs-372": {
     "__comp": "__comp---theme-doc-version-roota-7-b-5de",
     "__props": "__props---app-key-id-docs-docs-30-a-338"
   },
-  "/AppKeyIdDocs/docs-fdd": {
+  "/AppKeyIdDocs/docs-940": {
     "__comp": "__comp---theme-doc-roota-94-67a"
   },
   "/AppKeyIdDocs/docs/category/attested-communication-992": {
@@ -281,6 +281,14 @@
   "/AppKeyIdDocs/docs/category/foundation-4be": {
     "__comp": "__comp---theme-doc-category-generated-index-page-14-e-640",
     "__props": "__props---app-key-id-docs-docs-category-foundationf-17-8e8"
+  },
+  "/AppKeyIdDocs/docs/category/profile-menu-afb": {
+    "__comp": "__comp---theme-doc-category-generated-index-page-14-e-640",
+    "__props": "__props---app-key-id-docs-docs-category-profile-menud-6-a-cbc"
+  },
+  "/AppKeyIdDocs/docs/category/teams-f75": {
+    "__comp": "__comp---theme-doc-category-generated-index-page-14-e-640",
+    "__props": "__props---app-key-id-docs-docs-category-teamsd-06-4c2"
   },
   "/AppKeyIdDocs/docs/category/tutorial---basics-77d": {
     "__comp": "__comp---theme-doc-category-generated-index-page-14-e-640",
@@ -390,21 +398,53 @@
     "__comp": "__comp---theme-doc-item-178-a40",
     "content": "content---app-key-id-docs-docs-manual-introaf-3-96c"
   },
+  "/AppKeyIdDocs/docs/manual/profilemenu/logs-bcd": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---app-key-id-docs-docs-manual-profilemenu-logs-8-b-7-e88"
+  },
+  "/AppKeyIdDocs/docs/manual/profilemenu/passkeys-615": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---app-key-id-docs-docs-manual-profilemenu-passkeys-5-ec-b4e"
+  },
+  "/AppKeyIdDocs/docs/manual/profilemenu/profile-d14": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---app-key-id-docs-docs-manual-profilemenu-profile-346-466"
+  },
+  "/AppKeyIdDocs/docs/manual/profilemenu/settings-659": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---app-key-id-docs-docs-manual-profilemenu-settings-30-b-315"
+  },
+  "/AppKeyIdDocs/docs/manual/teams/addmembers-978": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---app-key-id-docs-docs-manual-teams-addmembersc-2-b-d10"
+  },
+  "/AppKeyIdDocs/docs/manual/teams/belongteam-8f8": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---app-key-id-docs-docs-manual-teams-belongteama-1-c-7c0"
+  },
+  "/AppKeyIdDocs/docs/manual/teams/capture-169": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---app-key-id-docs-docs-manual-teams-capture-745-09a"
+  },
+  "/AppKeyIdDocs/docs/manual/teams/createteam-6de": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---app-key-id-docs-docs-manual-teams-createteam-2-f-4-6f1"
+  },
+  "/AppKeyIdDocs/docs/manual/teams/export-4e6": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---app-key-id-docs-docs-manual-teams-export-8-ac-c0c"
+  },
+  "/AppKeyIdDocs/docs/manual/teams/properties-ec0": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---app-key-id-docs-docs-manual-teams-properties-28-b-0ab"
+  },
   "/AppKeyIdDocs/docs/tutorial/intro-0ec": {
     "__comp": "__comp---theme-doc-item-178-a40",
     "content": "content---app-key-id-docs-docs-tutorial-introa-0-f-818"
   },
-  "/AppKeyIdDocs/docs/tutorial/tutorial-basics/congratulations-eab": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---app-key-id-docs-docs-tutorial-tutorial-basics-congratulations-1-d-6-df4"
-  },
   "/AppKeyIdDocs/docs/tutorial/tutorial-basics/create-first-card-ca7": {
     "__comp": "__comp---theme-doc-item-178-a40",
     "content": "content---app-key-id-docs-docs-tutorial-tutorial-basics-create-first-card-8-d-1-048"
-  },
-  "/AppKeyIdDocs/docs/tutorial/tutorial-basics/deploy-your-site-585": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---app-key-id-docs-docs-tutorial-tutorial-basics-deploy-your-site-4-bc-1a0"
   },
   "/AppKeyIdDocs/docs/tutorial/tutorial-basics/signup-to-appkeyid-64b": {
     "__comp": "__comp---theme-doc-item-178-a40",
