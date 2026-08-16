@@ -1,476 +1,476 @@
 {
-  "/AppKeyIdDocs/__docusaurus/debug-6e9": {
+  "/__docusaurus/debug-5ff": {
     "__comp": "__comp---theme-debug-config-23-a-2ff",
     "__context": {
-      "plugin": "plugin---app-key-id-docs-docusaurus-debugb-38-fca"
+      "plugin": "plugin---docusaurus-debugb-38-ad3"
     }
   },
-  "/AppKeyIdDocs/__docusaurus/debug/config-c42": {
+  "/__docusaurus/debug/config-5ba": {
     "__comp": "__comp---theme-debug-config-23-a-2ff",
     "__context": {
-      "plugin": "plugin---app-key-id-docs-docusaurus-debugb-38-fca"
+      "plugin": "plugin---docusaurus-debugb-38-ad3"
     }
   },
-  "/AppKeyIdDocs/__docusaurus/debug/content-34e": {
+  "/__docusaurus/debug/content-a2b": {
     "__comp": "__comp---theme-debug-contentba-8-ce7",
     "__context": {
-      "plugin": "plugin---app-key-id-docs-docusaurus-debugb-38-fca"
+      "plugin": "plugin---docusaurus-debugb-38-ad3"
     },
-    "__props": "__props---app-key-id-docs-docusaurus-debug-content-14-b-ad0"
+    "__props": "__props---docusaurus-debug-content-3-c-0-be2"
   },
-  "/AppKeyIdDocs/__docusaurus/debug/globalData-44f": {
+  "/__docusaurus/debug/globalData-c3c": {
     "__comp": "__comp---theme-debug-global-dataede-0fa",
     "__context": {
-      "plugin": "plugin---app-key-id-docs-docusaurus-debugb-38-fca"
+      "plugin": "plugin---docusaurus-debugb-38-ad3"
     }
   },
-  "/AppKeyIdDocs/__docusaurus/debug/metadata-f8c": {
+  "/__docusaurus/debug/metadata-156": {
     "__comp": "__comp---theme-debug-site-metadata-68-e-3d4",
     "__context": {
-      "plugin": "plugin---app-key-id-docs-docusaurus-debugb-38-fca"
+      "plugin": "plugin---docusaurus-debugb-38-ad3"
     }
   },
-  "/AppKeyIdDocs/__docusaurus/debug/registry-fd7": {
+  "/__docusaurus/debug/registry-88c": {
     "__comp": "__comp---theme-debug-registry-679-501",
     "__context": {
-      "plugin": "plugin---app-key-id-docs-docusaurus-debugb-38-fca"
+      "plugin": "plugin---docusaurus-debugb-38-ad3"
     }
   },
-  "/AppKeyIdDocs/__docusaurus/debug/routes-71a": {
+  "/__docusaurus/debug/routes-000": {
     "__comp": "__comp---theme-debug-routes-946-699",
     "__context": {
-      "plugin": "plugin---app-key-id-docs-docusaurus-debugb-38-fca"
+      "plugin": "plugin---docusaurus-debugb-38-ad3"
     }
   },
-  "/AppKeyIdDocs/blog-7d4": {
+  "/blog-e21": {
     "__comp": "__comp---theme-blog-list-pagea-6-a-7ba",
     "__context": {
-      "plugin": "plugin---app-key-id-docs-blog-369-d07"
+      "plugin": "plugin---blog-369-22e"
     },
-    "sidebar": "sidebar---app-key-id-docs-blog-814-063",
+    "sidebar": "sidebar---blog-814-8ac",
     "items": [
       {
-        "content": "content---app-key-id-docs-blog-804-fa5"
+        "content": "content---blog-804-9f7"
       },
       {
-        "content": "content---app-key-id-docs-blogf-4-f-e2e"
+        "content": "content---blogf-4-f-cd7"
       },
       {
-        "content": "content---app-key-id-docs-blog-15-d-74d"
+        "content": "content---blog-15-d-5d8"
       },
       {
-        "content": "content---app-key-id-docs-blog-1-f-4-c47"
+        "content": "content---blog-1-f-4-32e"
       }
     ],
-    "__props": "__props---app-key-id-docs-blog-17-f-08a"
+    "__props": "__props---blogc-15-573"
   },
-  "/AppKeyIdDocs/blog/archive-da5": {
+  "/blog/archive-182": {
     "__comp": "__comp---theme-blog-archive-page-9-e-4-1d8",
     "__context": {
-      "plugin": "plugin---app-key-id-docs-blog-369-d07"
+      "plugin": "plugin---blog-369-22e"
     },
-    "__props": "__props---app-key-id-docs-blog-archiveff-2-23f"
+    "__props": "__props---blog-archivef-81-229"
   },
-  "/AppKeyIdDocs/blog/authors-10a": {
+  "/blog/authors-0b7": {
     "__comp": "__comp---theme-blog-pages-blog-authors-list-page-621-70c",
     "__context": {
       "data": {
-        "blogMetadata": "blogMetadata---app-key-id-docs-blog-authorsace-ec5"
+        "blogMetadata": "blogMetadata---blog-authorsace-e7d"
       },
-      "plugin": "plugin---app-key-id-docs-blog-369-d07"
+      "plugin": "plugin---blog-369-22e"
     },
-    "sidebar": "sidebar---app-key-id-docs-blog-814-063",
-    "__props": "__props---app-key-id-docs-blog-authors-566-11d"
+    "sidebar": "sidebar---blog-814-8ac",
+    "__props": "__props---blog-authorsef-8-44f"
   },
-  "/AppKeyIdDocs/blog/authors/all-sebastien-lorber-articles-c73": {
+  "/blog/authors/all-sebastien-lorber-articles-ec3": {
     "__comp": "__comp---theme-blog-pages-blog-authors-posts-page-33-f-bd5",
     "__context": {
       "data": {
-        "blogMetadata": "blogMetadata---app-key-id-docs-blog-authorsace-ec5"
+        "blogMetadata": "blogMetadata---blog-authorsace-e7d"
       },
-      "plugin": "plugin---app-key-id-docs-blog-369-d07"
+      "plugin": "plugin---blog-369-22e"
     },
     "items": [
       {
-        "content": "content---app-key-id-docs-blog-804-fa5"
+        "content": "content---blog-804-9f7"
       },
       {
-        "content": "content---app-key-id-docs-blogf-4-f-e2e"
+        "content": "content---blogf-4-f-cd7"
       },
       {
-        "content": "content---app-key-id-docs-blog-1-f-4-c47"
+        "content": "content---blog-1-f-4-32e"
       }
     ],
-    "sidebar": "sidebar---app-key-id-docs-blog-814-063",
-    "__props": "__props---app-key-id-docs-blog-authors-all-sebastien-lorber-articles-15-a-2b7"
+    "sidebar": "sidebar---blog-814-8ac",
+    "__props": "__props---blog-authors-all-sebastien-lorber-articlesc-9-c-639"
   },
-  "/AppKeyIdDocs/blog/authors/yangshun-55c": {
+  "/blog/authors/yangshun-b14": {
     "__comp": "__comp---theme-blog-pages-blog-authors-posts-page-33-f-bd5",
     "__context": {
       "data": {
-        "blogMetadata": "blogMetadata---app-key-id-docs-blog-authorsace-ec5"
+        "blogMetadata": "blogMetadata---blog-authorsace-e7d"
       },
-      "plugin": "plugin---app-key-id-docs-blog-369-d07"
+      "plugin": "plugin---blog-369-22e"
     },
     "items": [
       {
-        "content": "content---app-key-id-docs-blog-804-fa5"
+        "content": "content---blog-804-9f7"
       },
       {
-        "content": "content---app-key-id-docs-blog-15-d-74d"
+        "content": "content---blog-15-d-5d8"
       },
       {
-        "content": "content---app-key-id-docs-blog-1-f-4-c47"
+        "content": "content---blog-1-f-4-32e"
       }
     ],
-    "sidebar": "sidebar---app-key-id-docs-blog-814-063",
-    "__props": "__props---app-key-id-docs-blog-authors-yangshun-9-a-2-435"
+    "sidebar": "sidebar---blog-814-8ac",
+    "__props": "__props---blog-authors-yangshun-1-de-d0c"
   },
-  "/AppKeyIdDocs/blog/first-blog-post-38e": {
+  "/blog/first-blog-post-5c7": {
     "__comp": "__comp---theme-blog-post-pageccc-cab",
     "__context": {
       "data": {
-        "blogMetadata": "blogMetadata---app-key-id-docs-blog-authorsace-ec5"
+        "blogMetadata": "blogMetadata---blog-authorsace-e7d"
       },
-      "plugin": "plugin---app-key-id-docs-blog-369-d07"
+      "plugin": "plugin---blog-369-22e"
     },
-    "sidebar": "sidebar---app-key-id-docs-blog-814-063",
-    "content": "content---app-key-id-docs-blog-first-blog-postfef-4c8"
+    "sidebar": "sidebar---blog-814-8ac",
+    "content": "content---blog-first-blog-postfef-1cb"
   },
-  "/AppKeyIdDocs/blog/long-blog-post-106": {
+  "/blog/long-blog-post-4f6": {
     "__comp": "__comp---theme-blog-post-pageccc-cab",
     "__context": {
       "data": {
-        "blogMetadata": "blogMetadata---app-key-id-docs-blog-authorsace-ec5"
+        "blogMetadata": "blogMetadata---blog-authorsace-e7d"
       },
-      "plugin": "plugin---app-key-id-docs-blog-369-d07"
+      "plugin": "plugin---blog-369-22e"
     },
-    "sidebar": "sidebar---app-key-id-docs-blog-814-063",
-    "content": "content---app-key-id-docs-blog-long-blog-postd-66-6ad"
+    "sidebar": "sidebar---blog-814-8ac",
+    "content": "content---blog-long-blog-postd-66-286"
   },
-  "/AppKeyIdDocs/blog/mdx-blog-post-7ce": {
+  "/blog/mdx-blog-post-e9f": {
     "__comp": "__comp---theme-blog-post-pageccc-cab",
     "__context": {
       "data": {
-        "blogMetadata": "blogMetadata---app-key-id-docs-blog-authorsace-ec5"
+        "blogMetadata": "blogMetadata---blog-authorsace-e7d"
       },
-      "plugin": "plugin---app-key-id-docs-blog-369-d07"
+      "plugin": "plugin---blog-369-22e"
     },
-    "sidebar": "sidebar---app-key-id-docs-blog-814-063",
-    "content": "content---app-key-id-docs-blog-mdx-blog-post-593-8c4"
+    "sidebar": "sidebar---blog-814-8ac",
+    "content": "content---blog-mdx-blog-post-593-37b"
   },
-  "/AppKeyIdDocs/blog/tags-651": {
+  "/blog/tags-287": {
     "__comp": "__comp---theme-blog-tags-list-page-01-a-d0b",
     "__context": {
-      "plugin": "plugin---app-key-id-docs-blog-369-d07"
+      "plugin": "plugin---blog-369-22e"
     },
-    "sidebar": "sidebar---app-key-id-docs-blog-814-063",
-    "__props": "__props---app-key-id-docs-blog-tagsd-75-089"
+    "sidebar": "sidebar---blog-814-8ac",
+    "__props": "__props---blog-tags-3-a-2-fa2"
   },
-  "/AppKeyIdDocs/blog/tags/docusaurus-a9a": {
+  "/blog/tags/docusaurus-096": {
     "__comp": "__comp---theme-blog-tags-posts-page-687-b6c",
     "__context": {
-      "plugin": "plugin---app-key-id-docs-blog-369-d07"
+      "plugin": "plugin---blog-369-22e"
     },
-    "sidebar": "sidebar---app-key-id-docs-blog-814-063",
+    "sidebar": "sidebar---blog-814-8ac",
     "items": [
       {
-        "content": "content---app-key-id-docs-blog-804-fa5"
+        "content": "content---blog-804-9f7"
       },
       {
-        "content": "content---app-key-id-docs-blogf-4-f-e2e"
+        "content": "content---blogf-4-f-cd7"
       },
       {
-        "content": "content---app-key-id-docs-blog-15-d-74d"
+        "content": "content---blog-15-d-5d8"
       },
       {
-        "content": "content---app-key-id-docs-blog-1-f-4-c47"
+        "content": "content---blog-1-f-4-32e"
       }
     ],
-    "__props": "__props---app-key-id-docs-blog-tags-docusaurus-463-860"
+    "__props": "__props---blog-tags-docusaurus-321-832"
   },
-  "/AppKeyIdDocs/blog/tags/facebook-e13": {
+  "/blog/tags/facebook-394": {
     "__comp": "__comp---theme-blog-tags-posts-page-687-b6c",
     "__context": {
-      "plugin": "plugin---app-key-id-docs-blog-369-d07"
+      "plugin": "plugin---blog-369-22e"
     },
-    "sidebar": "sidebar---app-key-id-docs-blog-814-063",
+    "sidebar": "sidebar---blog-814-8ac",
     "items": [
       {
-        "content": "content---app-key-id-docs-blog-804-fa5"
+        "content": "content---blog-804-9f7"
       }
     ],
-    "__props": "__props---app-key-id-docs-blog-tags-facebookdb-9-294"
+    "__props": "__props---blog-tags-facebooke-5-a-514"
   },
-  "/AppKeyIdDocs/blog/tags/hello-af3": {
+  "/blog/tags/hello-731": {
     "__comp": "__comp---theme-blog-tags-posts-page-687-b6c",
     "__context": {
-      "plugin": "plugin---app-key-id-docs-blog-369-d07"
+      "plugin": "plugin---blog-369-22e"
     },
-    "sidebar": "sidebar---app-key-id-docs-blog-814-063",
+    "sidebar": "sidebar---blog-814-8ac",
     "items": [
       {
-        "content": "content---app-key-id-docs-blog-804-fa5"
+        "content": "content---blog-804-9f7"
       },
       {
-        "content": "content---app-key-id-docs-blog-15-d-74d"
+        "content": "content---blog-15-d-5d8"
       }
     ],
-    "__props": "__props---app-key-id-docs-blog-tags-hello-534-374"
+    "__props": "__props---blog-tags-hellof-82-2fd"
   },
-  "/AppKeyIdDocs/blog/tags/hola-8a0": {
+  "/blog/tags/hola-4fa": {
     "__comp": "__comp---theme-blog-tags-posts-page-687-b6c",
     "__context": {
-      "plugin": "plugin---app-key-id-docs-blog-369-d07"
+      "plugin": "plugin---blog-369-22e"
     },
-    "sidebar": "sidebar---app-key-id-docs-blog-814-063",
+    "sidebar": "sidebar---blog-814-8ac",
     "items": [
       {
-        "content": "content---app-key-id-docs-blog-1-f-4-c47"
+        "content": "content---blog-1-f-4-32e"
       }
     ],
-    "__props": "__props---app-key-id-docs-blog-tags-hola-4-c-7-8de"
+    "__props": "__props---blog-tags-hola-5-e-9-9a3"
   },
-  "/AppKeyIdDocs/blog/welcome-e03": {
+  "/blog/welcome-dfe": {
     "__comp": "__comp---theme-blog-post-pageccc-cab",
     "__context": {
       "data": {
-        "blogMetadata": "blogMetadata---app-key-id-docs-blog-authorsace-ec5"
+        "blogMetadata": "blogMetadata---blog-authorsace-e7d"
       },
-      "plugin": "plugin---app-key-id-docs-blog-369-d07"
+      "plugin": "plugin---blog-369-22e"
     },
-    "sidebar": "sidebar---app-key-id-docs-blog-814-063",
-    "content": "content---app-key-id-docs-blog-welcome-718-e66"
+    "sidebar": "sidebar---blog-814-8ac",
+    "content": "content---blog-welcome-718-b15"
   },
-  "/AppKeyIdDocs/markdown-page-812": {
+  "/markdown-page-53a": {
     "__comp": "__comp---theme-mdx-page-1-f-3-b90",
     "__context": {
-      "plugin": "plugin---app-key-id-docs-markdown-pagea-74-5c5"
+      "plugin": "plugin---markdown-pagea-74-7b5"
     },
-    "content": "content---app-key-id-docs-markdown-page-4-c-6-07b"
+    "content": "content---markdown-page-4-c-6-c89"
   },
-  "/AppKeyIdDocs/docs-bdc": {
+  "/docs-931": {
     "__comp": "__comp---theme-docs-root-5-e-9-0b6",
     "__context": {
-      "plugin": "plugin---app-key-id-docs-docsaba-cf2"
+      "plugin": "plugin---docsaba-d7c"
     }
   },
-  "/AppKeyIdDocs/docs-372": {
+  "/docs-b67": {
     "__comp": "__comp---theme-doc-version-roota-7-b-5de",
-    "__props": "__props---app-key-id-docs-docs-30-a-338"
+    "__props": "__props---docs-005-788"
   },
-  "/AppKeyIdDocs/docs-940": {
+  "/docs-f8b": {
     "__comp": "__comp---theme-doc-roota-94-67a"
   },
-  "/AppKeyIdDocs/docs/category/attested-communication-992": {
+  "/docs/category/attested-communication-b56": {
     "__comp": "__comp---theme-doc-category-generated-index-page-14-e-640",
-    "__props": "__props---app-key-id-docs-docs-category-attested-communication-90-b-709"
+    "__props": "__props---docs-category-attested-communicationf-37-3eb"
   },
-  "/AppKeyIdDocs/docs/category/card-types-5ce": {
+  "/docs/category/card-types-288": {
     "__comp": "__comp---theme-doc-category-generated-index-page-14-e-640",
-    "__props": "__props---app-key-id-docs-docs-category-card-types-051-94f"
+    "__props": "__props---docs-category-card-types-09-d-9a1"
   },
-  "/AppKeyIdDocs/docs/category/cards-5d5": {
+  "/docs/category/cards-4b1": {
     "__comp": "__comp---theme-doc-category-generated-index-page-14-e-640",
-    "__props": "__props---app-key-id-docs-docs-category-cardsac-1-5dc"
+    "__props": "__props---docs-category-cards-898-686"
   },
-  "/AppKeyIdDocs/docs/category/contacts-72d": {
+  "/docs/category/contacts-81f": {
     "__comp": "__comp---theme-doc-category-generated-index-page-14-e-640",
-    "__props": "__props---app-key-id-docs-docs-category-contactsfb-2-775"
+    "__props": "__props---docs-category-contactsd-4-f-fe4"
   },
-  "/AppKeyIdDocs/docs/category/foundation-4be": {
+  "/docs/category/foundation-c6a": {
     "__comp": "__comp---theme-doc-category-generated-index-page-14-e-640",
-    "__props": "__props---app-key-id-docs-docs-category-foundationf-17-8e8"
+    "__props": "__props---docs-category-foundation-4-f-6-630"
   },
-  "/AppKeyIdDocs/docs/category/profile-menu-afb": {
+  "/docs/category/profile-menu-10f": {
     "__comp": "__comp---theme-doc-category-generated-index-page-14-e-640",
-    "__props": "__props---app-key-id-docs-docs-category-profile-menud-6-a-cbc"
+    "__props": "__props---docs-category-profile-menu-8-a-9-d41"
   },
-  "/AppKeyIdDocs/docs/category/teams-f75": {
+  "/docs/category/teams-7b3": {
     "__comp": "__comp---theme-doc-category-generated-index-page-14-e-640",
-    "__props": "__props---app-key-id-docs-docs-category-teamsd-06-4c2"
+    "__props": "__props---docs-category-teams-57-a-8bc"
   },
-  "/AppKeyIdDocs/docs/category/tutorial---basics-77d": {
+  "/docs/category/tutorial---basics-20e": {
     "__comp": "__comp---theme-doc-category-generated-index-page-14-e-640",
-    "__props": "__props---app-key-id-docs-docs-category-tutorial-basics-65-f-551"
+    "__props": "__props---docs-category-tutorial-basicsc-8-a-e51"
   },
-  "/AppKeyIdDocs/docs/category/tutorial---extras-d1d": {
+  "/docs/category/tutorial---extras-9ad": {
     "__comp": "__comp---theme-doc-category-generated-index-page-14-e-640",
-    "__props": "__props---app-key-id-docs-docs-category-tutorial-extrasd-14-074"
+    "__props": "__props---docs-category-tutorial-extras-6-bb-a82"
   },
-  "/AppKeyIdDocs/docs/category/use-cases-b17": {
+  "/docs/category/use-cases-08d": {
     "__comp": "__comp---theme-doc-category-generated-index-page-14-e-640",
-    "__props": "__props---app-key-id-docs-docs-category-use-cases-0-a-8-42d"
+    "__props": "__props---docs-category-use-cases-878-fb9"
   },
-  "/AppKeyIdDocs/docs/concepts/attested-communication/chain-of-custody-f66": {
+  "/docs/concepts/attested-communication/chain-of-custody-4b5": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---app-key-id-docs-docs-concepts-attested-communication-chain-of-custodybea-cef"
+    "content": "content---docs-concepts-attested-communication-chain-of-custodybea-9c8"
   },
-  "/AppKeyIdDocs/docs/concepts/attested-communication/what-is-a-card-185": {
+  "/docs/concepts/attested-communication/what-is-a-card-354": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---app-key-id-docs-docs-concepts-attested-communication-what-is-a-carddb-9-5dd"
+    "content": "content---docs-concepts-attested-communication-what-is-a-carddb-9-9cb"
   },
-  "/AppKeyIdDocs/docs/concepts/attested-communication/what-is-attested-communication-abe": {
+  "/docs/concepts/attested-communication/what-is-attested-communication-243": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---app-key-id-docs-docs-concepts-attested-communication-what-is-attested-communication-038-01d"
+    "content": "content---docs-concepts-attested-communication-what-is-attested-communication-038-f9c"
   },
-  "/AppKeyIdDocs/docs/concepts/attested-communication/why-acknowlegement-914": {
+  "/docs/concepts/attested-communication/why-acknowlegement-86a": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---app-key-id-docs-docs-concepts-attested-communication-why-acknowlegementeeb-8c5"
+    "content": "content---docs-concepts-attested-communication-why-acknowlegementeeb-503"
   },
-  "/AppKeyIdDocs/docs/concepts/foundation/passkeys-explained-b61": {
+  "/docs/concepts/foundation/passkeys-explained-b01": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---app-key-id-docs-docs-concepts-foundation-passkeys-explaineddc-3-a43"
+    "content": "content---docs-concepts-foundation-passkeys-explaineddc-3-596"
   },
-  "/AppKeyIdDocs/docs/concepts/foundation/zero-trust-identity-5bf": {
+  "/docs/concepts/foundation/zero-trust-identity-8ee": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---app-key-id-docs-docs-concepts-foundation-zero-trust-identity-5-da-252"
+    "content": "content---docs-concepts-foundation-zero-trust-identity-5-da-b0d"
   },
-  "/AppKeyIdDocs/docs/concepts/intro-f82": {
+  "/docs/concepts/intro-154": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---app-key-id-docs-docs-concepts-intro-70-f-7de"
+    "content": "content---docs-concepts-intro-70-f-b34"
   },
-  "/AppKeyIdDocs/docs/concepts/use-cases/appkeyid-solution-a41": {
+  "/docs/concepts/use-cases/appkeyid-solution-72a": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---app-key-id-docs-docs-concepts-use-cases-appkeyid-solution-6-d-7-bf8"
+    "content": "content---docs-concepts-use-cases-appkeyid-solution-6-d-7-af8"
   },
-  "/AppKeyIdDocs/docs/concepts/use-cases/who-is-the-person-208": {
+  "/docs/concepts/use-cases/who-is-the-person-45e": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---app-key-id-docs-docs-concepts-use-cases-who-is-the-personf-64-1dc"
+    "content": "content---docs-concepts-use-cases-who-is-the-personf-64-a55"
   },
-  "/AppKeyIdDocs/docs/concepts/use-cases/why-ai-breaks-digital-0ce": {
+  "/docs/concepts/use-cases/why-ai-breaks-digital-ec2": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---app-key-id-docs-docs-concepts-use-cases-why-ai-breaks-digitalab-8-5e3"
+    "content": "content---docs-concepts-use-cases-why-ai-breaks-digitalab-8-01c"
   },
-  "/AppKeyIdDocs/docs/concepts/use-cases/why-email-and-messaging-a92": {
+  "/docs/concepts/use-cases/why-email-and-messaging-8ff": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---app-key-id-docs-docs-concepts-use-cases-why-email-and-messaging-65-c-05b"
+    "content": "content---docs-concepts-use-cases-why-email-and-messaging-65-c-f6c"
   },
-  "/AppKeyIdDocs/docs/manual/cards/inbox-c52": {
+  "/docs/manual/cards/inbox-5f9": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---app-key-id-docs-docs-manual-cards-inbox-751-2f2"
+    "content": "content---docs-manual-cards-inbox-751-e03"
   },
-  "/AppKeyIdDocs/docs/manual/cards/outbox-33e": {
+  "/docs/manual/cards/outbox-590": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---app-key-id-docs-docs-manual-cards-outbox-2-b-4-654"
+    "content": "content---docs-manual-cards-outbox-2-b-4-920"
   },
-  "/AppKeyIdDocs/docs/manual/cardtypes/capture-162": {
+  "/docs/manual/cardtypes/capture-b94": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---app-key-id-docs-docs-manual-cardtypes-capturecba-ed0"
+    "content": "content---docs-manual-cardtypes-capturecba-b18"
   },
-  "/AppKeyIdDocs/docs/manual/cardtypes/deck-a11": {
+  "/docs/manual/cardtypes/deck-284": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---app-key-id-docs-docs-manual-cardtypes-decka-39-7f0"
+    "content": "content---docs-manual-cardtypes-decka-39-689"
   },
-  "/AppKeyIdDocs/docs/manual/cardtypes/message-bc2": {
+  "/docs/manual/cardtypes/message-3d1": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---app-key-id-docs-docs-manual-cardtypes-message-9-a-7-2fb"
+    "content": "content---docs-manual-cardtypes-message-9-a-7-821"
   },
-  "/AppKeyIdDocs/docs/manual/cardtypes/public-319": {
+  "/docs/manual/cardtypes/public-1c6": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---app-key-id-docs-docs-manual-cardtypes-publicd-0-b-ebc"
+    "content": "content---docs-manual-cardtypes-publicd-0-b-0a1"
   },
-  "/AppKeyIdDocs/docs/manual/contacts/-6e9": {
+  "/docs/manual/contacts/-acd": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---app-key-id-docs-docs-manual-contacts-1-ad-18b"
+    "content": "content---docs-manual-contacts-1-ad-c3c"
   },
-  "/AppKeyIdDocs/docs/manual/contacts/blocking-3ad": {
+  "/docs/manual/contacts/blocking-ce4": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---app-key-id-docs-docs-manual-contacts-blocking-56-d-f6e"
+    "content": "content---docs-manual-contacts-blocking-56-d-be6"
   },
-  "/AppKeyIdDocs/docs/manual/contacts/chatting-f95": {
+  "/docs/manual/contacts/chatting-eec": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---app-key-id-docs-docs-manual-contacts-chattinge-3-e-a06"
+    "content": "content---docs-manual-contacts-chattinge-3-e-492"
   },
-  "/AppKeyIdDocs/docs/manual/contacts/export-e13": {
+  "/docs/manual/contacts/export-564": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---app-key-id-docs-docs-manual-contacts-export-6-b-7-75d"
+    "content": "content---docs-manual-contacts-export-6-b-7-3b5"
   },
-  "/AppKeyIdDocs/docs/manual/contacts/finding-d8d": {
+  "/docs/manual/contacts/finding-28b": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---app-key-id-docs-docs-manual-contacts-finding-8-ff-e67"
+    "content": "content---docs-manual-contacts-finding-8-ff-96b"
   },
-  "/AppKeyIdDocs/docs/manual/contacts/inviting-617": {
+  "/docs/manual/contacts/inviting-291": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---app-key-id-docs-docs-manual-contacts-inviting-840-d98"
+    "content": "content---docs-manual-contacts-inviting-840-4f9"
   },
-  "/AppKeyIdDocs/docs/manual/intro-964": {
+  "/docs/manual/intro-413": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---app-key-id-docs-docs-manual-introaf-3-96c"
+    "content": "content---docs-manual-introaf-3-7f2"
   },
-  "/AppKeyIdDocs/docs/manual/profilemenu/logs-bcd": {
+  "/docs/manual/profilemenu/logs-3a8": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---app-key-id-docs-docs-manual-profilemenu-logs-8-b-7-e88"
+    "content": "content---docs-manual-profilemenu-logs-8-b-7-9d4"
   },
-  "/AppKeyIdDocs/docs/manual/profilemenu/passkeys-615": {
+  "/docs/manual/profilemenu/passkeys-914": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---app-key-id-docs-docs-manual-profilemenu-passkeys-5-ec-b4e"
+    "content": "content---docs-manual-profilemenu-passkeys-5-ec-f20"
   },
-  "/AppKeyIdDocs/docs/manual/profilemenu/profile-d14": {
+  "/docs/manual/profilemenu/profile-712": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---app-key-id-docs-docs-manual-profilemenu-profile-346-466"
+    "content": "content---docs-manual-profilemenu-profile-346-788"
   },
-  "/AppKeyIdDocs/docs/manual/profilemenu/settings-659": {
+  "/docs/manual/profilemenu/settings-e47": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---app-key-id-docs-docs-manual-profilemenu-settings-30-b-315"
+    "content": "content---docs-manual-profilemenu-settings-30-b-266"
   },
-  "/AppKeyIdDocs/docs/manual/teams/addmembers-978": {
+  "/docs/manual/teams/addmembers-c52": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---app-key-id-docs-docs-manual-teams-addmembersc-2-b-d10"
+    "content": "content---docs-manual-teams-addmembersc-2-b-202"
   },
-  "/AppKeyIdDocs/docs/manual/teams/belongteam-8f8": {
+  "/docs/manual/teams/belongteam-668": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---app-key-id-docs-docs-manual-teams-belongteama-1-c-7c0"
+    "content": "content---docs-manual-teams-belongteama-1-c-eed"
   },
-  "/AppKeyIdDocs/docs/manual/teams/capture-169": {
+  "/docs/manual/teams/capture-bb9": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---app-key-id-docs-docs-manual-teams-capture-745-09a"
+    "content": "content---docs-manual-teams-capture-745-e06"
   },
-  "/AppKeyIdDocs/docs/manual/teams/createteam-6de": {
+  "/docs/manual/teams/createteam-3db": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---app-key-id-docs-docs-manual-teams-createteam-2-f-4-6f1"
+    "content": "content---docs-manual-teams-createteam-2-f-4-54c"
   },
-  "/AppKeyIdDocs/docs/manual/teams/export-4e6": {
+  "/docs/manual/teams/export-aec": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---app-key-id-docs-docs-manual-teams-export-8-ac-c0c"
+    "content": "content---docs-manual-teams-export-8-ac-909"
   },
-  "/AppKeyIdDocs/docs/manual/teams/properties-ec0": {
+  "/docs/manual/teams/properties-782": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---app-key-id-docs-docs-manual-teams-properties-28-b-0ab"
+    "content": "content---docs-manual-teams-properties-28-b-ea8"
   },
-  "/AppKeyIdDocs/docs/tutorial/intro-0ec": {
+  "/docs/tutorial/intro-f1d": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---app-key-id-docs-docs-tutorial-introa-0-f-818"
+    "content": "content---docs-tutorial-introa-0-f-691"
   },
-  "/AppKeyIdDocs/docs/tutorial/tutorial-basics/create-first-card-ca7": {
+  "/docs/tutorial/tutorial-basics/create-first-card-ea1": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---app-key-id-docs-docs-tutorial-tutorial-basics-create-first-card-8-d-1-048"
+    "content": "content---docs-tutorial-tutorial-basics-create-first-card-8-d-1-10d"
   },
-  "/AppKeyIdDocs/docs/tutorial/tutorial-basics/signup-to-appkeyid-64b": {
+  "/docs/tutorial/tutorial-basics/signup-to-appkeyid-614": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---app-key-id-docs-docs-tutorial-tutorial-basics-signup-to-appkeyid-5-b-0-579"
+    "content": "content---docs-tutorial-tutorial-basics-signup-to-appkeyid-5-b-0-b8e"
   },
-  "/AppKeyIdDocs/docs/tutorial/tutorial-basics/signup-using-apple-dd2": {
+  "/docs/tutorial/tutorial-basics/signup-using-apple-338": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---app-key-id-docs-docs-tutorial-tutorial-basics-signup-using-apple-716-7b4"
+    "content": "content---docs-tutorial-tutorial-basics-signup-using-apple-716-42c"
   },
-  "/AppKeyIdDocs/docs/tutorial/tutorial-basics/signup-using-google-b8f": {
+  "/docs/tutorial/tutorial-basics/signup-using-google-eb3": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---app-key-id-docs-docs-tutorial-tutorial-basics-signup-using-googleb-98-697"
+    "content": "content---docs-tutorial-tutorial-basics-signup-using-googleb-98-5c3"
   },
-  "/AppKeyIdDocs/docs/tutorial/tutorial-extras/manage-docs-versions-1ee": {
+  "/docs/tutorial/tutorial-extras/manage-docs-versions-130": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---app-key-id-docs-docs-tutorial-tutorial-extras-manage-docs-versionsf-81-f3b"
+    "content": "content---docs-tutorial-tutorial-extras-manage-docs-versionsf-81-704"
   },
-  "/AppKeyIdDocs/docs/tutorial/tutorial-extras/translate-your-site-08b": {
+  "/docs/tutorial/tutorial-extras/translate-your-site-e69": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---app-key-id-docs-docs-tutorial-tutorial-extras-translate-your-siteb-46-090"
+    "content": "content---docs-tutorial-tutorial-extras-translate-your-siteb-46-4c4"
   },
-  "/AppKeyIdDocs/-884": {
+  "/-2e1": {
     "__comp": "__comp---site-src-pages-index-jsc-4-f-f99",
     "__context": {
-      "plugin": "plugin---app-key-id-docs-markdown-pagea-74-5c5"
+      "plugin": "plugin---markdown-pagea-74-7b5"
     },
-    "config": "config---app-key-id-docs-5-e-9-965"
+    "config": "config---5-e-9-4f3"
   }
 }

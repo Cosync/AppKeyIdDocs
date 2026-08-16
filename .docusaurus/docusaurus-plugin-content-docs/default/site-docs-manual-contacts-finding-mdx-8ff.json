@@ -5,7 +5,7 @@
   "source": "@site/docs/manual/contacts/finding.mdx",
   "sourceDirName": "manual/contacts",
   "slug": "/manual/contacts/finding",
-  "permalink": "/AppKeyIdDocs/docs/manual/contacts/finding",
+  "permalink": "/docs/manual/contacts/finding",
   "draft": false,
   "unlisted": false,
   "tags": [],
@@ -17,10 +17,10 @@
   "sidebar": "manualSidebar",
   "previous": {
     "title": "Managing Contacts",
-    "permalink": "/AppKeyIdDocs/docs/manual/contacts/"
+    "permalink": "/docs/manual/contacts/"
   },
   "next": {
     "title": "Chatting with Contacts",
-    "permalink": "/AppKeyIdDocs/docs/manual/contacts/chatting"
+    "permalink": "/docs/manual/contacts/chatting"
   }
 }

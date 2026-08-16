@@ -5,7 +5,7 @@
   "source": "@site/docs/manual/contacts/export.mdx",
   "sourceDirName": "manual/contacts",
   "slug": "/manual/contacts/export",
-  "permalink": "/AppKeyIdDocs/docs/manual/contacts/export",
+  "permalink": "/docs/manual/contacts/export",
   "draft": false,
   "unlisted": false,
   "tags": [],
@@ -17,10 +17,10 @@
   "sidebar": "manualSidebar",
   "previous": {
     "title": "Blocking Users",
-    "permalink": "/AppKeyIdDocs/docs/manual/contacts/blocking"
+    "permalink": "/docs/manual/contacts/blocking"
   },
   "next": {
     "title": "Teams",
-    "permalink": "/AppKeyIdDocs/docs/category/teams"
+    "permalink": "/docs/category/teams"
   }
 }

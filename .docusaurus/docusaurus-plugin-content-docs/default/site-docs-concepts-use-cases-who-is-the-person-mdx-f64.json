@@ -5,7 +5,7 @@
   "source": "@site/docs/concepts/use-cases/who-is-the-person.mdx",
   "sourceDirName": "concepts/use-cases",
   "slug": "/concepts/use-cases/who-is-the-person",
-  "permalink": "/AppKeyIdDocs/docs/concepts/use-cases/who-is-the-person",
+  "permalink": "/docs/concepts/use-cases/who-is-the-person",
   "draft": false,
   "unlisted": false,
   "tags": [],
@@ -17,10 +17,10 @@
   "sidebar": "conceptsSidebar",
   "previous": {
     "title": "Use Cases",
-    "permalink": "/AppKeyIdDocs/docs/category/use-cases"
+    "permalink": "/docs/category/use-cases"
   },
   "next": {
     "title": "Why AI Breaks Digital Trust",
-    "permalink": "/AppKeyIdDocs/docs/concepts/use-cases/why-ai-breaks-digital"
+    "permalink": "/docs/concepts/use-cases/why-ai-breaks-digital"
   }
 }

@@ -5,7 +5,7 @@
   "source": "@site/docs/manual/teams/addmembers.mdx",
   "sourceDirName": "manual/teams",
   "slug": "/manual/teams/addmembers",
-  "permalink": "/AppKeyIdDocs/docs/manual/teams/addmembers",
+  "permalink": "/docs/manual/teams/addmembers",
   "draft": false,
   "unlisted": false,
   "tags": [],
@@ -17,10 +17,10 @@
   "sidebar": "manualSidebar",
   "previous": {
     "title": "Creating a Team",
-    "permalink": "/AppKeyIdDocs/docs/manual/teams/createteam"
+    "permalink": "/docs/manual/teams/createteam"
   },
   "next": {
     "title": "Manage Team Properties",
-    "permalink": "/AppKeyIdDocs/docs/manual/teams/properties"
+    "permalink": "/docs/manual/teams/properties"
   }
 }

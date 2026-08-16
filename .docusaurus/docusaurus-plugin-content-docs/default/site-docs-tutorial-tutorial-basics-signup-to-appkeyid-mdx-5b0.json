@@ -5,7 +5,7 @@
   "source": "@site/docs/tutorial/tutorial-basics/signup-to-appkeyid.mdx",
   "sourceDirName": "tutorial/tutorial-basics",
   "slug": "/tutorial/tutorial-basics/signup-to-appkeyid",
-  "permalink": "/AppKeyIdDocs/docs/tutorial/tutorial-basics/signup-to-appkeyid",
+  "permalink": "/docs/tutorial/tutorial-basics/signup-to-appkeyid",
   "draft": false,
   "unlisted": false,
   "tags": [],
@@ -17,10 +17,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "Tutorial - Basics",
-    "permalink": "/AppKeyIdDocs/docs/category/tutorial---basics"
+    "permalink": "/docs/category/tutorial---basics"
   },
   "next": {
     "title": "Signing Up with Google",
-    "permalink": "/AppKeyIdDocs/docs/tutorial/tutorial-basics/signup-using-google"
+    "permalink": "/docs/tutorial/tutorial-basics/signup-using-google"
   }
 }

@@ -5,7 +5,7 @@
   "source": "@site/docs/manual/contacts/blocking.mdx",
   "sourceDirName": "manual/contacts",
   "slug": "/manual/contacts/blocking",
-  "permalink": "/AppKeyIdDocs/docs/manual/contacts/blocking",
+  "permalink": "/docs/manual/contacts/blocking",
   "draft": false,
   "unlisted": false,
   "tags": [],
@@ -17,10 +17,10 @@
   "sidebar": "manualSidebar",
   "previous": {
     "title": "Inviting to AppKeyId",
-    "permalink": "/AppKeyIdDocs/docs/manual/contacts/inviting"
+    "permalink": "/docs/manual/contacts/inviting"
   },
   "next": {
     "title": "Exporting Contacts",
-    "permalink": "/AppKeyIdDocs/docs/manual/contacts/export"
+    "permalink": "/docs/manual/contacts/export"
   }
 }

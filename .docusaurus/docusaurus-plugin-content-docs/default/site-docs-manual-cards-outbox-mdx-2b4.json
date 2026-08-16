@@ -1,26 +1,26 @@
 {
   "id": "manual/cards/outbox",
   "title": "What is the outbox",
-  "description": "",
+  "description": "The Outbox in the Cards tab contains all cards authored by the user. Cards are displayed",
   "source": "@site/docs/manual/cards/outbox.mdx",
   "sourceDirName": "manual/cards",
   "slug": "/manual/cards/outbox",
-  "permalink": "/AppKeyIdDocs/docs/manual/cards/outbox",
+  "permalink": "/docs/manual/cards/outbox",
   "draft": false,
   "unlisted": false,
   "tags": [],
   "version": "current",
-  "sidebarPosition": 2,
+  "sidebarPosition": 1,
   "frontMatter": {
-    "sidebar_position": 2
+    "sidebar_position": 1
   },
   "sidebar": "manualSidebar",
   "previous": {
-    "title": "What is the Inbox",
-    "permalink": "/AppKeyIdDocs/docs/manual/cards/inbox"
+    "title": "Cards",
+    "permalink": "/docs/category/cards"
   },
   "next": {
-    "title": "Card Types",
-    "permalink": "/AppKeyIdDocs/docs/category/card-types"
+    "title": "What is the Inbox",
+    "permalink": "/docs/manual/cards/inbox"
   }
 }

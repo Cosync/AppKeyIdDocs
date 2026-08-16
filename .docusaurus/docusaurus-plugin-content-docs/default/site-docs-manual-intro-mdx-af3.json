@@ -1,11 +1,11 @@
 {
   "id": "manual/intro",
   "title": "Manual",
-  "description": "",
+  "description": "Welcome to the AppKeyId User Manual. This guide explains how to use AppKeyId to create, share,",
   "source": "@site/docs/manual/intro.mdx",
   "sourceDirName": "manual",
   "slug": "/manual/intro",
-  "permalink": "/AppKeyIdDocs/docs/manual/intro",
+  "permalink": "/docs/manual/intro",
   "draft": false,
   "unlisted": false,
   "tags": [],
@@ -17,6 +17,6 @@
   "sidebar": "manualSidebar",
   "next": {
     "title": "Cards",
-    "permalink": "/AppKeyIdDocs/docs/category/cards"
+    "permalink": "/docs/category/cards"
   }
 }

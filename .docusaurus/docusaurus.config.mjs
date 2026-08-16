@@ -30,7 +30,7 @@ export default {
     }
   },
   "url": "https://cosync.github.io",
-  "baseUrl": "/AppKeyIdDocs/",
+  "baseUrl": "/",
   "organizationName": "Cosync",
   "projectName": "AppKeyIdDocs",
   "onBrokenLinks": "throw",

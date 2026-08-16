@@ -5,7 +5,7 @@
   "source": "@site/docs/manual/cardtypes/public.mdx",
   "sourceDirName": "manual/cardtypes",
   "slug": "/manual/cardtypes/public",
-  "permalink": "/AppKeyIdDocs/docs/manual/cardtypes/public",
+  "permalink": "/docs/manual/cardtypes/public",
   "draft": false,
   "unlisted": false,
   "tags": [],
@@ -17,10 +17,10 @@
   "sidebar": "manualSidebar",
   "previous": {
     "title": "Message Card Type",
-    "permalink": "/AppKeyIdDocs/docs/manual/cardtypes/message"
+    "permalink": "/docs/manual/cardtypes/message"
   },
   "next": {
     "title": "Capture Card Type",
-    "permalink": "/AppKeyIdDocs/docs/manual/cardtypes/capture"
+    "permalink": "/docs/manual/cardtypes/capture"
   }
 }

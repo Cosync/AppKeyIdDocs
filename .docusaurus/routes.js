@@ -3,430 +3,430 @@ import ComponentCreator from '@docusaurus/ComponentCreator';
 
 export default [
   {
-    path: '/AppKeyIdDocs/__docusaurus/debug',
-    component: ComponentCreator('/AppKeyIdDocs/__docusaurus/debug', '6e9'),
+    path: '/__docusaurus/debug',
+    component: ComponentCreator('/__docusaurus/debug', '5ff'),
     exact: true
   },
   {
-    path: '/AppKeyIdDocs/__docusaurus/debug/config',
-    component: ComponentCreator('/AppKeyIdDocs/__docusaurus/debug/config', 'c42'),
+    path: '/__docusaurus/debug/config',
+    component: ComponentCreator('/__docusaurus/debug/config', '5ba'),
     exact: true
   },
   {
-    path: '/AppKeyIdDocs/__docusaurus/debug/content',
-    component: ComponentCreator('/AppKeyIdDocs/__docusaurus/debug/content', '34e'),
+    path: '/__docusaurus/debug/content',
+    component: ComponentCreator('/__docusaurus/debug/content', 'a2b'),
     exact: true
   },
   {
-    path: '/AppKeyIdDocs/__docusaurus/debug/globalData',
-    component: ComponentCreator('/AppKeyIdDocs/__docusaurus/debug/globalData', '44f'),
+    path: '/__docusaurus/debug/globalData',
+    component: ComponentCreator('/__docusaurus/debug/globalData', 'c3c'),
     exact: true
   },
   {
-    path: '/AppKeyIdDocs/__docusaurus/debug/metadata',
-    component: ComponentCreator('/AppKeyIdDocs/__docusaurus/debug/metadata', 'f8c'),
+    path: '/__docusaurus/debug/metadata',
+    component: ComponentCreator('/__docusaurus/debug/metadata', '156'),
     exact: true
   },
   {
-    path: '/AppKeyIdDocs/__docusaurus/debug/registry',
-    component: ComponentCreator('/AppKeyIdDocs/__docusaurus/debug/registry', 'fd7'),
+    path: '/__docusaurus/debug/registry',
+    component: ComponentCreator('/__docusaurus/debug/registry', '88c'),
     exact: true
   },
   {
-    path: '/AppKeyIdDocs/__docusaurus/debug/routes',
-    component: ComponentCreator('/AppKeyIdDocs/__docusaurus/debug/routes', '71a'),
+    path: '/__docusaurus/debug/routes',
+    component: ComponentCreator('/__docusaurus/debug/routes', '000'),
     exact: true
   },
   {
-    path: '/AppKeyIdDocs/blog',
-    component: ComponentCreator('/AppKeyIdDocs/blog', '7d4'),
+    path: '/blog',
+    component: ComponentCreator('/blog', 'e21'),
     exact: true
   },
   {
-    path: '/AppKeyIdDocs/blog/archive',
-    component: ComponentCreator('/AppKeyIdDocs/blog/archive', 'da5'),
+    path: '/blog/archive',
+    component: ComponentCreator('/blog/archive', '182'),
     exact: true
   },
   {
-    path: '/AppKeyIdDocs/blog/authors',
-    component: ComponentCreator('/AppKeyIdDocs/blog/authors', '10a'),
+    path: '/blog/authors',
+    component: ComponentCreator('/blog/authors', '0b7'),
     exact: true
   },
   {
-    path: '/AppKeyIdDocs/blog/authors/all-sebastien-lorber-articles',
-    component: ComponentCreator('/AppKeyIdDocs/blog/authors/all-sebastien-lorber-articles', 'c73'),
+    path: '/blog/authors/all-sebastien-lorber-articles',
+    component: ComponentCreator('/blog/authors/all-sebastien-lorber-articles', 'ec3'),
     exact: true
   },
   {
-    path: '/AppKeyIdDocs/blog/authors/yangshun',
-    component: ComponentCreator('/AppKeyIdDocs/blog/authors/yangshun', '55c'),
+    path: '/blog/authors/yangshun',
+    component: ComponentCreator('/blog/authors/yangshun', 'b14'),
     exact: true
   },
   {
-    path: '/AppKeyIdDocs/blog/first-blog-post',
-    component: ComponentCreator('/AppKeyIdDocs/blog/first-blog-post', '38e'),
+    path: '/blog/first-blog-post',
+    component: ComponentCreator('/blog/first-blog-post', '5c7'),
     exact: true
   },
   {
-    path: '/AppKeyIdDocs/blog/long-blog-post',
-    component: ComponentCreator('/AppKeyIdDocs/blog/long-blog-post', '106'),
+    path: '/blog/long-blog-post',
+    component: ComponentCreator('/blog/long-blog-post', '4f6'),
     exact: true
   },
   {
-    path: '/AppKeyIdDocs/blog/mdx-blog-post',
-    component: ComponentCreator('/AppKeyIdDocs/blog/mdx-blog-post', '7ce'),
+    path: '/blog/mdx-blog-post',
+    component: ComponentCreator('/blog/mdx-blog-post', 'e9f'),
     exact: true
   },
   {
-    path: '/AppKeyIdDocs/blog/tags',
-    component: ComponentCreator('/AppKeyIdDocs/blog/tags', '651'),
+    path: '/blog/tags',
+    component: ComponentCreator('/blog/tags', '287'),
     exact: true
   },
   {
-    path: '/AppKeyIdDocs/blog/tags/docusaurus',
-    component: ComponentCreator('/AppKeyIdDocs/blog/tags/docusaurus', 'a9a'),
+    path: '/blog/tags/docusaurus',
+    component: ComponentCreator('/blog/tags/docusaurus', '096'),
     exact: true
   },
   {
-    path: '/AppKeyIdDocs/blog/tags/facebook',
-    component: ComponentCreator('/AppKeyIdDocs/blog/tags/facebook', 'e13'),
+    path: '/blog/tags/facebook',
+    component: ComponentCreator('/blog/tags/facebook', '394'),
     exact: true
   },
   {
-    path: '/AppKeyIdDocs/blog/tags/hello',
-    component: ComponentCreator('/AppKeyIdDocs/blog/tags/hello', 'af3'),
+    path: '/blog/tags/hello',
+    component: ComponentCreator('/blog/tags/hello', '731'),
     exact: true
   },
   {
-    path: '/AppKeyIdDocs/blog/tags/hola',
-    component: ComponentCreator('/AppKeyIdDocs/blog/tags/hola', '8a0'),
+    path: '/blog/tags/hola',
+    component: ComponentCreator('/blog/tags/hola', '4fa'),
     exact: true
   },
   {
-    path: '/AppKeyIdDocs/blog/welcome',
-    component: ComponentCreator('/AppKeyIdDocs/blog/welcome', 'e03'),
+    path: '/blog/welcome',
+    component: ComponentCreator('/blog/welcome', 'dfe'),
     exact: true
   },
   {
-    path: '/AppKeyIdDocs/markdown-page',
-    component: ComponentCreator('/AppKeyIdDocs/markdown-page', '812'),
+    path: '/markdown-page',
+    component: ComponentCreator('/markdown-page', '53a'),
     exact: true
   },
   {
-    path: '/AppKeyIdDocs/docs',
-    component: ComponentCreator('/AppKeyIdDocs/docs', 'bdc'),
+    path: '/docs',
+    component: ComponentCreator('/docs', '931'),
     routes: [
       {
-        path: '/AppKeyIdDocs/docs',
-        component: ComponentCreator('/AppKeyIdDocs/docs', '372'),
+        path: '/docs',
+        component: ComponentCreator('/docs', 'b67'),
         routes: [
           {
-            path: '/AppKeyIdDocs/docs',
-            component: ComponentCreator('/AppKeyIdDocs/docs', '940'),
+            path: '/docs',
+            component: ComponentCreator('/docs', 'f8b'),
             routes: [
               {
-                path: '/AppKeyIdDocs/docs/category/attested-communication',
-                component: ComponentCreator('/AppKeyIdDocs/docs/category/attested-communication', '992'),
+                path: '/docs/category/attested-communication',
+                component: ComponentCreator('/docs/category/attested-communication', 'b56'),
                 exact: true,
                 sidebar: "conceptsSidebar"
               },
               {
-                path: '/AppKeyIdDocs/docs/category/card-types',
-                component: ComponentCreator('/AppKeyIdDocs/docs/category/card-types', '5ce'),
+                path: '/docs/category/card-types',
+                component: ComponentCreator('/docs/category/card-types', '288'),
                 exact: true,
                 sidebar: "manualSidebar"
               },
               {
-                path: '/AppKeyIdDocs/docs/category/cards',
-                component: ComponentCreator('/AppKeyIdDocs/docs/category/cards', '5d5'),
+                path: '/docs/category/cards',
+                component: ComponentCreator('/docs/category/cards', '4b1'),
                 exact: true,
                 sidebar: "manualSidebar"
               },
               {
-                path: '/AppKeyIdDocs/docs/category/contacts',
-                component: ComponentCreator('/AppKeyIdDocs/docs/category/contacts', '72d'),
+                path: '/docs/category/contacts',
+                component: ComponentCreator('/docs/category/contacts', '81f'),
                 exact: true,
                 sidebar: "manualSidebar"
               },
               {
-                path: '/AppKeyIdDocs/docs/category/foundation',
-                component: ComponentCreator('/AppKeyIdDocs/docs/category/foundation', '4be'),
+                path: '/docs/category/foundation',
+                component: ComponentCreator('/docs/category/foundation', 'c6a'),
                 exact: true,
                 sidebar: "conceptsSidebar"
               },
               {
-                path: '/AppKeyIdDocs/docs/category/profile-menu',
-                component: ComponentCreator('/AppKeyIdDocs/docs/category/profile-menu', 'afb'),
+                path: '/docs/category/profile-menu',
+                component: ComponentCreator('/docs/category/profile-menu', '10f'),
                 exact: true,
                 sidebar: "manualSidebar"
               },
               {
-                path: '/AppKeyIdDocs/docs/category/teams',
-                component: ComponentCreator('/AppKeyIdDocs/docs/category/teams', 'f75'),
+                path: '/docs/category/teams',
+                component: ComponentCreator('/docs/category/teams', '7b3'),
                 exact: true,
                 sidebar: "manualSidebar"
               },
               {
-                path: '/AppKeyIdDocs/docs/category/tutorial---basics',
-                component: ComponentCreator('/AppKeyIdDocs/docs/category/tutorial---basics', '77d'),
+                path: '/docs/category/tutorial---basics',
+                component: ComponentCreator('/docs/category/tutorial---basics', '20e'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/AppKeyIdDocs/docs/category/tutorial---extras',
-                component: ComponentCreator('/AppKeyIdDocs/docs/category/tutorial---extras', 'd1d'),
+                path: '/docs/category/tutorial---extras',
+                component: ComponentCreator('/docs/category/tutorial---extras', '9ad'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/AppKeyIdDocs/docs/category/use-cases',
-                component: ComponentCreator('/AppKeyIdDocs/docs/category/use-cases', 'b17'),
+                path: '/docs/category/use-cases',
+                component: ComponentCreator('/docs/category/use-cases', '08d'),
                 exact: true,
                 sidebar: "conceptsSidebar"
               },
               {
-                path: '/AppKeyIdDocs/docs/concepts/attested-communication/chain-of-custody',
-                component: ComponentCreator('/AppKeyIdDocs/docs/concepts/attested-communication/chain-of-custody', 'f66'),
+                path: '/docs/concepts/attested-communication/chain-of-custody',
+                component: ComponentCreator('/docs/concepts/attested-communication/chain-of-custody', '4b5'),
                 exact: true,
                 sidebar: "conceptsSidebar"
               },
               {
-                path: '/AppKeyIdDocs/docs/concepts/attested-communication/what-is-a-card',
-                component: ComponentCreator('/AppKeyIdDocs/docs/concepts/attested-communication/what-is-a-card', '185'),
+                path: '/docs/concepts/attested-communication/what-is-a-card',
+                component: ComponentCreator('/docs/concepts/attested-communication/what-is-a-card', '354'),
                 exact: true,
                 sidebar: "conceptsSidebar"
               },
               {
-                path: '/AppKeyIdDocs/docs/concepts/attested-communication/what-is-attested-communication',
-                component: ComponentCreator('/AppKeyIdDocs/docs/concepts/attested-communication/what-is-attested-communication', 'abe'),
+                path: '/docs/concepts/attested-communication/what-is-attested-communication',
+                component: ComponentCreator('/docs/concepts/attested-communication/what-is-attested-communication', '243'),
                 exact: true,
                 sidebar: "conceptsSidebar"
               },
               {
-                path: '/AppKeyIdDocs/docs/concepts/attested-communication/why-acknowlegement',
-                component: ComponentCreator('/AppKeyIdDocs/docs/concepts/attested-communication/why-acknowlegement', '914'),
+                path: '/docs/concepts/attested-communication/why-acknowlegement',
+                component: ComponentCreator('/docs/concepts/attested-communication/why-acknowlegement', '86a'),
                 exact: true,
                 sidebar: "conceptsSidebar"
               },
               {
-                path: '/AppKeyIdDocs/docs/concepts/foundation/passkeys-explained',
-                component: ComponentCreator('/AppKeyIdDocs/docs/concepts/foundation/passkeys-explained', 'b61'),
+                path: '/docs/concepts/foundation/passkeys-explained',
+                component: ComponentCreator('/docs/concepts/foundation/passkeys-explained', 'b01'),
                 exact: true,
                 sidebar: "conceptsSidebar"
               },
               {
-                path: '/AppKeyIdDocs/docs/concepts/foundation/zero-trust-identity',
-                component: ComponentCreator('/AppKeyIdDocs/docs/concepts/foundation/zero-trust-identity', '5bf'),
+                path: '/docs/concepts/foundation/zero-trust-identity',
+                component: ComponentCreator('/docs/concepts/foundation/zero-trust-identity', '8ee'),
                 exact: true,
                 sidebar: "conceptsSidebar"
               },
               {
-                path: '/AppKeyIdDocs/docs/concepts/intro',
-                component: ComponentCreator('/AppKeyIdDocs/docs/concepts/intro', 'f82'),
+                path: '/docs/concepts/intro',
+                component: ComponentCreator('/docs/concepts/intro', '154'),
                 exact: true,
                 sidebar: "conceptsSidebar"
               },
               {
-                path: '/AppKeyIdDocs/docs/concepts/use-cases/appkeyid-solution',
-                component: ComponentCreator('/AppKeyIdDocs/docs/concepts/use-cases/appkeyid-solution', 'a41'),
+                path: '/docs/concepts/use-cases/appkeyid-solution',
+                component: ComponentCreator('/docs/concepts/use-cases/appkeyid-solution', '72a'),
                 exact: true,
                 sidebar: "conceptsSidebar"
               },
               {
-                path: '/AppKeyIdDocs/docs/concepts/use-cases/who-is-the-person',
-                component: ComponentCreator('/AppKeyIdDocs/docs/concepts/use-cases/who-is-the-person', '208'),
+                path: '/docs/concepts/use-cases/who-is-the-person',
+                component: ComponentCreator('/docs/concepts/use-cases/who-is-the-person', '45e'),
                 exact: true,
                 sidebar: "conceptsSidebar"
               },
               {
-                path: '/AppKeyIdDocs/docs/concepts/use-cases/why-ai-breaks-digital',
-                component: ComponentCreator('/AppKeyIdDocs/docs/concepts/use-cases/why-ai-breaks-digital', '0ce'),
+                path: '/docs/concepts/use-cases/why-ai-breaks-digital',
+                component: ComponentCreator('/docs/concepts/use-cases/why-ai-breaks-digital', 'ec2'),
                 exact: true,
                 sidebar: "conceptsSidebar"
               },
               {
-                path: '/AppKeyIdDocs/docs/concepts/use-cases/why-email-and-messaging',
-                component: ComponentCreator('/AppKeyIdDocs/docs/concepts/use-cases/why-email-and-messaging', 'a92'),
+                path: '/docs/concepts/use-cases/why-email-and-messaging',
+                component: ComponentCreator('/docs/concepts/use-cases/why-email-and-messaging', '8ff'),
                 exact: true,
                 sidebar: "conceptsSidebar"
               },
               {
-                path: '/AppKeyIdDocs/docs/manual/cards/inbox',
-                component: ComponentCreator('/AppKeyIdDocs/docs/manual/cards/inbox', 'c52'),
+                path: '/docs/manual/cards/inbox',
+                component: ComponentCreator('/docs/manual/cards/inbox', '5f9'),
                 exact: true,
                 sidebar: "manualSidebar"
               },
               {
-                path: '/AppKeyIdDocs/docs/manual/cards/outbox',
-                component: ComponentCreator('/AppKeyIdDocs/docs/manual/cards/outbox', '33e'),
+                path: '/docs/manual/cards/outbox',
+                component: ComponentCreator('/docs/manual/cards/outbox', '590'),
                 exact: true,
                 sidebar: "manualSidebar"
               },
               {
-                path: '/AppKeyIdDocs/docs/manual/cardtypes/capture',
-                component: ComponentCreator('/AppKeyIdDocs/docs/manual/cardtypes/capture', '162'),
+                path: '/docs/manual/cardtypes/capture',
+                component: ComponentCreator('/docs/manual/cardtypes/capture', 'b94'),
                 exact: true,
                 sidebar: "manualSidebar"
               },
               {
-                path: '/AppKeyIdDocs/docs/manual/cardtypes/deck',
-                component: ComponentCreator('/AppKeyIdDocs/docs/manual/cardtypes/deck', 'a11'),
+                path: '/docs/manual/cardtypes/deck',
+                component: ComponentCreator('/docs/manual/cardtypes/deck', '284'),
                 exact: true,
                 sidebar: "manualSidebar"
               },
               {
-                path: '/AppKeyIdDocs/docs/manual/cardtypes/message',
-                component: ComponentCreator('/AppKeyIdDocs/docs/manual/cardtypes/message', 'bc2'),
+                path: '/docs/manual/cardtypes/message',
+                component: ComponentCreator('/docs/manual/cardtypes/message', '3d1'),
                 exact: true,
                 sidebar: "manualSidebar"
               },
               {
-                path: '/AppKeyIdDocs/docs/manual/cardtypes/public',
-                component: ComponentCreator('/AppKeyIdDocs/docs/manual/cardtypes/public', '319'),
+                path: '/docs/manual/cardtypes/public',
+                component: ComponentCreator('/docs/manual/cardtypes/public', '1c6'),
                 exact: true,
                 sidebar: "manualSidebar"
               },
               {
-                path: '/AppKeyIdDocs/docs/manual/contacts/',
-                component: ComponentCreator('/AppKeyIdDocs/docs/manual/contacts/', '6e9'),
+                path: '/docs/manual/contacts/',
+                component: ComponentCreator('/docs/manual/contacts/', 'acd'),
                 exact: true,
                 sidebar: "manualSidebar"
               },
               {
-                path: '/AppKeyIdDocs/docs/manual/contacts/blocking',
-                component: ComponentCreator('/AppKeyIdDocs/docs/manual/contacts/blocking', '3ad'),
+                path: '/docs/manual/contacts/blocking',
+                component: ComponentCreator('/docs/manual/contacts/blocking', 'ce4'),
                 exact: true,
                 sidebar: "manualSidebar"
               },
               {
-                path: '/AppKeyIdDocs/docs/manual/contacts/chatting',
-                component: ComponentCreator('/AppKeyIdDocs/docs/manual/contacts/chatting', 'f95'),
+                path: '/docs/manual/contacts/chatting',
+                component: ComponentCreator('/docs/manual/contacts/chatting', 'eec'),
                 exact: true,
                 sidebar: "manualSidebar"
               },
               {
-                path: '/AppKeyIdDocs/docs/manual/contacts/export',
-                component: ComponentCreator('/AppKeyIdDocs/docs/manual/contacts/export', 'e13'),
+                path: '/docs/manual/contacts/export',
+                component: ComponentCreator('/docs/manual/contacts/export', '564'),
                 exact: true,
                 sidebar: "manualSidebar"
               },
               {
-                path: '/AppKeyIdDocs/docs/manual/contacts/finding',
-                component: ComponentCreator('/AppKeyIdDocs/docs/manual/contacts/finding', 'd8d'),
+                path: '/docs/manual/contacts/finding',
+                component: ComponentCreator('/docs/manual/contacts/finding', '28b'),
                 exact: true,
                 sidebar: "manualSidebar"
               },
               {
-                path: '/AppKeyIdDocs/docs/manual/contacts/inviting',
-                component: ComponentCreator('/AppKeyIdDocs/docs/manual/contacts/inviting', '617'),
+                path: '/docs/manual/contacts/inviting',
+                component: ComponentCreator('/docs/manual/contacts/inviting', '291'),
                 exact: true,
                 sidebar: "manualSidebar"
               },
               {
-                path: '/AppKeyIdDocs/docs/manual/intro',
-                component: ComponentCreator('/AppKeyIdDocs/docs/manual/intro', '964'),
+                path: '/docs/manual/intro',
+                component: ComponentCreator('/docs/manual/intro', '413'),
                 exact: true,
                 sidebar: "manualSidebar"
               },
               {
-                path: '/AppKeyIdDocs/docs/manual/profilemenu/logs',
-                component: ComponentCreator('/AppKeyIdDocs/docs/manual/profilemenu/logs', 'bcd'),
+                path: '/docs/manual/profilemenu/logs',
+                component: ComponentCreator('/docs/manual/profilemenu/logs', '3a8'),
                 exact: true,
                 sidebar: "manualSidebar"
               },
               {
-                path: '/AppKeyIdDocs/docs/manual/profilemenu/passkeys',
-                component: ComponentCreator('/AppKeyIdDocs/docs/manual/profilemenu/passkeys', '615'),
+                path: '/docs/manual/profilemenu/passkeys',
+                component: ComponentCreator('/docs/manual/profilemenu/passkeys', '914'),
                 exact: true,
                 sidebar: "manualSidebar"
               },
               {
-                path: '/AppKeyIdDocs/docs/manual/profilemenu/profile',
-                component: ComponentCreator('/AppKeyIdDocs/docs/manual/profilemenu/profile', 'd14'),
+                path: '/docs/manual/profilemenu/profile',
+                component: ComponentCreator('/docs/manual/profilemenu/profile', '712'),
                 exact: true,
                 sidebar: "manualSidebar"
               },
               {
-                path: '/AppKeyIdDocs/docs/manual/profilemenu/settings',
-                component: ComponentCreator('/AppKeyIdDocs/docs/manual/profilemenu/settings', '659'),
+                path: '/docs/manual/profilemenu/settings',
+                component: ComponentCreator('/docs/manual/profilemenu/settings', 'e47'),
                 exact: true,
                 sidebar: "manualSidebar"
               },
               {
-                path: '/AppKeyIdDocs/docs/manual/teams/addmembers',
-                component: ComponentCreator('/AppKeyIdDocs/docs/manual/teams/addmembers', '978'),
+                path: '/docs/manual/teams/addmembers',
+                component: ComponentCreator('/docs/manual/teams/addmembers', 'c52'),
                 exact: true,
                 sidebar: "manualSidebar"
               },
               {
-                path: '/AppKeyIdDocs/docs/manual/teams/belongteam',
-                component: ComponentCreator('/AppKeyIdDocs/docs/manual/teams/belongteam', '8f8'),
+                path: '/docs/manual/teams/belongteam',
+                component: ComponentCreator('/docs/manual/teams/belongteam', '668'),
                 exact: true,
                 sidebar: "manualSidebar"
               },
               {
-                path: '/AppKeyIdDocs/docs/manual/teams/capture',
-                component: ComponentCreator('/AppKeyIdDocs/docs/manual/teams/capture', '169'),
+                path: '/docs/manual/teams/capture',
+                component: ComponentCreator('/docs/manual/teams/capture', 'bb9'),
                 exact: true,
                 sidebar: "manualSidebar"
               },
               {
-                path: '/AppKeyIdDocs/docs/manual/teams/createteam',
-                component: ComponentCreator('/AppKeyIdDocs/docs/manual/teams/createteam', '6de'),
+                path: '/docs/manual/teams/createteam',
+                component: ComponentCreator('/docs/manual/teams/createteam', '3db'),
                 exact: true,
                 sidebar: "manualSidebar"
               },
               {
-                path: '/AppKeyIdDocs/docs/manual/teams/export',
-                component: ComponentCreator('/AppKeyIdDocs/docs/manual/teams/export', '4e6'),
+                path: '/docs/manual/teams/export',
+                component: ComponentCreator('/docs/manual/teams/export', 'aec'),
                 exact: true,
                 sidebar: "manualSidebar"
               },
               {
-                path: '/AppKeyIdDocs/docs/manual/teams/properties',
-                component: ComponentCreator('/AppKeyIdDocs/docs/manual/teams/properties', 'ec0'),
+                path: '/docs/manual/teams/properties',
+                component: ComponentCreator('/docs/manual/teams/properties', '782'),
                 exact: true,
                 sidebar: "manualSidebar"
               },
               {
-                path: '/AppKeyIdDocs/docs/tutorial/intro',
-                component: ComponentCreator('/AppKeyIdDocs/docs/tutorial/intro', '0ec'),
+                path: '/docs/tutorial/intro',
+                component: ComponentCreator('/docs/tutorial/intro', 'f1d'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/AppKeyIdDocs/docs/tutorial/tutorial-basics/create-first-card',
-                component: ComponentCreator('/AppKeyIdDocs/docs/tutorial/tutorial-basics/create-first-card', 'ca7'),
+                path: '/docs/tutorial/tutorial-basics/create-first-card',
+                component: ComponentCreator('/docs/tutorial/tutorial-basics/create-first-card', 'ea1'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/AppKeyIdDocs/docs/tutorial/tutorial-basics/signup-to-appkeyid',
-                component: ComponentCreator('/AppKeyIdDocs/docs/tutorial/tutorial-basics/signup-to-appkeyid', '64b'),
+                path: '/docs/tutorial/tutorial-basics/signup-to-appkeyid',
+                component: ComponentCreator('/docs/tutorial/tutorial-basics/signup-to-appkeyid', '614'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/AppKeyIdDocs/docs/tutorial/tutorial-basics/signup-using-apple',
-                component: ComponentCreator('/AppKeyIdDocs/docs/tutorial/tutorial-basics/signup-using-apple', 'dd2'),
+                path: '/docs/tutorial/tutorial-basics/signup-using-apple',
+                component: ComponentCreator('/docs/tutorial/tutorial-basics/signup-using-apple', '338'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/AppKeyIdDocs/docs/tutorial/tutorial-basics/signup-using-google',
-                component: ComponentCreator('/AppKeyIdDocs/docs/tutorial/tutorial-basics/signup-using-google', 'b8f'),
+                path: '/docs/tutorial/tutorial-basics/signup-using-google',
+                component: ComponentCreator('/docs/tutorial/tutorial-basics/signup-using-google', 'eb3'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/AppKeyIdDocs/docs/tutorial/tutorial-extras/manage-docs-versions',
-                component: ComponentCreator('/AppKeyIdDocs/docs/tutorial/tutorial-extras/manage-docs-versions', '1ee'),
+                path: '/docs/tutorial/tutorial-extras/manage-docs-versions',
+                component: ComponentCreator('/docs/tutorial/tutorial-extras/manage-docs-versions', '130'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/AppKeyIdDocs/docs/tutorial/tutorial-extras/translate-your-site',
-                component: ComponentCreator('/AppKeyIdDocs/docs/tutorial/tutorial-extras/translate-your-site', '08b'),
+                path: '/docs/tutorial/tutorial-extras/translate-your-site',
+                component: ComponentCreator('/docs/tutorial/tutorial-extras/translate-your-site', 'e69'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               }
@@ -437,8 +437,8 @@ export default [
     ]
   },
   {
-    path: '/AppKeyIdDocs/',
-    component: ComponentCreator('/AppKeyIdDocs/', '884'),
+    path: '/',
+    component: ComponentCreator('/', '2e1'),
     exact: true
   },
   {

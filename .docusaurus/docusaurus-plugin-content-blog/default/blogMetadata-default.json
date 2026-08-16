@@ -1,5 +1,5 @@
 {
-  "blogBasePath": "/AppKeyIdDocs/blog",
+  "blogBasePath": "/blog",
   "blogTitle": "Blog",
-  "authorsListPath": "/AppKeyIdDocs/blog/authors"
+  "authorsListPath": "/blog/authors"
 }

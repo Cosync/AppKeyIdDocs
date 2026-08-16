@@ -5,7 +5,7 @@
   "source": "@site/docs/manual/profilemenu/profile.mdx",
   "sourceDirName": "manual/profilemenu",
   "slug": "/manual/profilemenu/profile",
-  "permalink": "/AppKeyIdDocs/docs/manual/profilemenu/profile",
+  "permalink": "/docs/manual/profilemenu/profile",
   "draft": false,
   "unlisted": false,
   "tags": [],
@@ -17,10 +17,10 @@
   "sidebar": "manualSidebar",
   "previous": {
     "title": "Profile Menu",
-    "permalink": "/AppKeyIdDocs/docs/category/profile-menu"
+    "permalink": "/docs/category/profile-menu"
   },
   "next": {
     "title": "AppKeyId Passkeys",
-    "permalink": "/AppKeyIdDocs/docs/manual/profilemenu/passkeys"
+    "permalink": "/docs/manual/profilemenu/passkeys"
   }
 }

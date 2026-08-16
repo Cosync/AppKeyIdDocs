@@ -5,7 +5,7 @@
   "source": "@site/docs/concepts/foundation/zero-trust-identity.mdx",
   "sourceDirName": "concepts/foundation",
   "slug": "/concepts/foundation/zero-trust-identity",
-  "permalink": "/AppKeyIdDocs/docs/concepts/foundation/zero-trust-identity",
+  "permalink": "/docs/concepts/foundation/zero-trust-identity",
   "draft": false,
   "unlisted": false,
   "tags": [],
@@ -17,10 +17,10 @@
   "sidebar": "conceptsSidebar",
   "previous": {
     "title": "Foundation",
-    "permalink": "/AppKeyIdDocs/docs/category/foundation"
+    "permalink": "/docs/category/foundation"
   },
   "next": {
     "title": "Passkeys Explained",
-    "permalink": "/AppKeyIdDocs/docs/concepts/foundation/passkeys-explained"
+    "permalink": "/docs/concepts/foundation/passkeys-explained"
   }
 }

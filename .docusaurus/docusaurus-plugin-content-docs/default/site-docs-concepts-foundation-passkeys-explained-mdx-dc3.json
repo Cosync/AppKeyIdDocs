@@ -5,7 +5,7 @@
   "source": "@site/docs/concepts/foundation/passkeys-explained.mdx",
   "sourceDirName": "concepts/foundation",
   "slug": "/concepts/foundation/passkeys-explained",
-  "permalink": "/AppKeyIdDocs/docs/concepts/foundation/passkeys-explained",
+  "permalink": "/docs/concepts/foundation/passkeys-explained",
   "draft": false,
   "unlisted": false,
   "tags": [],
@@ -17,10 +17,10 @@
   "sidebar": "conceptsSidebar",
   "previous": {
     "title": "Zero Trust Identity",
-    "permalink": "/AppKeyIdDocs/docs/concepts/foundation/zero-trust-identity"
+    "permalink": "/docs/concepts/foundation/zero-trust-identity"
   },
   "next": {
     "title": "Attested Communication",
-    "permalink": "/AppKeyIdDocs/docs/category/attested-communication"
+    "permalink": "/docs/category/attested-communication"
   }
 }

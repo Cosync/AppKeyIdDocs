@@ -5,7 +5,7 @@
   "source": "@site/docs/manual/cardtypes/deck.mdx",
   "sourceDirName": "manual/cardtypes",
   "slug": "/manual/cardtypes/deck",
-  "permalink": "/AppKeyIdDocs/docs/manual/cardtypes/deck",
+  "permalink": "/docs/manual/cardtypes/deck",
   "draft": false,
   "unlisted": false,
   "tags": [],
@@ -17,10 +17,10 @@
   "sidebar": "manualSidebar",
   "previous": {
     "title": "Capture Card Type",
-    "permalink": "/AppKeyIdDocs/docs/manual/cardtypes/capture"
+    "permalink": "/docs/manual/cardtypes/capture"
   },
   "next": {
     "title": "Contacts",
-    "permalink": "/AppKeyIdDocs/docs/category/contacts"
+    "permalink": "/docs/category/contacts"
   }
 }

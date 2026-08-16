@@ -5,7 +5,7 @@
   "source": "@site/docs/concepts/attested-communication/what-is-a-card.mdx",
   "sourceDirName": "concepts/attested-communication",
   "slug": "/concepts/attested-communication/what-is-a-card",
-  "permalink": "/AppKeyIdDocs/docs/concepts/attested-communication/what-is-a-card",
+  "permalink": "/docs/concepts/attested-communication/what-is-a-card",
   "draft": false,
   "unlisted": false,
   "tags": [],
@@ -17,10 +17,10 @@
   "sidebar": "conceptsSidebar",
   "previous": {
     "title": "What is Attested Communication",
-    "permalink": "/AppKeyIdDocs/docs/concepts/attested-communication/what-is-attested-communication"
+    "permalink": "/docs/concepts/attested-communication/what-is-attested-communication"
   },
   "next": {
     "title": "Why Acknowledgements Matter",
-    "permalink": "/AppKeyIdDocs/docs/concepts/attested-communication/why-acknowlegement"
+    "permalink": "/docs/concepts/attested-communication/why-acknowlegement"
   }
 }

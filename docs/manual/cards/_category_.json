@@ -3,6 +3,6 @@
   "position": 2,
   "link": {
     "type": "generated-index",
-    "description": "This section describes Cards as the primary communication objects in AppKeyId."
+    "description": "Cards are the fundamental attested communication object in AppKeyId. Each card represents a specific communication or workflow, with different card types implementing functions such as private messages, public broadcasts, captures, and decks. New card types will be added over time. For ease of use, cards are organized into an Inbox, containing cards shared with the user or accessed through QR codes, and an Outbox,containing cards authored by the user that can be shared with and acknowledged by other users."
   }
 }
