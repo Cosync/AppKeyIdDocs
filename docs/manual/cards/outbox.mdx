@@ -20,7 +20,14 @@ In the upper-right corner of the card are a set of action icons used to manage t
 
 ## Create Email Template
 
-The **Acknowledge Email Template** controls the email notifications sent when a recipient acknowledges a card. You can choose whether an email is sent to the recipient, the author, or both. These notifications provide an additional record of the attested communication by documenting that a specific user acknowledged a specific card.
+The **Acknowledge Email Template** controls the email notifications sent when a recipient acknowledges a card.
+You can choose whether an email is sent to the recipient, the author, or both. These notifications provide 
+an additional record of the attested communication by documenting that a specific user acknowledged a specific 
+card.
+
+* **Recipient** - controls the message sent to a user after acknowledging a card
+* **Author** - controls the message sent to the author of the card after a user acknowledges it
+* **Message** - controls the message that is sent to a user after a card is shared with a user
 
 Each card can define its own acknowledgement email template, although a default template is provided for convenience. The template consists of three configurable elements:
 
@@ -38,12 +45,33 @@ The subject and body support a simple macro language that automatically substitu
 | `%FULL_NAME%` | Full name of the user who acknowledged the card. |
 | `%SENT_FULL_NAME%` | Full name of the card author. |
 | `%SENT_HANDLE%` | Handle (username) of the card author. |
+| `%DATE%` | Date of card acknowledgment. |
+| `%LINK%` | link of the card. |
+| `%QR_CODE%` | QR code of the card for acknowledgment. |
 
+
+### The Recipient tab
 
 <img
-  src={require('./img/email.png').default}
-  alt="Create Email Template"
-  style={{ maxWidth: '511px', width: '100%', height: 'auto' }}
+  src={require('./img/recipient.png').default}
+  alt="Recipient Email Template"
+  style={{ maxWidth: '502px', width: '100%', height: 'auto' }}
+/>
+
+### The Author tab
+
+<img
+  src={require('./img/author.png').default}
+  alt="Author Email Template"
+  style={{ maxWidth: '506px', width: '100%', height: 'auto' }}
+/>
+
+### The Message tab
+
+<img
+  src={require('./img/message.png').default}
+  alt="Author Email Template"
+  style={{ maxWidth: '506px', width: '100%', height: 'auto' }}
 />
 
 
