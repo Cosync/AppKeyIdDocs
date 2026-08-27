@@ -1,6 +1,6 @@
 {
   "id": "manual/cardtypes/public",
-  "title": "Public Card Type",
+  "title": "Public Card",
   "description": "",
   "source": "@site/docs/manual/cardtypes/public.mdx",
   "sourceDirName": "manual/cardtypes",
@@ -16,11 +16,11 @@
   },
   "sidebar": "manualSidebar",
   "previous": {
-    "title": "Message Card Type",
+    "title": "Message Card",
     "permalink": "/docs/manual/cardtypes/message"
   },
   "next": {
-    "title": "Capture Card Type",
+    "title": "Capture Card",
     "permalink": "/docs/manual/cardtypes/capture"
   }
 }

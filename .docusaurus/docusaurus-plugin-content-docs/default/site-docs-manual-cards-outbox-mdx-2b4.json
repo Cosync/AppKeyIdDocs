@@ -16,8 +16,8 @@
   },
   "sidebar": "manualSidebar",
   "previous": {
-    "title": "Cards",
-    "permalink": "/docs/category/cards"
+    "title": "Inbox and Outbox",
+    "permalink": "/docs/category/inbox-and-outbox"
   },
   "next": {
     "title": "What is the Inbox",

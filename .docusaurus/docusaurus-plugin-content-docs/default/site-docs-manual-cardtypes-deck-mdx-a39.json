@@ -1,6 +1,6 @@
 {
   "id": "manual/cardtypes/deck",
-  "title": "Deck Card Type",
+  "title": "Deck Card",
   "description": "",
   "source": "@site/docs/manual/cardtypes/deck.mdx",
   "sourceDirName": "manual/cardtypes",
@@ -16,7 +16,7 @@
   },
   "sidebar": "manualSidebar",
   "previous": {
-    "title": "Capture Card Type",
+    "title": "Capture Card",
     "permalink": "/docs/manual/cardtypes/capture"
   },
   "next": {

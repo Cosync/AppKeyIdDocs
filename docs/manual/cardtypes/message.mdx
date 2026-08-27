@@ -2,5 +2,91 @@
 sidebar_position: 1
 ---
 
-# Message Card Type
+# Message Card
 
+**Message Cards** are the foundation of AppKeyId’s Attested Communication system. They allow an author 
+to send a private message to selected Contacts that only the intended recipients can access 
+and acknowledge. When a recipient acknowledges the message, the author is notified.
+
+Unlike traditional email or SMS, Message Cards provide several important capabilities:
+
+* **Restricted access** — Only intended recipients can read the message and access its attachments.
+* **Verified acknowledgement** — The author can verify the identity of the recipient with biometric confidence and record when and where the acknowledgement occurred.
+* **Expiration** — The author can set an expiration time, limiting the period during which recipients can access the message.
+* **Return URL** — The author can specify a URL to which the recipient is automatically redirected after acknowledging the message.
+
+A Message Card consists of several components:
+
+* **Title** — The title of the message.
+* **Content** — The body of the message, written in Markdown and displayed to the recipient as formatted HTML.
+* **Tags** — Keywords used to organize and search for messages in the Inbox and Outbox.
+* **Return URL** — The web address to which the recipient is redirected after acknowledging the message.
+* **Assets** — Files attached to the message, including documents, images, video, and audio.
+* **Options** — Additional message controls, including Precise Location, Enable Card SMS, and Expiration Date/Time.
+
+
+<img
+  src={require('./img/message.png').default}
+  alt="Inbox"
+  style={{ maxWidth: '778px', width: '100%', height: 'auto' }}
+/>
+
+## Content Markdown
+
+Markdown is particularly well suited to AppKeyId Cards because it provides richly formatted content without the complexity 
+of a traditional document editor. Authors can create headings, lists, links, tables, images, emphasis, and other structured 
+content using simple, human-readable text.
+
+Unlike HTML or proprietary document formats, Markdown remains readable even in its original form. It is also lightweight, 
+portable, easy to store, and can be reliably converted into HTML for display on virtually any device.
+
+For AppKeyId, this is especially valuable because a Card is intended to be a durable unit of Attested Communication. 
+Markdown keeps the content separate from its presentation: AppKeyId can preserve the original text as part of the Card’s 
+permanent record while rendering it consistently for recipients on the web or mobile devices.
+
+Here is some sample markdown that shows how easy it is to create headings, lists, and images. 
+
+```
+# Sample Markdown Content
+## List
+Here is a **Markdown List**
+
+* Item 1
+* Item 2
+* Item 3
+
+**Numbered list**
+1. Item 1
+2. Item 2
+3. Item 3
+
+## Images
+An image by photographer Christopher Sardegna
+
+<img src="https://fastly.picsum.photos/id/155/3264/2176.jpg?hmac=Zgf_oGMJeg18XoKBFmJgp2DgHMRYuorXlDx5wLII9nU" 
+    alt="Description" style="max-width: 100%; height: auto;">
+
+Any markdown is acceptable in AppKeyId.
+```
+
+The formatted content that is sent to the user's email with whom the card has been shared would look like this:
+
+<img
+  src={require('./img/markdown.png').default}
+  alt="Inbox"
+  style={{ maxWidth: '504px', width: '100%', height: 'auto' }}
+/>
+
+
+## Tags
+
+## Return URL
+
+## Assets
+
+
+## Precise Location
+
+## Enable Card SMS
+
+## Expire

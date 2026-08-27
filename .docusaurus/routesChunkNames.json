@@ -249,17 +249,17 @@
     },
     "content": "content---markdown-page-4-c-6-c89"
   },
-  "/docs-931": {
+  "/docs-176": {
     "__comp": "__comp---theme-docs-root-5-e-9-0b6",
     "__context": {
       "plugin": "plugin---docsaba-d7c"
     }
   },
-  "/docs-b67": {
+  "/docs-a53": {
     "__comp": "__comp---theme-doc-version-roota-7-b-5de",
     "__props": "__props---docs-005-788"
   },
-  "/docs-f8b": {
+  "/docs-efe": {
     "__comp": "__comp---theme-doc-roota-94-67a"
   },
   "/docs/category/attested-communication-b56": {
@@ -270,10 +270,6 @@
     "__comp": "__comp---theme-doc-category-generated-index-page-14-e-640",
     "__props": "__props---docs-category-card-types-09-d-9a1"
   },
-  "/docs/category/cards-4b1": {
-    "__comp": "__comp---theme-doc-category-generated-index-page-14-e-640",
-    "__props": "__props---docs-category-cards-898-686"
-  },
   "/docs/category/contacts-81f": {
     "__comp": "__comp---theme-doc-category-generated-index-page-14-e-640",
     "__props": "__props---docs-category-contactsd-4-f-fe4"
@@ -281,6 +277,10 @@
   "/docs/category/foundation-c6a": {
     "__comp": "__comp---theme-doc-category-generated-index-page-14-e-640",
     "__props": "__props---docs-category-foundation-4-f-6-630"
+  },
+  "/docs/category/inbox-and-outbox-d34": {
+    "__comp": "__comp---theme-doc-category-generated-index-page-14-e-640",
+    "__props": "__props---docs-category-inbox-and-outbox-429-0dd"
   },
   "/docs/category/profile-menu-10f": {
     "__comp": "__comp---theme-doc-category-generated-index-page-14-e-640",

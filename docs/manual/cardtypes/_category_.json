@@ -3,6 +3,10 @@
   "position": 3,
   "link": {
     "type": "generated-index",
-    "description": "This section describes the different card types supported in AppKeyId."
+    "description": "AppKeyId supports several card types for different forms of Attested Communication. Cards fall into two categories: private and public.
+
+Private cards, including Messages and Private Decks, are shared with selected Contacts or Teams and can only be viewed and acknowledged by their intended recipients. They are typically accessed through an email or SMS link, or directly from the user’s Inbox.
+
+Public cards include Public Messages, Capture Cards, and Public Decks. They are available to any authenticated AppKeyId user and are typically accessed through a QR code or public link. Capture Cards are specifically used to add authenticated users to a Team."
   }
 }

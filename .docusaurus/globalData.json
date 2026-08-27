@@ -241,8 +241,8 @@
               "sidebar": "conceptsSidebar"
             },
             {
-              "id": "/category/cards",
-              "path": "/docs/category/cards",
+              "id": "/category/inbox-and-outbox",
+              "path": "/docs/category/inbox-and-outbox",
               "sidebar": "manualSidebar"
             },
             {

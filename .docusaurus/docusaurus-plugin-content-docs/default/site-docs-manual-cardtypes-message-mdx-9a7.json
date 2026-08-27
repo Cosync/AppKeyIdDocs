@@ -1,7 +1,7 @@
 {
   "id": "manual/cardtypes/message",
-  "title": "Message Card Type",
-  "description": "",
+  "title": "Message Card",
+  "description": "Message Cards are the foundation of AppKeyId’s Attested Communication system. They allow an author",
   "source": "@site/docs/manual/cardtypes/message.mdx",
   "sourceDirName": "manual/cardtypes",
   "slug": "/manual/cardtypes/message",
@@ -20,7 +20,7 @@
     "permalink": "/docs/category/card-types"
   },
   "next": {
-    "title": "Public Card Type",
+    "title": "Public Card",
     "permalink": "/docs/manual/cardtypes/public"
   }
 }

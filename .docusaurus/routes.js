@@ -114,15 +114,15 @@ export default [
   },
   {
     path: '/docs',
-    component: ComponentCreator('/docs', '931'),
+    component: ComponentCreator('/docs', '176'),
     routes: [
       {
         path: '/docs',
-        component: ComponentCreator('/docs', 'b67'),
+        component: ComponentCreator('/docs', 'a53'),
         routes: [
           {
             path: '/docs',
-            component: ComponentCreator('/docs', 'f8b'),
+            component: ComponentCreator('/docs', 'efe'),
             routes: [
               {
                 path: '/docs/category/attested-communication',
@@ -137,12 +137,6 @@ export default [
                 sidebar: "manualSidebar"
               },
               {
-                path: '/docs/category/cards',
-                component: ComponentCreator('/docs/category/cards', '4b1'),
-                exact: true,
-                sidebar: "manualSidebar"
-              },
-              {
                 path: '/docs/category/contacts',
                 component: ComponentCreator('/docs/category/contacts', '81f'),
                 exact: true,
@@ -153,6 +147,12 @@ export default [
                 component: ComponentCreator('/docs/category/foundation', 'c6a'),
                 exact: true,
                 sidebar: "conceptsSidebar"
+              },
+              {
+                path: '/docs/category/inbox-and-outbox',
+                component: ComponentCreator('/docs/category/inbox-and-outbox', 'd34'),
+                exact: true,
+                sidebar: "manualSidebar"
               },
               {
                 path: '/docs/category/profile-menu',
