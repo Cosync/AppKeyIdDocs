@@ -10,14 +10,14 @@
   "unlisted": false,
   "tags": [],
   "version": "current",
-  "sidebarPosition": 3,
+  "sidebarPosition": 4,
   "frontMatter": {
-    "sidebar_position": 3
+    "sidebar_position": 4
   },
   "sidebar": "manualSidebar",
   "previous": {
-    "title": "Public Card",
-    "permalink": "/docs/manual/cardtypes/public"
+    "title": "Alibi Card",
+    "permalink": "/docs/manual/cardtypes/alibi"
   },
   "next": {
     "title": "Deck Card",

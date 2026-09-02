@@ -1,0 +1,26 @@
+{
+  "id": "manual/cardtypes/public-deck",
+  "title": "Public Deck Card",
+  "description": "",
+  "source": "@site/docs/manual/cardtypes/public-deck.mdx",
+  "sourceDirName": "manual/cardtypes",
+  "slug": "/manual/cardtypes/public-deck",
+  "permalink": "/docs/manual/cardtypes/public-deck",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 6,
+  "frontMatter": {
+    "sidebar_position": 6
+  },
+  "sidebar": "manualSidebar",
+  "previous": {
+    "title": "Deck Card",
+    "permalink": "/docs/manual/cardtypes/deck"
+  },
+  "next": {
+    "title": "Contacts",
+    "permalink": "/docs/category/contacts"
+  }
+}

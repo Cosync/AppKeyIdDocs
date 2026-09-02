@@ -38,91 +38,21 @@ export default [
     exact: true
   },
   {
-    path: '/blog',
-    component: ComponentCreator('/blog', 'e21'),
-    exact: true
-  },
-  {
-    path: '/blog/archive',
-    component: ComponentCreator('/blog/archive', '182'),
-    exact: true
-  },
-  {
-    path: '/blog/authors',
-    component: ComponentCreator('/blog/authors', '0b7'),
-    exact: true
-  },
-  {
-    path: '/blog/authors/all-sebastien-lorber-articles',
-    component: ComponentCreator('/blog/authors/all-sebastien-lorber-articles', 'ec3'),
-    exact: true
-  },
-  {
-    path: '/blog/authors/yangshun',
-    component: ComponentCreator('/blog/authors/yangshun', 'b14'),
-    exact: true
-  },
-  {
-    path: '/blog/first-blog-post',
-    component: ComponentCreator('/blog/first-blog-post', '5c7'),
-    exact: true
-  },
-  {
-    path: '/blog/long-blog-post',
-    component: ComponentCreator('/blog/long-blog-post', '4f6'),
-    exact: true
-  },
-  {
-    path: '/blog/mdx-blog-post',
-    component: ComponentCreator('/blog/mdx-blog-post', 'e9f'),
-    exact: true
-  },
-  {
-    path: '/blog/tags',
-    component: ComponentCreator('/blog/tags', '287'),
-    exact: true
-  },
-  {
-    path: '/blog/tags/docusaurus',
-    component: ComponentCreator('/blog/tags/docusaurus', '096'),
-    exact: true
-  },
-  {
-    path: '/blog/tags/facebook',
-    component: ComponentCreator('/blog/tags/facebook', '394'),
-    exact: true
-  },
-  {
-    path: '/blog/tags/hello',
-    component: ComponentCreator('/blog/tags/hello', '731'),
-    exact: true
-  },
-  {
-    path: '/blog/tags/hola',
-    component: ComponentCreator('/blog/tags/hola', '4fa'),
-    exact: true
-  },
-  {
-    path: '/blog/welcome',
-    component: ComponentCreator('/blog/welcome', 'dfe'),
-    exact: true
-  },
-  {
     path: '/markdown-page',
     component: ComponentCreator('/markdown-page', '53a'),
     exact: true
   },
   {
     path: '/docs',
-    component: ComponentCreator('/docs', '176'),
+    component: ComponentCreator('/docs', 'd85'),
     routes: [
       {
         path: '/docs',
-        component: ComponentCreator('/docs', 'a53'),
+        component: ComponentCreator('/docs', '2d3'),
         routes: [
           {
             path: '/docs',
-            component: ComponentCreator('/docs', 'efe'),
+            component: ComponentCreator('/docs', 'c1b'),
             routes: [
               {
                 path: '/docs/category/attested-communication',
@@ -263,6 +193,12 @@ export default [
                 sidebar: "manualSidebar"
               },
               {
+                path: '/docs/manual/cardtypes/alibi',
+                component: ComponentCreator('/docs/manual/cardtypes/alibi', 'c8b'),
+                exact: true,
+                sidebar: "manualSidebar"
+              },
+              {
                 path: '/docs/manual/cardtypes/capture',
                 component: ComponentCreator('/docs/manual/cardtypes/capture', 'b94'),
                 exact: true,
@@ -283,6 +219,12 @@ export default [
               {
                 path: '/docs/manual/cardtypes/public',
                 component: ComponentCreator('/docs/manual/cardtypes/public', '1c6'),
+                exact: true,
+                sidebar: "manualSidebar"
+              },
+              {
+                path: '/docs/manual/cardtypes/public-deck',
+                component: ComponentCreator('/docs/manual/cardtypes/public-deck', '32f'),
                 exact: true,
                 sidebar: "manualSidebar"
               },

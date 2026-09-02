@@ -1,0 +1,26 @@
+{
+  "id": "manual/cardtypes/capture copy",
+  "title": "Capture Card",
+  "description": "",
+  "source": "@site/docs/manual/cardtypes/capture copy.mdx",
+  "sourceDirName": "manual/cardtypes",
+  "slug": "/manual/cardtypes/capture copy",
+  "permalink": "/docs/manual/cardtypes/capture copy",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "sidebar_position": 3
+  },
+  "sidebar": "manualSidebar",
+  "previous": {
+    "title": "Public Card",
+    "permalink": "/docs/manual/cardtypes/public"
+  },
+  "next": {
+    "title": "Capture Card",
+    "permalink": "/docs/manual/cardtypes/capture"
+  }
+}

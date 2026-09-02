@@ -66,19 +66,7 @@ export default {
         "docs": {
           "sidebarPath": "./sidebars.js"
         },
-        "blog": {
-          "showReadingTime": true,
-          "feedOptions": {
-            "type": [
-              "rss",
-              "atom"
-            ],
-            "xslt": true
-          },
-          "onInlineTags": "warn",
-          "onInlineAuthors": "warn",
-          "onUntruncatedBlogPosts": "warn"
-        },
+        "blog": false,
         "theme": {
           "customCss": "./src/css/custom.css"
         }
@@ -116,11 +104,6 @@ export default {
           "sidebarId": "manualSidebar",
           "position": "left",
           "label": "User Manual"
-        },
-        {
-          "to": "/blog",
-          "label": "Blog",
-          "position": "left"
         }
       ],
       "hideOnScroll": false

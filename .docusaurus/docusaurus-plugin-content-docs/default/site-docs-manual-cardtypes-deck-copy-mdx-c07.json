@@ -1,18 +1,18 @@
 {
-  "id": "manual/cardtypes/deck",
+  "id": "manual/cardtypes/deck copy",
   "title": "Deck Card",
   "description": "",
-  "source": "@site/docs/manual/cardtypes/deck.mdx",
+  "source": "@site/docs/manual/cardtypes/deck copy.mdx",
   "sourceDirName": "manual/cardtypes",
-  "slug": "/manual/cardtypes/deck",
-  "permalink": "/docs/manual/cardtypes/deck",
+  "slug": "/manual/cardtypes/deck copy",
+  "permalink": "/docs/manual/cardtypes/deck copy",
   "draft": false,
   "unlisted": false,
   "tags": [],
   "version": "current",
-  "sidebarPosition": 5,
+  "sidebarPosition": 4,
   "frontMatter": {
-    "sidebar_position": 5
+    "sidebar_position": 4
   },
   "sidebar": "manualSidebar",
   "previous": {
@@ -20,7 +20,7 @@
     "permalink": "/docs/manual/cardtypes/capture"
   },
   "next": {
-    "title": "Public Deck Card",
-    "permalink": "/docs/manual/cardtypes/public-deck"
+    "title": "Deck Card",
+    "permalink": "/docs/manual/cardtypes/deck"
   }
 }

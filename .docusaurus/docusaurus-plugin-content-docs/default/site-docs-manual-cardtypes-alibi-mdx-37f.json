@@ -1,0 +1,26 @@
+{
+  "id": "manual/cardtypes/alibi",
+  "title": "Alibi Card",
+  "description": "",
+  "source": "@site/docs/manual/cardtypes/alibi.mdx",
+  "sourceDirName": "manual/cardtypes",
+  "slug": "/manual/cardtypes/alibi",
+  "permalink": "/docs/manual/cardtypes/alibi",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "sidebar_position": 3
+  },
+  "sidebar": "manualSidebar",
+  "previous": {
+    "title": "Public Card",
+    "permalink": "/docs/manual/cardtypes/public"
+  },
+  "next": {
+    "title": "Capture Card",
+    "permalink": "/docs/manual/cardtypes/capture"
+  }
+}

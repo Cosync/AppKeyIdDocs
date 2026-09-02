@@ -4,6 +4,8 @@ sidebar_position: 1
 
 # Message Card
 
+Message cards are used for private messaging.
+
 **Message Cards** are the foundation of AppKeyId’s Attested Communication system. They allow an author 
 to send a private message to selected Contacts that only the intended recipients can access 
 and acknowledge. When a recipient acknowledges the message, the author is notified.
@@ -61,10 +63,9 @@ Here is a **Markdown List**
 3. Item 3
 
 ## Images
-An image by photographer Christopher Sardegna
 
-<img src="https://fastly.picsum.photos/id/155/3264/2176.jpg?hmac=Zgf_oGMJeg18XoKBFmJgp2DgHMRYuorXlDx5wLII9nU" 
-    alt="Description" style="max-width: 100%; height: auto;">
+![image](https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4e/Picture_of_Flower.jpg/120px-Picture_of_Flower.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail)
+
 
 Any markdown is acceptable in AppKeyId.
 ```
@@ -74,13 +75,40 @@ The formatted content that is sent to the user's email with whom the card has be
 <img
   src={require('./img/markdown.png').default}
   alt="Inbox"
-  style={{ maxWidth: '504px', width: '100%', height: 'auto' }}
+  style={{ maxWidth: '560px', width: '100%', height: 'auto' }}
 />
 
 
 ## Tags
 
+The **Tags** field allows an author to add descriptive keywords to a Card, making it easier to find later. Tags act as simple finder 
+shortcuts for organizing and locating Cards without having to remember their exact titles or content.
+
+Using the search bar at the top of the **Inbox or Outbox**, users can enter a tag to quickly locate Cards associated with 
+that keyword. For example, Cards might be tagged with terms such as invoice, contract, training, or project-alpha.
+
+Tags are particularly useful as the number of Cards grows, providing a simple way to categorize and retrieve related communications.
+
 ## Return URL
+
+The **Return URL** allows the author to specify a web page that is displayed after a user successfully acknowledges a Card. 
+Once the acknowledgement is complete, AppKeyId opens the specified URL in a web view, allowing the recipient to continue 
+directly to the author’s content.
+
+This allows an AppKeyId Card to act as **an authenticated portal to external web content**. For example, an author might direct 
+users to a website, document, application, registration page, or other online resource.
+
+Unlike a traditional QR code, which generally provides little information about who followed the link, AppKeyId first 
+requires the user to acknowledge the Card. The author therefore has a record of **which authenticated user acknowledged the 
+Card before proceeding to the external content**, along with the acknowledgement information recorded by AppKeyId.
+
+This **Return URL** displays a YouTube video featuring a Blue Heeler dog.
+
+<img
+  src={require('./img/returnurl.png').default}
+  alt="Inbox"
+  style={{ maxWidth: '483px', width: '100%', height: 'auto' }}
+/>
 
 ## Assets
 

@@ -76,6 +76,11 @@
               "sidebar": "manualSidebar"
             },
             {
+              "id": "manual/cardtypes/alibi",
+              "path": "/docs/manual/cardtypes/alibi",
+              "sidebar": "manualSidebar"
+            },
+            {
               "id": "manual/cardtypes/capture",
               "path": "/docs/manual/cardtypes/capture",
               "sidebar": "manualSidebar"
@@ -93,6 +98,11 @@
             {
               "id": "manual/cardtypes/public",
               "path": "/docs/manual/cardtypes/public",
+              "sidebar": "manualSidebar"
+            },
+            {
+              "id": "manual/cardtypes/public-deck",
+              "path": "/docs/manual/cardtypes/public-deck",
               "sidebar": "manualSidebar"
             },
             {

@@ -1,7 +1,7 @@
 {
   "id": "manual/cardtypes/message",
   "title": "Message Card",
-  "description": "Message Cards are the foundation of AppKeyId’s Attested Communication system. They allow an author",
+  "description": "Message cards are used for private messaging.",
   "source": "@site/docs/manual/cardtypes/message.mdx",
   "sourceDirName": "manual/cardtypes",
   "slug": "/manual/cardtypes/message",
