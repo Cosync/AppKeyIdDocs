@@ -122,12 +122,7 @@ export default {
         },
         {
           "title": "More",
-          "items": [
-            {
-              "label": "Blog",
-              "to": "/blog"
-            }
-          ]
+          "items": []
         }
       ],
       "copyright": "Copyright © 2026 Cosync, Inc."
