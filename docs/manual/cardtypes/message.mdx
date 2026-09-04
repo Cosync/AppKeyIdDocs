@@ -111,10 +111,106 @@ This **Return URL** displays a YouTube video featuring a Blue Heeler dog.
 />
 
 ## Assets
+AppKeyId allows authors to attach **Assets** to Message Cards. Assets can include photos, videos, audio recordings, 
+PDFs, Word documents, and other file types. Common media formats can be previewed directly within AppKeyId, although 
+some file types may only be available for download and may not include a preview.
 
+Asset storage depends on the author’s account plan. **Free accounts include up to 10 MB of storage**, while **paid accounts 
+include up to 20 GB.**
+
+These storage limits apply to the author storing and attaching Assets. There is **no corresponding storage limitation 
+for a Free user receiving a Card**. A paid user can therefore share Cards containing Assets with Free users without those 
+Assets counting against the recipient’s storage allowance.
+
+<img
+  src={require('./img/assets.png').default}
+  alt="Inbox"
+  style={{ maxWidth: '866px', width: '100%', height: 'auto' }}
+/>
 
 ## Precise Location
 
+AppKeyId supports **Precise Location** as part of a Card’s acknowledgement. Under the hood, the location is recorded as a precise 
+latitude and longitude and can also be represented as a corresponding street address.
+
+When **Precise Location** is enabled for a Card, AppKeyId attempts to record the recipient’s location when the Card is 
+acknowledged. This requires the recipient to have Location Services enabled on their device and to grant the browser 
+permission to access their precise location.
+
+The resulting location becomes part of the Card’s acknowledgement record, providing the author with **evidence of who 
+acknowledged the Card, when it was acknowledged, and where the acknowledgement occurred.**
+
+Precise Location can also be used as an acknowledgement requirement. A Card may require the recipient to be at a 
+specified location before the acknowledgement is accepted. This makes it possible to create location-dependent Attested 
+Communications where physical presence is part of the attestation.
+
+### Enabling Location Services on iPhone
+
+On an iPhone, Safari’s website location accuracy is controlled by both Location Services and Precise Location.
+
+1. Open **Settings → Privacy & Security → Location Services.**
+2. Make sure **Location Services** is **On.**
+3. Find **Safari Websites** in the list.
+4. Set **Allow Location Access to While Using the App**.
+5. Turn **Precise Location On.**
+
+Then open your website in Safari. When the site requests your location, tap **Allow.**
+
+If you previously denied location access to a particular website, in Safari open that site, tap the **page/menu button in 
+the address bar → Website Settings** (wording can vary by iOS version) → **Location → Allow.**
+
+
+### Enabling Location Services on Android
+
+On Android with Chrome, you need to allow **precise location at both the Android and Chrome/site levels.**
+
+1. Open **Settings → Apps → Chrome → Permissions → Location.**
+2. Select **Allow only while using the app.**
+3. Make sure **Use precise location** is turned **On.**
+4. Open Chrome and navigate to the AppKeyId website.
+5. When Chrome asks whether the site can use your location, select **Allow.**
+
+If you previously denied location permission for AppKeyId, open the site in Chrome, tap the icon to the left of the address 
+bar → **Permissions → Location → Allow.** You may need to reload the page afterward.
+
+For the most accurate GPS result, Android’s Location service should also be enabled. Depending on the phone, you can
+find this under **Settings → Location.**
+
+For your AppKeyId manual, the key distinction is: **Android must give Chrome precise location permission, and Chrome must 
+separately** give AppKeyId permission to access that location.
+
 ## Enable Card SMS
 
+The **Enable Card SMS** option is available to users with a paid AppKeyId account plan. When enabled for a Card, AppKeyId 
+sends SMS notifications in addition to the standard email notifications associated with sharing and acknowledging that Card.
+
+When the author shares the Card with a recipient, the recipient receives both an **email notification and an SMS notification** 
+informing them that a Card has been shared.
+
+When the recipient acknowledges the Card, AppKeyId sends an **SMS notification to both the recipient and the author** confirming 
+that the acknowledgement has occurred.
+
+This provides an additional notification channel for time-sensitive or important communications and helps ensure that 
+both parties are promptly informed when a Card is shared and acknowledged.
+
+<img
+  src={require('./img/sms.png').default}
+  alt="Inbox"
+  style={{ maxWidth: '768px', width: '100%', height: 'auto' }}
+/>
+
 ## Expire
+AppKeyId allows the author of a Card to specify a **date and time when the Card will expire**. This gives the author control 
+over how long the Card’s content remains available to its recipients.
+
+Once a Card has expired, recipients can **no longer view or acknowledge the Card**. This is particularly useful for time-sensitive 
+communications where access should only be permitted during a specific period.
+
+Card Expiration can be used for temporary notices, time-sensitive instructions, limited offers, event information, or any 
+communication where the author wants to establish a defined window for access and acknowledgement.
+
+<img
+  src={require('./img/expire.png').default}
+  alt="Inbox"
+  style={{ maxWidth: '492px', width: '100%', height: 'auto' }}
+/>
