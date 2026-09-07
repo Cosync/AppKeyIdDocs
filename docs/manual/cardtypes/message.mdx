@@ -179,6 +179,44 @@ find this under **Settings → Location.**
 For your AppKeyId manual, the key distinction is: **Android must give Chrome precise location permission, and Chrome must 
 separately** give AppKeyId permission to access that location.
 
+## Precise Location
+
+**Constrain Location** allows the author of a Card to require recipients to be within a specified geographic area before they 
+can acknowledge the Card. This adds **physical presence** as a requirement of the acknowledgement.
+
+To use Constrain Location, **Precise Location** must first be enabled for the Card. The author can then select **Use Current 
+Location** to set the Card’s location to their current position. AppKeyId records this position as a latitude and longitude and 
+also displays a human-readable address.
+
+The **Radius** determines how close the recipient must be to the specified location. The default radius is 20 meters, 
+which provides a relatively tight geographic constraint while allowing for variations in mobile-device location accuracy. 
+Larger radii can be used when less precision is required. For example:
+
+* **20 meters** — a specific location or small property
+* **50 meters** — a specific location or small property and its garden
+* **100 meters** — a building, facility, or immediate surrounding area
+* **1 kilometer** — a neighborhood or campus
+* **50 kilometers** — a metropolitan area
+
+When a recipient attempts to acknowledge a location-constrained Card, AppKeyId obtains the device’s current location and 
+verifies that it falls within the permitted radius. If the recipient is outside the allowed area, the Card cannot be 
+acknowledged.
+
+Constrain Location can be useful in many situations. An employer could require an employee to acknowledge a Card while 
+physically present at a work site. It could also be used for **event check-ins, delivery confirmation, property inspections, 
+construction-site verification, classroom or training attendance, service calls, equipment maintenance, or proof of presence 
+at a particular location.**
+
+For location-constrained Cards to work, the recipient must use a device and browser that support precise location services. 
+**Location Services and precise location access must also be enabled and permission granted to AppKeyId through the browser.**
+
+
+<img
+  src={require('./img/constrain.png').default}
+  alt="Inbox"
+  style={{ maxWidth: '492px', width: '100%', height: 'auto' }}
+/>
+
 ## Enable Card SMS
 
 The **Enable Card SMS** option is available to users with a paid AppKeyId account plan. When enabled for a Card, AppKeyId 
