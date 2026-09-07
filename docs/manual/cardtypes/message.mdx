@@ -252,3 +252,43 @@ communication where the author wants to establish a defined window for access an
   alt="Inbox"
   style={{ maxWidth: '492px', width: '100%', height: 'auto' }}
 />
+
+## Card QR codes
+
+The **QR Code** icon provides a convenient way to access and acknowledge a Card. Clicking the icon displays both a **QR code**
+and a **web link** that directs the user to the Card.
+
+A recipient can scan the QR code with a mobile device or click the provided link to access and acknowledge the Card. For 
+private Cards, the recipient must have the appropriate **access rights** before the Card can be viewed or acknowledged.
+
+Both the **QR code and link can be copied to the clipboard**, making them easy to include in emails, messages, websites, or 
+other communications. The QR code can also be **downloaded as a PNG image** for use in printed materials, signs, badges, documents, 
+or other physical media.
+
+<img
+  src={require('./img/qrcode.png').default}
+  alt="Inbox"
+  style={{ maxWidth: '488px', width: '100%', height: 'auto' }}
+/>
+
+### Authenticated QR Codes
+
+Traditional QR codes are essentially **web links encoded as images**. When scanned, they direct a person to a web page, but the 
+owner of that page generally has no reliable way of knowing who scanned the code.
+
+AppKeyId QR codes add an identity layer to this process. When a user scans an AppKeyId QR code, the Card can require the user 
+to authenticate with their AppKeyId account and acknowledge the Card using their passkey. Instead of simply recording that an 
+anonymous visitor followed a link, the Card author can obtain a verifiable record of **who acknowledged the Card and when**. 
+When Precise Location is enabled, the acknowledgement can also record **where** it occurred.
+
+This provides several advantages over a conventional QR code:
+
+* **Verified identity** — Know which authenticated AppKeyId user acknowledged the Card.
+* **Proof of acknowledgement** — Record that the user acknowledged the Card rather than simply opened a web page.
+* **Time and location** — Record when and, when enabled, where the acknowledgement occurred.
+* **Access control** — Private Cards can restrict access to specific users or Teams.
+* **Permanent record** — The acknowledgement becomes part of the Card’s history.
+* **Physical-to-digital identity** — Printed QR codes can provide an entry point to authenticated digital interactions.
+
+In this way, an AppKeyId QR code is more than a link. It provides a bridge between a **physical QR code and an authenticated, 
+attested interaction with a known user.**
