@@ -292,3 +292,49 @@ This provides several advantages over a conventional QR code:
 
 In this way, an AppKeyId QR code is more than a link. It provides a bridge between a **physical QR code and an authenticated, 
 attested interaction with a known user.**
+
+## Edit Members
+
+AppKeyId **private Message Cards** can only be viewed and acknowledged by users who have been explicitly granted access to the 
+Card. Other AppKeyId users cannot view or acknowledge its contents.
+
+The **Edit Members** icon allows the Card author to control who has access. Selecting the icon opens a dialog where the author 
+can add one or more of their **Contacts** as members of the Card. The author can also add themselves as a member, which is 
+particularly useful for testing a Card and its acknowledgement process.
+
+<img
+  src={require('./img/editmembers.png').default}
+  alt="Inbox"
+  style={{ maxWidth: '544px', width: '100%', height: 'auto' }}
+/>
+
+Instead of selecting individual Contacts, the author can also share a private Message Card with a **Team**, allowing the 
+Card to be distributed to a predefined group of users.
+
+When a Card is shared, its members receive an **email notification** informing them that the Card is available for acknowledgement. 
+If **Card SMS** is enabled, eligible recipients can also receive an SMS notification.
+
+
+<img
+  src={require('./img/addcontacts.png').default}
+  alt="Inbox"
+  style={{ maxWidth: '507px', width: '100%', height: 'auto' }}
+/>
+
+### Admin Members
+
+AppKeyId also allows the author to assign an **Admin** role to selected Card members. Admin members are given additional rights 
+to help manage the Card.
+
+An Admin can:
+
+- **Edit the Card** and its contents.
+
+- **Add other Contacts** as members of the Card.
+
+- **Manage the Card's membership** on behalf of the author.
+
+Admin members **cannot delete the Card**. Ownership and ultimate control of the Card remain with its original author.
+
+This makes the Admin role useful when a private Card needs to be managed collaboratively while preserving the distinction 
+between the **Card's author** and the users authorized to help administer it.
