@@ -1,7 +1,7 @@
 {
   "id": "manual/cardtypes/public",
   "title": "Public Card",
-  "description": "",
+  "description": "Public Cards are designed to communicate information to a broad audience. Unlike private Message Cards,",
   "source": "@site/docs/manual/cardtypes/public.mdx",
   "sourceDirName": "manual/cardtypes",
   "slug": "/manual/cardtypes/public",
