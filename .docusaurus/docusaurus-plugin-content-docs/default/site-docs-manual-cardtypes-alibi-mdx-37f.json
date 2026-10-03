@@ -1,7 +1,7 @@
 {
   "id": "manual/cardtypes/alibi",
   "title": "Alibi Card",
-  "description": "",
+  "description": "Alibi Cards allow an AppKeyId user to create a verifiable digital record of where they were and when they were there.",
   "source": "@site/docs/manual/cardtypes/alibi.mdx",
   "sourceDirName": "manual/cardtypes",
   "slug": "/manual/cardtypes/alibi",
