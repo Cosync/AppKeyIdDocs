@@ -30,6 +30,24 @@ or
 
 Conversely, a location record may also provide supporting evidence that a person was somewhere other than a particular location at a particular time.
 
+## Enabled by FIDO2 Passkeys
+
+Alibi Cards depend on more than simply recording a time and GPS location. For an alibi to have evidentiary value, the system also needs a strong way to establish **who performed the acknowledgement**. This is where **FIDO2 passkeys** make Attested Communication possible.
+
+Passkeys use public-key cryptography and can require the user to unlock a credential through the device's biometric or other local user-verification mechanism. The private credential remains protected by the user's device or credential provider rather than being transmitted to AppKeyId. This gives AppKeyId a cryptographically verifiable acknowledgement tied to the user's passkey without requiring AppKeyId to collect or store the user's biometric data.
+
+The widespread deployment of passkeys across major mobile platforms beginning in **2022–2023** changed what was practical. Modern smartphones increasingly provided the platform capabilities needed to create and use passkeys as part of their standard authentication infrastructure.
+
+The important element is that **another person cannot simply substitute themselves for the intended recipient and acknowledge the Card on their behalf**. The acknowledgement requires access to the recipient's passkey and successful user verification as required by that credential. When a passkey is protected by biometric verification, simply handing another person the phone is not sufficient for them to complete the acknowledgement.
+
+That distinction is fundamental to the Alibi Card concept. A conventional location application may establish where a **device** was located. An Alibi Card is designed to create stronger evidence connecting an **authenticated user** with an acknowledgement made at a particular time and reported location.
+
+The convergence of **FIDO2 passkeys, device-based user verification, precise mobile location, and ubiquitous smartphones** makes the Alibi Card practical. AppKeyId brings these capabilities together into a single Attested Communication:
+
+> **Identity + Passkey Acknowledgement + Time + Location + Card Content**
+
+Without strong authentication, a location record says little about who actually created it. Without location, authentication says little about where the person was. By combining the two, an Alibi Card creates a substantially stronger digital record: **a particular credential acknowledged a particular communication, at a particular time, from a reported location.**
+
 ## Workplace and Professional Uses
 
 Alibi Cards can provide a lightweight proof-of-presence system for organizations with employees and contractors working outside a traditional office.
@@ -133,3 +151,73 @@ The underlying principle remains the same:
 > **An Alibi Card creates an authenticated digital record of a person's presence at a particular place and time.**
 
 Alibi Cards should not, however, be treated as infallible proof of physical presence. Location information supplied by consumer devices can vary in accuracy and may potentially be manipulated. For legal, employment, corrections, or law-enforcement applications, Alibi Card records should therefore be considered **supporting digital evidence**, with their use governed by applicable laws, court orders, employment policies, consent requirements, and organizational procedures.
+
+## Creating an Alibi Card
+
+Creating and consuming an Alibi Card requires only four basic steps.
+
+### Step 1 — Create an Alibi Card
+
+Select **Create** from the Outbox and choose **Alibi** as the Card type.
+
+<img
+  src={require('./img/pickalibi.png').default}
+  alt="pickalibi"
+  style={{ maxWidth: '250px', width: '100%', height: 'auto' }}
+/>
+
+The Alibi Card provides the same basic content capabilities as other AppKeyId Cards while adding the ability to create an authenticated record of the recipient's location and time when the Card is acknowledged.
+
+### Step 2 — Write the Alibi Message
+
+Enter a **Title** and write the Alibi instructions or other information that you want the recipient to acknowledge.
+
+For example:
+
+```
+This is Richard's Alibi Card. Acknowledge it to create an Alibi at a moment in time and at a location
+```
+
+<img
+  src={require('./img/createalibi.png').default}
+  alt="createalibi"
+  style={{ maxWidth: '600px', width: '100%', height: 'auto' }}
+/>
+
+Save the Card when finished.
+
+### Step 3 — Share the Alibi Card
+
+Use **Edit Members** to share the Alibi Card with the intended recipient. For this example, share the Card **with yourself** so that you can test the complete Alibi process.
+
+Once shared, copy the **Alibi Link** or display the Card's **QR code**.
+
+The link can be sent electronically, while the QR code can be displayed on another screen, downloaded, or printed for scanning with a mobile phone.
+
+<img
+  src={require('./img/copyalibilink.png').default}
+  alt="copyalibilink"
+  style={{ maxWidth: '400px', width: '100%', height: 'auto' }}
+/>
+
+### Step 4 — Consume and Acknowledge the Alibi
+
+Open the Alibi Card by either:
+
+- Clicking the **Alibi Link**, or
+
+- Scanning the **QR code** with a mobile phone camera.
+
+The recipient then acknowledges the Alibi Card using their passkey. When **Precise Location** is enabled and location permission has been granted, AppKeyId records the precise latitude and longitude reported by the device together with the exact time of the acknowledgement.
+
+The resulting Alibi record ties together:
+
+> **Authenticated User + Biometrically Verified Passkey + Exact Time + Precise Location + Alibi Card**
+
+<img
+  src={require('./img/performalibi.png').default}
+  alt="performalibi"
+  style={{ maxWidth: '500px', width: '100%', height: 'auto' }}
+/>
+
+The important point is that the Alibi is created **at the moment the Card is acknowledged**. The resulting record establishes that the intended recipient's passkey was used to acknowledge that specific Alibi Card at a specific time and from a specific reported location.
