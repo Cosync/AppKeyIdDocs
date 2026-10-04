@@ -100,3 +100,119 @@ Capture Cards therefore transform the traditional signup sheet into an **authent
 
 What once required a clipboard, a stack of business cards, manual data entry, and subsequent cleanup can instead begin with something as simple as scanning a QR code.
 
+## Creating a Capture Card: Trade Show Leads
+
+The following example demonstrates how to create a **Capture Card** for collecting leads at a trade show. Anyone who scans the Capture Card's QR code or follows its link can authenticate with AppKeyId, acknowledge the Card, and choose to join the **Trade Show Leads** Team.
+
+### Step 1 — Create the Team
+
+The first step is to create the **Team** where users captured by the Capture Card will be added.
+
+Open the **Teams** tab and select **Create** to create a new Team.
+
+Give the Team the following name:
+
+> **Trade Show Leads**
+
+
+<img
+  src={require('./img/createteam.png').default}
+  alt="createteam"
+  style={{ maxWidth: '500px', width: '100%', height: 'auto' }}
+/>
+
+Save the Team. This Team will become the destination for everyone who responds to the Capture Card and agrees to join.
+
+### Step 2 — Create the Capture Card
+
+Next, open your **Outbox**, select **Create**, and choose **Capture** as the Card type.
+
+<img
+  src={require('./img/capturecard.png').default}
+  alt="capturecard"
+  style={{ maxWidth: '400px', width: '100%', height: 'auto' }}
+/>
+
+Enter the following title:
+
+> **Trade Show Leads**
+
+Add the appropriate content to the Card. For example:
+
+> **Please add me to the leads for this trade show to get more product information.**
+
+>
+
+> Acknowledge this Card to join our Trade Show Leads group and receive additional information about our products and services.
+
+<img
+  src={require('./img/createcapture.png').default}
+  alt="createcapture"
+  style={{ maxWidth: '500px', width: '100%', height: 'auto' }}
+/>
+
+Associate the Capture Card with the **Trade Show Leads** Team created in Step 1, and then save the Card.
+
+### Step 3 — Share the Capture Card
+
+The new Capture Card will now appear in your **Outbox**.
+
+Expand the Card's **QR code** to display the QR code and Card link. You can now either send the link directly to another user or have the user scan the QR code with the camera on their mobile phone.
+
+<img
+  src={require('./img/captureqr.png').default}
+  alt="captureqr"
+  style={{ maxWidth: '500px', width: '100%', height: 'auto' }}
+/>
+
+This is particularly useful at a trade show, where the QR code can be displayed prominently at a booth, on a monitor, in printed material, or on a sign.
+
+When the user follows the link or scans the QR code, they are presented with the Capture Card and its acknowledgement form. The user acknowledges the Card using their AppKeyId account and passkey and may also leave an optional comment.
+
+<img
+  src={require('./img/acknowledgecapture.png').default}
+  alt="acknowledgecapture"
+  style={{ maxWidth: '400px', width: '100%', height: 'auto' }}
+/>
+
+### Step 4 — Join the Team
+
+After acknowledging the Capture Card, the user is explicitly asked whether they want to join the **Trade Show Leads** Team.
+
+The user selects **Submit** to confirm that they want to join.
+
+<img
+  src={require('./img/jointeam.png').default}
+  alt="jointeam"
+  style={{ maxWidth: '400px', width: '100%', height: 'auto' }}
+/>
+
+This explicit confirmation is important: scanning the QR code or viewing the Card does not automatically add someone to the Team. The user acknowledges the Card and affirmatively agrees to join.
+
+### Step 5 — Verify the Captured User
+
+The Card owner can now return to the **Teams** tab, locate the **Trade Show Leads** Team, and select **Edit Members**.
+
+The newly captured user will appear as a member of the Team, together with the contact information associated with their AppKeyId identity.
+
+The Team can continue to grow as additional people scan the same QR code and acknowledge the Capture Card.
+
+<img
+  src={require('./img/teammembers.png').default}
+  alt="teammembers"
+  style={{ maxWidth: '500px', width: '100%', height: 'auto' }}
+/>
+
+### That's It
+
+*Et voilà!* That is how easy it is to create a Capture Card and its associated QR code.
+
+There are no handwritten signup sheets to decipher, business cards to transcribe, or email addresses to manually enter. Each participant supplies their identity through their existing AppKeyId account and acknowledges the Capture Card using their passkey.
+
+The entire process becomes:
+
+> **Scan → Authenticate → Acknowledge → Agree to Join → Captured**
+
+The result is a completely automated form of contact capture based on **Attested Communication**. Instead of trusting manually entered information, the Card owner receives contact information associated with an authenticated AppKeyId user and a passkey-backed acknowledgement of the interaction.
+
+For a busy trade show booth, a single QR code can therefore replace the clipboard, signup sheet, business-card bowl, and much of the data entry that traditionally follows the event.
