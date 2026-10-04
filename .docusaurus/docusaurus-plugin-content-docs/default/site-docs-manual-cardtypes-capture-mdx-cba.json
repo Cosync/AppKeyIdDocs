@@ -1,7 +1,7 @@
 {
   "id": "manual/cardtypes/capture",
   "title": "Capture Card",
-  "description": "",
+  "description": "Capture Cards solve a very common problem: you have a group of people and need to accurately collect their identity and contact information.",
   "source": "@site/docs/manual/cardtypes/capture.mdx",
   "sourceDirName": "manual/cardtypes",
   "slug": "/manual/cardtypes/capture",
