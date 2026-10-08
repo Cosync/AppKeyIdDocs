@@ -4,3 +4,210 @@ sidebar_position: 5
 
 # Deck Card
 
+**Decks** extend the concept of AppKeyId Cards by arranging multiple Cards into an **ordered sequence**. Instead of presenting a single communication for acknowledgement, a Deck creates a progression in which each Card must be acknowledged before the next Card becomes available.
+
+The fundamental concept is simple:
+
+> **Card 1 → Acknowledge → Card 2 → Acknowledge → Card 3 → Acknowledge → Complete**
+
+The sequence matters. A participant cannot skip ahead to a later Card without first acknowledging the Cards that precede it. This allows a Deck to represent not simply a collection of information, but an **authenticated process with a defined order**.
+
+Depending on how the Deck is configured, a participant may be permitted to complete the Deck only once or to complete the sequence multiple times. When repeated, the participant still progresses through the Cards in their defined order.
+
+## Multi-Step Tasks and Workflows
+
+Decks can be used to model complex business processes by dividing a job into individual Cards, with each Card representing a specific task or stage.
+
+The person performing the work acknowledges each Card after completing that step. Only then does the next task become available.
+
+For example:
+
+> **Inspect Equipment → Acknowledge → Perform Maintenance → Acknowledge → Test Equipment → Acknowledge → Return to Service**
+
+This provides both **workflow control and an acknowledgement trail**. The Deck defines what must happen and in what order, while Attested Communication records who acknowledged each step.
+
+This approach could be useful for manufacturing, equipment maintenance, construction, inspections, laboratory procedures, field service, quality assurance, and other processes where the **sequence of operations matters**.
+
+## Training, Lessons, and Certification
+
+Decks can be used to create **sequential learning programs** in which each Card represents an individual lesson that must be reviewed and acknowledged before the student proceeds to the next lesson.
+
+A Lesson Card might contain written instructional material, diagrams, photographs, video, audio, documents, or links to additional resources. After studying the material, the student acknowledges the Card using their passkey, creating a record that the lesson was presented and acknowledged.
+
+The Card's **Return URL** can then direct the student to an external test, quiz, assessment, or interactive exercise covering the material they have just studied.
+
+For example:
+
+> **Lesson 1 → Acknowledge → Test → Lesson 2 → Acknowledge → Test → Lesson 3 → Acknowledge → Final Assessment**
+
+This creates a natural progression between **learning, acknowledgement, and testing**. The Deck determines the order in which the instructional material is presented, AppKeyId records the authenticated acknowledgement of each lesson, and the Return URL connects each lesson to the appropriate assessment.
+
+A workplace safety course, for example, could contain separate Cards covering protective equipment, hazardous materials, emergency procedures, and equipment operation. Each lesson would be acknowledged before the employee proceeds, while the Return URL could take the employee directly to a test covering that particular lesson.
+
+The final Card could direct the student to a comprehensive examination, certification process, or completion page.
+
+This model could be used for:
+
+- **Employee Training** — Guide employees through required training materials and assessments.
+
+- **Continuing Education** — Organize educational courses into sequential lessons with authenticated acknowledgements.
+
+- **Compliance Training** — Establish a record that employees acknowledged required policies, regulations, and procedures.
+
+- **Equipment Certification** — Present operating instructions and safety requirements before directing users to competency assessments.
+
+- **Classroom Instruction** — Deliver structured lessons that students must acknowledge in sequence.
+
+- **Professional Development** — Create guided learning programs for acquiring new skills and qualifications.
+
+- **Product Training** — Teach employees, distributors, or customers how to use a product through a series of instructional Cards.
+
+- **Customer Education** — Provide step-by-step tutorials and interactive learning experiences.
+
+Rather than simply presenting a collection of educational material, a Deck creates an **ordered and attestable learning path**:
+
+> **Learn → Acknowledge → Test → Advance**
+
+An important distinction is that **acknowledging a lesson does not necessarily mean the student has mastered its content**. The acknowledgement establishes that the student acknowledged the lesson, while the external assessment determines whether the student understood the material.
+
+If advancement must depend on passing a test, the external assessment system must communicate that result to the workflow or otherwise control progression. The Return URL alone provides navigation to the assessment, not automatic verification of a passing grade.
+
+By combining **sequential lessons, FIDO2 passkey acknowledgements, and external assessments**, AppKeyId Decks provide a foundation for authenticated education, training, and certification workflows.
+
+## Employee Onboarding
+
+Organizations can create onboarding Decks for new employees.
+
+A Deck might contain Cards for company policies, security procedures, benefits information, equipment issuance, required forms, and departmental orientation.
+
+Instead of giving a new employee a large collection of documents and hoping everything gets completed, the Deck guides the employee through the onboarding process in the intended order while maintaining an acknowledgement history.
+
+For example:
+
+> **Company Policies → Security Training → Benefits → Equipment Issuance → Department Orientation → Complete**
+
+Each acknowledgement establishes that the employee has acknowledged the information associated with that particular stage of onboarding.
+
+## Inspections and Checklists
+
+Decks can turn conventional checklists into **sequentially attested checklists**.
+
+An inspector might be required to inspect the exterior of a property, electrical system, plumbing, mechanical equipment, and safety systems in a prescribed order. Each completed inspection becomes an acknowledged Card before the inspector proceeds to the next stage.
+
+When **Precise Location** and **Constrain Location** are used, individual steps can also require the inspector's device to report that it is within a designated geographic area before acknowledgement is permitted.
+
+For example:
+
+> **Exterior Inspection → Electrical Inspection → Plumbing Inspection → HVAC Inspection → Safety Inspection → Final Report**
+
+The result is more than a completed checklist. It is an authenticated record of the sequence in which the inspector acknowledged each stage of the inspection.
+
+## Chain of Custody
+
+Decks can also model a **chain-of-custody process**.
+
+An item might move through a sequence such as:
+
+> **Received → Inspected → Stored → Released → Delivered**
+
+Each stage can require acknowledgement by the person responsible for that step. The resulting Deck history provides a chronological record of the item's progression through the process and the authenticated users who acknowledged each stage.
+
+This could be useful for tracking:
+
+- **Legal Evidence** — Document the handling and transfer of evidence between authorized personnel.
+
+- **Medical Specimens** — Record the progression of laboratory samples through collection, transportation, processing, and storage.
+
+- **Valuable Equipment** — Track the receipt, inspection, assignment, and return of expensive equipment.
+
+- **Sensitive Documents** — Establish a record of who acknowledged responsibility for documents at different stages.
+
+- **Shipping and Logistics** — Record the movement of valuable or sensitive shipments through defined checkpoints.
+
+By requiring each stage to be acknowledged in sequence, a Deck can help reduce ambiguity about the order in which custody-related events were recorded.
+
+## Emergency and Safety Procedures
+
+Decks can guide personnel through procedures where completing steps in the correct order is particularly important.
+
+An emergency response Deck, for example, might require personnel to acknowledge that equipment has been shut down, an area has been evacuated, emergency services have been contacted, and responsible personnel have been notified.
+
+For example:
+
+> **Shut Down Equipment → Evacuate Area → Contact Emergency Services → Notify Management → Complete**
+
+The Deck provides the procedure while AppKeyId creates the acknowledgement trail.
+
+This approach could also be useful for **industrial shutdowns, equipment lockout procedures, emergency preparedness exercises, safety inspections, and incident-response workflows**.
+
+In safety-critical situations, Decks should supplement established emergency procedures rather than delay urgent actions or replace required safety controls.
+
+## Tours and Guided Experiences
+
+Museums, historic sites, campuses, parks, resorts, and tourist attractions can use Decks to create **self-guided experiences**.
+
+Each location can reveal the next part of the experience only after the previous Card has been acknowledged. Cards can combine text, photographs, audio, video, instructions, and location requirements to create an interactive journey.
+
+For example, a museum could create a Deck containing ten exhibits. Each Card would describe an exhibit and provide additional educational material. Once the visitor acknowledges the Card, the next exhibit becomes available.
+
+When **Constrain Location** is enabled, the museum could require visitors to be near a particular exhibit before acknowledging its Card.
+
+This transforms a traditional self-guided tour into a **sequential, interactive, and authenticated experience**.
+
+## Treasure Hunts and Games
+
+One of the more entertaining demonstrations of Decks is a **treasure hunt or geographic trek**.
+
+Imagine a Deck containing ten Cards, with each Card corresponding to a different physical location. The first Card provides instructions or a clue leading participants to the first checkpoint. After reaching that location, the participant acknowledges the Card and unlocks the next Card in the Deck.
+
+That Card provides the next clue, leading to another location, and the process continues until the entire Deck has been completed.
+
+When **Precise Location** and **Constrain Location** are used, acknowledgement can be restricted to participants whose devices report that they are within the permitted geographic area. Simply discovering the answer to a clue would not necessarily be enough—the participant would have to reach the checkpoint before progressing.
+
+Multiple participants could compete to determine **who completes and acknowledges the entire Deck first**.
+
+For example:
+
+> **Starting Point → Clue 1 → Checkpoint 1 → Clue 2 → Checkpoint 2 → Clue 3 → Final Treasure**
+
+This could form the basis of:
+
+- **Treasure Hunts** — Participants follow a sequence of geographically distributed clues.
+
+- **Scavenger Hunts** — Players locate objects or landmarks and acknowledge Cards at each checkpoint.
+
+- **Races and Competitions** — Participants compete to complete a sequence of location-constrained Cards in the shortest time.
+
+- **Corporate Team Building** — Employees participate in collaborative challenges requiring sequential acknowledgements.
+
+- **School Activities** — Students complete educational challenges distributed across a campus or other location.
+
+- **Orientation Games** — New students or employees explore a campus or facility through an interactive sequence.
+
+- **Tourist Adventures** — Visitors explore a city or historic location through a guided series of challenges.
+
+Because AppKeyId records the authenticated identity and time of each acknowledgement, the resulting history can provide the basis for determining the order in which participants completed the challenge.
+
+## A Protocol, Not Just a Collection of Cards
+
+The important distinction is that a Deck is **not simply a folder containing several Cards**. The ordering itself has meaning.
+
+A normal collection says:
+
+> **Here are five things.**
+
+A Deck says:
+
+> **Do this first. Acknowledge it. Then do this. Acknowledge it. Continue until the process is complete.**
+
+This makes Decks useful for everything from serious business workflows, training, inspections, and chain-of-custody procedures to tours, games, and geographic treasure hunts.
+
+The ability to configure a Deck for **single or repeated completion** adds another dimension. A Deck might represent a one-time employee onboarding process, a recurring weekly equipment inspection, a daily maintenance checklist, or a treasure hunt that participants can attempt multiple times.
+
+Each completion follows the same defined sequence, while the associated acknowledgements provide a record of the participant's progression.
+
+By combining **ordered Cards, FIDO2 passkey acknowledgement, authenticated identity, time, location, and Attested Communication**, a Deck turns a sequence of instructions into a **verifiable digital process**.
+
+At its core, a Deck provides a simple but powerful capability:
+
+> **An authenticated sequence of actions in which each step must be acknowledged before the next step can begin.**

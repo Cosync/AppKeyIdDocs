@@ -1,7 +1,7 @@
 {
   "id": "manual/cardtypes/deck",
   "title": "Deck Card",
-  "description": "",
+  "description": "Decks extend the concept of AppKeyId Cards by arranging multiple Cards into an ordered sequence. Instead of presenting a single communication for acknowledgement, a Deck creates a progression in which each Card must be acknowledged before the next Card becomes available.",
   "source": "@site/docs/manual/cardtypes/deck.mdx",
   "sourceDirName": "manual/cardtypes",
   "slug": "/manual/cardtypes/deck",
