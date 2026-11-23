@@ -104,6 +104,12 @@ export default {
           "sidebarId": "manualSidebar",
           "position": "left",
           "label": "User Manual"
+        },
+        {
+          "type": "docSidebar",
+          "sidebarId": "selfhostedSidebar",
+          "position": "left",
+          "label": "Self-Hosted"
         }
       ],
       "hideOnScroll": false

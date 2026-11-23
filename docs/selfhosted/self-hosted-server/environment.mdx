@@ -1,0 +1,704 @@
+---
+sidebar_position: 4
+---
+
+# Environment Variables Configuration
+
+The AppKeyId Server uses environment variables to configure its database connection, cryptographic keys, authentication services, and external integrations. These settings are stored in a file named `.env`, which Docker reads when starting the application.
+
+Keeping configuration separate from the source code makes it possible to deploy the same application in different environments without rebuilding it. A development installation might use a local MongoDB database and `localhost`, while a production installation might use MongoDB Atlas and a public domain with HTTPS.
+
+This chapter explains how to create the environment file and configure each variable.
+
+## 4.1 Create the Environment File
+
+The AppKeyId Server repository includes a template named `.env_default`. Begin by making a copy of this file.
+
+On macOS or Linux:
+
+```bash
+
+cp .env_default .env
+
+```
+
+On Windows PowerShell:
+
+```powershell
+
+Copy-Item .env_default .env
+
+```
+
+Open `.env` in your preferred text editor. For example, using Visual Studio Code:
+
+```bash
+
+code .env
+
+```
+
+Each environment variable follows a simple format:
+
+```ini
+
+VARIABLE_NAME=value
+
+```
+
+Lines beginning with `#` are comments and are ignored.
+
+**Important:** The `.env` file contains passwords, encryption keys, and API credentials. Never commit it to a public repository or include it in a Docker image. Make sure `.env` is excluded from Git version control.
+
+## 4.2 General Server Configuration
+
+The first group of variables defines the server's network port and administrative email addresses.
+
+```ini
+
+PORT=3004
+
+ADMIN_EMAIL=your_admin_email@domain.com
+
+NOREPLY_EMAIL=noreply@yourdomain.com
+
+```
+
+**PORT**
+
+The TCP port on which the AppKeyId Server listens. The default is `3004`.
+
+For local development, the server will typically be accessible at:
+
+`http://localhost:3004`
+
+If you change this port, make sure the Docker configuration and any reverse proxy use the same value.
+
+**ADMIN_EMAIL**
+
+The administrative email address for the installation. Use an address controlled by the organization operating the server.
+
+**NOREPLY_EMAIL**
+
+The sender address used for automated application emails, such as account verification messages.
+
+For example:
+
+`noreply@yourdomain.com`
+
+This address must be authorized through the SendGrid account configured in Chapter 3.
+
+## 4.3 Cryptographic Keys
+
+AppKeyId uses RSA public/private keys and AES encryption to protect application data and perform cryptographic operations.
+
+In Chapter 2, we generated a 3072-bit RSA key pair and converted both keys to Base64 strings.
+
+Add these values to the environment file:
+
+```ini
+
+PRIVATE_KEY=your_base64_encoded_private_key_string
+
+PUBLIC_KEY=your_base64_encoded_public_key_string
+
+PRIVATE_PASSKEY=your_chosen_openssl_private_key_password
+
+AES_ENCRYPT_KEY=your_custom_database_aes_encryption_secret
+
+```
+
+**PRIVATE_KEY**
+
+The Base64-encoded RSA private key generated in Chapter 2. Copy the entire encoded string without inserting line breaks.
+
+**PUBLIC_KEY**
+
+The Base64-encoded public key corresponding to the private key. Both keys must belong to the same RSA key pair.
+
+**PRIVATE_PASSKEY**
+
+The password used when generating the encrypted private key with OpenSSL. The server uses this password to decrypt the private key when needed.
+
+**AES_ENCRYPT_KEY**
+
+A secret used by AppKeyId for symmetric encryption of application data.
+
+Use a cryptographically random value rather than a memorable password. The required key format and length depend on the server's AES implementation.
+
+For example, OpenSSL can generate 32 random bytes represented as hexadecimal:
+
+```bash
+
+openssl rand -hex 32
+
+```
+
+This produces a 64-character hexadecimal string. Use this representation only if the AppKeyId Server expects a hexadecimal AES key.
+
+**Important:** Keep secure backups of your cryptographic keys and passwords. Losing an encryption key may make previously encrypted data permanently inaccessible.
+
+## 4.4 Server URLs and WebAuthn Configuration
+
+AppKeyId uses FIDO2/WebAuthn passkeys for authentication and attested acknowledgments.
+
+WebAuthn associates passkeys with a Relying Party ID, normally a domain name. When deploying AppKeyId on your own infrastructure, you must configure the server to use the appropriate domain.
+
+For local development, use:
+
+```ini
+
+SERVER_API_URL=http://localhost:3004
+
+ALLOW_ORIGIN_DOMAIN=http://localhost:8080
+
+WEBAUTHN_ORIGIN=http://localhost:8080
+
+WEBAUTHN_RP_ID=localhost
+
+WEBAUTHN_RP_NAME=AppKeyId
+
+DEVELOPER_SESSION_EXPIRED=30d
+
+```
+
+### SERVER_API_URL
+
+Specifies the address used to access the AppKeyId Server API.
+
+For local development:
+
+```ini
+
+SERVER_API_URL=http://localhost:3004
+
+```
+
+For production:
+
+```ini
+
+SERVER_API_URL=https://api.example.com
+
+```
+
+Production installations should use HTTPS with a valid TLS certificate.
+
+### ALLOW_ORIGIN_DOMAIN
+
+Defines which website origins are permitted to make cross-origin requests to the server.
+
+For local development:
+
+```ini
+
+ALLOW_ORIGIN_DOMAIN=http://localhost:8080
+
+```
+
+To allow multiple origins, separate them with commas:
+
+```ini
+
+ALLOW_ORIGIN_DOMAIN=https://example.com,https://admin.example.com
+
+```
+
+To allow requests from any origin:
+
+```ini
+
+ALLOW_ORIGIN_DOMAIN=*
+
+```
+
+**Security:** Avoid using `*` in production. Specify the domains authorized to communicate with your AppKeyId Server.
+
+CORS restricts browser access to server responses. It does not replace user authentication or API authorization.
+
+### WEBAUTHN_ORIGIN
+
+Specifies the website origin from which WebAuthn authentication requests originate.
+
+For local development:
+
+```ini
+
+WEBAUTHN_ORIGIN=http://localhost:8080
+
+```
+
+For production:
+
+```ini
+
+WEBAUTHN_ORIGIN=https://identity.example.com
+
+```
+
+The origin includes the protocol, hostname, and port when applicable.
+
+It must match the origin used by the browser during passkey registration and authentication.
+
+### WEBAUTHN_RP_ID
+
+Specifies the FIDO2/WebAuthn Relying Party ID.
+
+For local development:
+
+```ini
+
+WEBAUTHN_RP_ID=localhost
+
+```
+
+For production:
+
+```ini
+
+WEBAUTHN_RP_ID=identity.example.com
+
+```
+
+The Relying Party ID contains only the domain name. Do not include `https://` or a port number.
+
+The Relying Party ID must match the website's effective domain or an eligible parent domain.
+
+**Important:** Passkeys are associated with their Relying Party ID. Passkeys registered for `appkeyid.com` cannot automatically be used with `identity.example.com`.
+
+Choose your production Relying Party ID before registering users. Changing it later generally requires users to register new passkeys.
+
+### WEBAUTHN_RP_NAME
+
+Specifies the human-readable name of the Relying Party.
+
+For example:
+
+```ini
+
+WEBAUTHN_RP_NAME=AppKeyId
+
+```
+
+Organizations deploying a branded version can change this value:
+
+```ini
+
+WEBAUTHN_RP_NAME=Example Corporation
+
+```
+
+### DEVELOPER_SESSION_EXPIRED
+
+Specifies the configured lifetime of developer sessions.
+
+```ini
+
+DEVELOPER_SESSION_EXPIRED=30d
+
+```
+
+The default is 30 days. Organizations with stricter security requirements may prefer shorter session lifetimes.
+
+## 4.5 MongoDB Database Configuration
+
+AppKeyId uses MongoDB to store user accounts, Cards, acknowledgments, and other application data.
+
+The server supports a local MongoDB installation or a managed MongoDB Atlas database.
+
+Only one MongoDB connection string should be active.
+
+### Option 1 — Local MongoDB
+
+If MongoDB runs on your development computer, use:
+
+```ini
+
+MONGODB_CONNECTION_STRING=mongodb://host.docker.internal:27017/AppKeyDatabaseDocker
+
+MONGODB_DB_NAME=AppKeyDatabaseDocker
+
+```
+
+The hostname `host.docker.internal` allows a Docker container to communicate with services running on the host computer.
+
+This works with Docker Desktop on macOS and Windows. Linux installations may require additional configuration.
+
+If MongoDB runs in another container on the same Docker network, use its Docker Compose service name instead.
+
+### Option 2 — MongoDB Atlas
+
+If you configured MongoDB Atlas in Chapter 3, use the connection string provided by Atlas:
+
+```ini
+
+MONGODB_CONNECTION_STRING=mongodb+srv://<db_username>:<db_password>@your-cluster.mongodb.net/?appName=Cluster0
+
+MONGODB_DB_NAME=AppKeyDatabaseDocker
+
+```
+
+Replace the placeholders with your actual credentials and cluster hostname.
+
+Make sure the database user has the necessary permissions and that Atlas permits connections from your server.
+
+## 4.6 SendGrid Email Integration
+
+AppKeyId uses SendGrid to send account verification emails and other automated messages.
+
+Add the API key generated in Chapter 3:
+
+```ini
+
+SENDGRID_API_KEY=SG.your_actual_sendgrid_api_key_here
+
+```
+
+The API key must have permission to send email.
+
+The sender address specified by `NOREPLY_EMAIL` must also be verified through SendGrid.
+
+If emails are not delivered, check the SendGrid activity logs and confirm that sender authentication is complete.
+
+## 4.7 Twilio SMS Integration
+
+AppKeyId uses Twilio to send phone verification codes and transactional SMS notifications.
+
+Configure the following variables:
+
+```ini
+
+TWILLIO_ACCOUNT_SID=your_twilio_account_sid
+
+TWILLIO_AUTH_TOKEN=your_twilio_auth_token
+
+TWILLIO_PHONE_NUMBER=+12025550123
+
+```
+
+**TWILLIO_ACCOUNT_SID**
+
+Your Twilio Account SID.
+
+**TWILLIO_AUTH_TOKEN**
+
+The authentication token associated with your Twilio account.
+
+**TWILLIO_PHONE_NUMBER**
+
+The Twilio phone number used to send SMS messages.
+
+Phone numbers must use international E.164 format, including the country code.
+
+For example:
+
+`+12025550123`
+
+**Note:** The variable names use `TWILLIO` with two Ls because this is the spelling expected by the current AppKeyId Server configuration. Do not change these names unless the server code is updated accordingly.
+
+The configuration uses the Twilio Account SID and Auth Token, not the API Key SID and Secret described in Chapter 3. These are different credential types.
+
+For production installations, make sure your Twilio sender is configured and any required SMS registration has been completed.
+
+## 4.8 Amazon S3 Storage Configuration
+
+AppKeyId uses Amazon S3 to store file attachments and application assets.
+
+Configure the AWS credentials and bucket names created in Chapter 3:
+
+```ini
+
+AWS_KEYID=your_iam_access_key_id
+
+AWS_SECRET_TOKEN=your_iam_secret_access_key
+
+AWS_REGION=us-east-1
+
+AWS_BUCKET_NAME=your-private-bucket-name
+
+AWS_PUBLIC_BUCKET_NAME=your-public-bucket-name
+
+```
+
+**AWS_KEYID**
+
+The AWS Access Key ID associated with the IAM identity used by AppKeyId.
+
+**AWS_SECRET_TOKEN**
+
+The corresponding AWS Secret Access Key.
+
+**AWS_REGION**
+
+The AWS region containing your S3 buckets.
+
+For example:
+
+`us-east-1`
+
+**AWS_BUCKET_NAME**
+
+The name of the private S3 bucket used for protected attachments.
+
+**AWS_PUBLIC_BUCKET_NAME**
+
+The name of the public S3 bucket used for assets intended to be publicly accessible.
+
+Both buckets must exist before the server attempts to use them.
+
+The IAM identity must have the necessary permissions to read, write, and delete objects in the appropriate buckets.
+
+## 4.9 Apple and Google Authentication
+
+AppKeyId supports Apple and Google authentication in addition to email-based registration.
+
+To enable these services, configure the corresponding application identifiers:
+
+```ini
+
+APPLE_BUNDLE_ID=bundle_id_1,bundle_id_2
+
+GOOGLE_CLIENT_ID=google_id_1,google_id_2
+
+```
+
+### APPLE_BUNDLE_ID
+
+Specifies the Apple application identifiers accepted by the server.
+
+Multiple identifiers can be supplied as a comma-separated list.
+
+For example:
+
+```ini
+
+APPLE_BUNDLE_ID=com.example.appkeyid,com.example.appkeyid.mobile
+
+```
+
+These identifiers must correspond to applications configured in your Apple Developer account.
+
+### GOOGLE_CLIENT_ID
+
+Specifies the Google OAuth client IDs accepted by the server.
+
+Multiple client IDs can be supplied as a comma-separated list:
+
+```ini
+
+GOOGLE_CLIENT_ID=your-web-client-id,another-client-id
+
+```
+
+These values must match the OAuth clients configured in Google Cloud.
+
+For additional information, consult the official documentation:
+
+- [Sign in with Apple](https://developer.apple.com/sign-in-with-apple/)
+
+- [Google Identity Services](https://developers.google.com/identity)
+
+If Apple or Google authentication is not required, consult the server configuration to determine whether these variables can be left empty.
+
+## 4.10 Complete Environment Configuration
+
+The following example brings together the variables described in this chapter.
+
+It is configured for local development using Docker Desktop, a local MongoDB instance, and an AppKeyId Website running on port `8080`.
+
+Replace all placeholder values before starting the server.
+
+```ini
+
+# --------------------------------------------------
+
+# General Server Configuration
+
+# --------------------------------------------------
+
+PORT=3004
+
+ADMIN_EMAIL=admin@example.com
+
+NOREPLY_EMAIL=noreply@example.com
+
+# --------------------------------------------------
+
+# Cryptographic Configuration
+
+# --------------------------------------------------
+
+PRIVATE_KEY=your_base64_encoded_private_key_string
+
+PUBLIC_KEY=your_base64_encoded_public_key_string
+
+PRIVATE_PASSKEY=your_private_key_password
+
+AES_ENCRYPT_KEY=your_aes_encryption_secret
+
+# --------------------------------------------------
+
+# Server and WebAuthn Configuration
+
+# --------------------------------------------------
+
+SERVER_API_URL=http://localhost:3004
+
+ALLOW_ORIGIN_DOMAIN=http://localhost:8080
+
+WEBAUTHN_ORIGIN=http://localhost:8080
+
+WEBAUTHN_RP_ID=localhost
+
+WEBAUTHN_RP_NAME=AppKeyId
+
+DEVELOPER_SESSION_EXPIRED=30d
+
+# --------------------------------------------------
+
+# MongoDB Configuration
+
+# --------------------------------------------------
+
+MONGODB_CONNECTION_STRING=mongodb://host.docker.internal:27017/AppKeyDatabaseDocker
+
+MONGODB_DB_NAME=AppKeyDatabaseDocker
+
+# --------------------------------------------------
+
+# SendGrid Configuration
+
+# --------------------------------------------------
+
+SENDGRID_API_KEY=SG.your_sendgrid_api_key
+
+# --------------------------------------------------
+
+# Twilio Configuration
+
+# --------------------------------------------------
+
+TWILLIO_ACCOUNT_SID=your_twilio_account_sid
+
+TWILLIO_AUTH_TOKEN=your_twilio_auth_token
+
+TWILLIO_PHONE_NUMBER=+12025550123
+
+# --------------------------------------------------
+
+# Amazon S3 Configuration
+
+# --------------------------------------------------
+
+AWS_KEYID=your_aws_access_key_id
+
+AWS_SECRET_TOKEN=your_aws_secret_access_key
+
+AWS_REGION=us-east-1
+
+AWS_BUCKET_NAME=your-private-bucket-name
+
+AWS_PUBLIC_BUCKET_NAME=your-public-bucket-name
+
+# --------------------------------------------------
+
+# Apple and Google Authentication
+
+# --------------------------------------------------
+
+APPLE_BUNDLE_ID=bundle_id_1,bundle_id_2
+
+GOOGLE_CLIENT_ID=google_id_1,google_id_2
+
+```
+
+This configuration is intended as a starting point. Production installations should use HTTPS endpoints, organization-specific domains, and appropriately restricted credentials.
+
+## 4.11 Verify the Environment File
+
+Before starting the server, confirm that the `.env` file exists and contains the required variables.
+
+On macOS or Linux:
+
+```bash
+
+ls -la .env
+
+```
+
+On Windows PowerShell:
+
+```powershell
+
+Get-Item .env
+
+```
+
+You can also ask Docker Compose to validate its configuration:
+
+```bash
+
+docker compose config --quiet
+
+```
+
+This checks the Compose configuration for errors, but it does not verify that database credentials, API keys, or cryptographic values are correct.
+
+Avoid sharing the output of `docker compose config` without `--quiet`, since the resolved configuration may expose sensitive environment variables.
+
+On macOS or Linux, restrict access to the environment file:
+
+```bash
+
+chmod 600 .env
+
+```
+
+Finally, verify that Git is not tracking the file:
+
+```bash
+
+git status --short
+
+```
+
+If `.env` appears as an untracked file, add it to `.gitignore`:
+
+```bash
+
+echo ".env" >> .gitignore
+
+```
+
+If the file is already tracked, remove it from the Git index without deleting the local copy:
+
+```bash
+
+git rm --cached .env
+
+```
+
+Removing the file from the index does not remove secrets from previous commits. If credentials have already been published, rotate them.
+
+## 4.12 Next Steps
+
+The AppKeyId Server is now configured with its cryptographic keys, database connection, authentication settings, and external service credentials.
+
+Before proceeding, verify that:
+
+1. The `.env` file exists in the AppKeyId Server Docker directory.
+
+2. The RSA keys and private key password match.
+
+3. The AES encryption secret is configured.
+
+4. The MongoDB connection string points to an accessible database.
+
+5. The WebAuthn Relying Party ID matches your intended domain.
+
+6. The SendGrid, Twilio, and AWS credentials are valid.
+
+7. The environment file is excluded from version control.
+
+In the next chapter, we will build the AppKeyId Server Docker image, start the container, and verify that the server is running correctly.
+

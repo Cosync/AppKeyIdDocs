@@ -1,0 +1,26 @@
+{
+  "id": "selfhosted/self-hosted-server/environment",
+  "title": "Environment Variables Configuration",
+  "description": "The AppKeyId Server uses environment variables to configure its database connection, cryptographic keys, authentication services, and external integrations. These settings are stored in a file named .env, which Docker reads when starting the application.",
+  "source": "@site/docs/selfhosted/self-hosted-server/environment.mdx",
+  "sourceDirName": "selfhosted/self-hosted-server",
+  "slug": "/selfhosted/self-hosted-server/environment",
+  "permalink": "/docs/selfhosted/self-hosted-server/environment",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "sidebar_position": 4
+  },
+  "sidebar": "selfhostedSidebar",
+  "previous": {
+    "title": "Configuring Third-Party Service Providers",
+    "permalink": "/docs/selfhosted/self-hosted-server/third-party"
+  },
+  "next": {
+    "title": "Building and Running the AppKeyId Server",
+    "permalink": "/docs/selfhosted/self-hosted-server/launch-run"
+  }
+}

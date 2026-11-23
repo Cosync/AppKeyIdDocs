@@ -1,0 +1,26 @@
+{
+  "id": "selfhosted/self-hosted-server/third-party copy",
+  "title": "Configuring Third-Party Service Providers",
+  "description": "The AppKeyId Server relies on several external services for database storage, file attachments, SMS notifications, and email delivery. Before starting the server, you must configure these services and obtain the credentials needed to access them.",
+  "source": "@site/docs/selfhosted/self-hosted-server/third-party copy.mdx",
+  "sourceDirName": "selfhosted/self-hosted-server",
+  "slug": "/selfhosted/self-hosted-server/third-party copy",
+  "permalink": "/docs/selfhosted/self-hosted-server/third-party copy",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "sidebar_position": 3
+  },
+  "sidebar": "selfhostedSidebar",
+  "previous": {
+    "title": "Cryptographic Keys and Repository Setup",
+    "permalink": "/docs/selfhosted/self-hosted-server/cryptographc-keys"
+  },
+  "next": {
+    "title": "Configuring Third-Party Service Providers",
+    "permalink": "/docs/selfhosted/self-hosted-server/third-party"
+  }
+}

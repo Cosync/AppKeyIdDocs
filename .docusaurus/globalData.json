@@ -191,6 +191,46 @@
               "sidebar": "manualSidebar"
             },
             {
+              "id": "selfhosted/intro",
+              "path": "/docs/selfhosted/intro",
+              "sidebar": "selfhostedSidebar"
+            },
+            {
+              "id": "selfhosted/self-hosted-server/cryptographc-keys",
+              "path": "/docs/selfhosted/self-hosted-server/cryptographc-keys",
+              "sidebar": "selfhostedSidebar"
+            },
+            {
+              "id": "selfhosted/self-hosted-server/environment",
+              "path": "/docs/selfhosted/self-hosted-server/environment",
+              "sidebar": "selfhostedSidebar"
+            },
+            {
+              "id": "selfhosted/self-hosted-server/launch-run",
+              "path": "/docs/selfhosted/self-hosted-server/launch-run",
+              "sidebar": "selfhostedSidebar"
+            },
+            {
+              "id": "selfhosted/self-hosted-server/prerequisite",
+              "path": "/docs/selfhosted/self-hosted-server/prerequisite",
+              "sidebar": "selfhostedSidebar"
+            },
+            {
+              "id": "selfhosted/self-hosted-server/third-party",
+              "path": "/docs/selfhosted/self-hosted-server/third-party",
+              "sidebar": "selfhostedSidebar"
+            },
+            {
+              "id": "selfhosted/self-hosted-website/manage-docs-versions",
+              "path": "/docs/selfhosted/self-hosted-website/manage-docs-versions",
+              "sidebar": "selfhostedSidebar"
+            },
+            {
+              "id": "selfhosted/self-hosted-website/translate-your-site",
+              "path": "/docs/selfhosted/self-hosted-website/translate-your-site",
+              "sidebar": "selfhostedSidebar"
+            },
+            {
               "id": "tutorial/intro",
               "path": "/docs/tutorial/intro",
               "sidebar": "tutorialSidebar"
@@ -274,6 +314,16 @@
               "id": "/category/profile-menu",
               "path": "/docs/category/profile-menu",
               "sidebar": "manualSidebar"
+            },
+            {
+              "id": "/category/self-hosted-server",
+              "path": "/docs/category/self-hosted-server",
+              "sidebar": "selfhostedSidebar"
+            },
+            {
+              "id": "/category/self-hosted-website",
+              "path": "/docs/category/self-hosted-website",
+              "sidebar": "selfhostedSidebar"
             }
           ],
           "draftIds": [],
@@ -294,6 +344,12 @@
               "link": {
                 "path": "/docs/manual/intro",
                 "label": "manual/intro"
+              }
+            },
+            "selfhostedSidebar": {
+              "link": {
+                "path": "/docs/selfhosted/intro",
+                "label": "selfhosted/intro"
               }
             }
           }

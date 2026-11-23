@@ -1,0 +1,26 @@
+{
+  "id": "selfhosted/self-hosted-server/signup-using-google",
+  "title": "Cryptographic Keys and Repository Setup",
+  "description": "The AppKeyId Server uses public-key cryptography to secure its operations. Before building the server, you must obtain the source code and generate a pair of RSA keys.",
+  "source": "@site/docs/selfhosted/self-hosted-server/signup-using-google.mdx",
+  "sourceDirName": "selfhosted/self-hosted-server",
+  "slug": "/selfhosted/self-hosted-server/signup-using-google",
+  "permalink": "/docs/selfhosted/self-hosted-server/signup-using-google",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "sidebar_position": 2
+  },
+  "sidebar": "selfhostedSidebar",
+  "previous": {
+    "title": "Prerequisites and Installation",
+    "permalink": "/docs/selfhosted/self-hosted-server/create-first-card"
+  },
+  "next": {
+    "title": "Signing Up with Apple ID",
+    "permalink": "/docs/selfhosted/self-hosted-server/signup-using-apple"
+  }
+}

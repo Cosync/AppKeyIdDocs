@@ -1,0 +1,22 @@
+{
+  "id": "selfhosted/self-hosted-website/translate-your-site",
+  "title": "Translate your site",
+  "description": "",
+  "source": "@site/docs/selfhosted/self-hosted-website/translate-your-site.mdx",
+  "sourceDirName": "selfhosted/self-hosted-website",
+  "slug": "/selfhosted/self-hosted-website/translate-your-site",
+  "permalink": "/docs/selfhosted/self-hosted-website/translate-your-site",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "sidebar_position": 2
+  },
+  "sidebar": "selfhostedSidebar",
+  "previous": {
+    "title": "Manage Docs Versions",
+    "permalink": "/docs/selfhosted/self-hosted-website/manage-docs-versions"
+  }
+}

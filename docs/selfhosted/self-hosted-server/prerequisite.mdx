@@ -1,0 +1,189 @@
+---
+sidebar_position: 1
+---
+
+# Prerequisites and Installation
+
+Before building the AppKeyId Server, you need two tools: **Docker** to run the application in containers, and **Node.js** to build and manage the server software.
+
+Both tools are available for macOS and Windows. The installation procedures differ slightly between operating systems.
+
+## 1.1 Install Docker
+
+Docker packages applications and their dependencies into containers. This allows the AppKeyId Server to run in a consistent environment regardless of the host operating system.
+
+Download and install Docker Desktop for your platform:
+
+- **macOS:** [Docker Desktop for Mac](https://docs.docker.com/desktop/setup/install/mac-install/)
+
+- **Windows:** [Docker Desktop for Windows](https://docs.docker.com/desktop/setup/install/windows-install/)
+
+Once installed, start Docker Desktop and wait for the Docker engine to become available.
+
+Open a terminal and verify the installation:
+
+```sh
+
+docker --version
+
+docker compose version
+
+```
+
+Both commands should display version information. If either command fails, check that Docker Desktop is running and that its command-line tools are available.
+
+You can also verify that Docker can start a container:
+
+```sh
+
+docker run --rm hello-world
+
+```
+
+Docker will download a small test image, run it, and display a confirmation message.
+
+## 1.2 Install Node.js and npm
+
+AppKeyId uses Node.js for its server-side JavaScript environment. The Node Package Manager (`npm`) is used to install dependencies and execute build scripts.
+
+We recommend **Node.js version 24**. npm is included with the Node.js installation.
+
+### macOS
+
+On macOS, the simplest way to manage Node.js is with **nvm** (Node Version Manager). It allows multiple Node.js versions to coexist without modifying the system installation.
+
+Open Terminal and install nvm using the instructions from the official repository:
+
+[nvm — Node Version Manager](https://github.com/nvm-sh/nvm)
+
+For example, using the nvm v0.40.3 installation script:
+
+```sh
+
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.3/install.sh | bash
+
+```
+
+Load nvm into the current shell:
+
+```sh
+
+export NVM_DIR="$HOME/.nvm"
+
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+
+```
+
+Install Node.js 24:
+
+```sh
+
+nvm install 24
+
+nvm use 24
+
+```
+
+Verify the installation:
+
+```sh
+
+node -v
+
+npm -v
+
+```
+
+The output should resemble:
+
+```text
+
+v24.x.x
+
+11.x.x
+
+```
+
+The exact patch versions may differ. This is normal.
+
+To make Node.js 24 the default for future terminal sessions:
+
+```sh
+
+nvm alias default 24
+
+```
+
+### Windows
+
+On Windows, Node.js can be installed using **Chocolatey**, a package manager for Windows.
+
+If Chocolatey is not installed, follow the installation instructions at:
+
+[Chocolatey Installation](https://chocolatey.org/install)
+
+Open **PowerShell as Administrator** and install Node.js 24:
+
+```powershell
+
+choco install nodejs --version=24.21.0 -y
+
+```
+
+If that exact version is unavailable, check the versions offered by Chocolatey or use the official Node.js installer:
+
+[Node.js Downloads](https://nodejs.org/en/download)
+
+Once installation is complete, close and reopen PowerShell.
+
+Verify the installation:
+
+```powershell
+
+node -v
+
+npm -v
+
+```
+
+Expected output:
+
+```text
+
+v24.x.x
+
+11.x.x
+
+```
+
+If either command is not recognized, restart the terminal to refresh the system's `PATH` environment variable.
+
+## 1.3 Verify the Development Environment
+
+Before proceeding, confirm that all three tools are available:
+
+```sh
+
+docker --version
+
+node --version
+
+npm --version
+
+```
+
+You should see version information for each command.
+
+Docker Desktop must also be running. You can check the Docker engine with:
+
+```sh
+
+docker info
+
+```
+
+If this command returns information about the Docker server, the environment is ready.
+
+You now have the tools required to build and run the AppKeyId Server.
+
+In the next chapter, we will obtain the AppKeyId source code, install its dependencies, and build the Docker image.

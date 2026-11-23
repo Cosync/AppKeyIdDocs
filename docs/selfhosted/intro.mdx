@@ -1,0 +1,33 @@
+---
+sidebar_position: 1
+---
+
+# Self-Hosted AppKeyId
+
+## Overview
+
+The AppKeyId Attested Communication system is open-source software released under the **GNU Affero General Public License (AGPL)**. This allows organizations to deploy their own instances of AppKeyId using Docker, customize the platform, and brand it to meet their specific requirements.
+
+Under the AGPL, organizations that modify AppKeyId and make the modified software available to users over a network must also make the corresponding source code available to those users under the same license. If your organization requires a **private commercial license** that allows you to keep modifications proprietary, please contact us to discuss licensing options.
+
+Self-hosting gives organizations complete control over their infrastructure, user data, authentication services, and deployment environment without relying on the AppKeyId cloud service.
+
+## System Components
+
+The AppKeyId Attested Communication system consists of two primary components:
+
+1. **AppKeyId Server** — The backend service responsible for authentication, user management, attested communication, data storage, and API operations.
+
+2. **AppKeyId Website** — The web application that provides the user interface for registration, passkey authentication, creating and managing Cards, and acknowledging communications.
+
+Both components can be deployed using Docker and configured to operate within your organization's infrastructure.
+
+## FIDO2 Relying Party Configuration
+
+By default, the AppKeyId Server and Website are configured to use passkeys associated with the **appkeyid.com** FIDO2/WebAuthn Relying Party.
+
+When deploying your own instance, you can configure AppKeyId to use a domain controlled by your organization. This allows users to register and authenticate with passkeys associated with your own domain rather than appkeyid.com.
+
+For example, an organization deploying AppKeyId at `identity.example.com` can configure that domain as its FIDO2 Relying Party ID.
+
+The following sections explain how to build and deploy both Docker components, configure your own domain, and establish an independent AppKeyId Attested Communication service.

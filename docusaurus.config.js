@@ -115,6 +115,12 @@ const config = {
             position: 'left',
             label: 'User Manual',
           },
+          {
+            type: 'docSidebar',
+            sidebarId: 'selfhostedSidebar',
+            position: 'left',
+            label: 'Self-Hosted',
+          },
           //{to: '/blog', label: 'Blog', position: 'left'},
           // {
           //   href: 'https://github.com/facebook/docusaurus',

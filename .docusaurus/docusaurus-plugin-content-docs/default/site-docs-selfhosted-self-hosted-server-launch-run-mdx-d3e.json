@@ -1,0 +1,26 @@
+{
+  "id": "selfhosted/self-hosted-server/launch-run",
+  "title": "Building and Running the AppKeyId Server",
+  "description": "With the environment variables configured, you are ready to build and start the AppKeyId Server.",
+  "source": "@site/docs/selfhosted/self-hosted-server/launch-run.mdx",
+  "sourceDirName": "selfhosted/self-hosted-server",
+  "slug": "/selfhosted/self-hosted-server/launch-run",
+  "permalink": "/docs/selfhosted/self-hosted-server/launch-run",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 5,
+  "frontMatter": {
+    "sidebar_position": 5
+  },
+  "sidebar": "selfhostedSidebar",
+  "previous": {
+    "title": "Environment Variables Configuration",
+    "permalink": "/docs/selfhosted/self-hosted-server/environment"
+  },
+  "next": {
+    "title": "Self-Hosted Website",
+    "permalink": "/docs/category/self-hosted-website"
+  }
+}

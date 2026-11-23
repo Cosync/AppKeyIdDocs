@@ -1,0 +1,17 @@
+{
+  "id": "tutorial copy/tutorial-basics/create-first-card",
+  "title": "Creating Your First Card",
+  "description": "Now that your AppKeyId account is ready, you can begin using it to share and acknowledge information.",
+  "source": "@site/docs/tutorial copy/tutorial-basics/create-first-card.mdx",
+  "sourceDirName": "tutorial copy/tutorial-basics",
+  "slug": "/tutorial copy/tutorial-basics/create-first-card",
+  "permalink": "/docs/tutorial copy/tutorial-basics/create-first-card",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "sidebar_position": 4
+  }
+}

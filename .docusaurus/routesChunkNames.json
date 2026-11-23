@@ -49,17 +49,17 @@
     },
     "content": "content---markdown-page-4-c-6-c89"
   },
-  "/docs-d85": {
+  "/docs-1d5": {
     "__comp": "__comp---theme-docs-root-5-e-9-0b6",
     "__context": {
       "plugin": "plugin---docsaba-d7c"
     }
   },
-  "/docs-2d3": {
+  "/docs-c27": {
     "__comp": "__comp---theme-doc-version-roota-7-b-5de",
     "__props": "__props---docs-005-788"
   },
-  "/docs-c1b": {
+  "/docs-96e": {
     "__comp": "__comp---theme-doc-roota-94-67a"
   },
   "/docs/category/attested-communication-b56": {
@@ -85,6 +85,14 @@
   "/docs/category/profile-menu-10f": {
     "__comp": "__comp---theme-doc-category-generated-index-page-14-e-640",
     "__props": "__props---docs-category-profile-menu-8-a-9-d41"
+  },
+  "/docs/category/self-hosted-server-1e3": {
+    "__comp": "__comp---theme-doc-category-generated-index-page-14-e-640",
+    "__props": "__props---docs-category-self-hosted-serverbfd-2b5"
+  },
+  "/docs/category/self-hosted-website-c4a": {
+    "__comp": "__comp---theme-doc-category-generated-index-page-14-e-640",
+    "__props": "__props---docs-category-self-hosted-website-3-ee-7d7"
   },
   "/docs/category/teams-7b3": {
     "__comp": "__comp---theme-doc-category-generated-index-page-14-e-640",
@@ -245,6 +253,38 @@
   "/docs/manual/teams/properties-782": {
     "__comp": "__comp---theme-doc-item-178-a40",
     "content": "content---docs-manual-teams-properties-28-b-ea8"
+  },
+  "/docs/selfhosted/intro-f00": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-selfhosted-intro-7-a-0-f3f"
+  },
+  "/docs/selfhosted/self-hosted-server/cryptographc-keys-5d8": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-selfhosted-self-hosted-server-cryptographc-keys-6-fa-1da"
+  },
+  "/docs/selfhosted/self-hosted-server/environment-75d": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-selfhosted-self-hosted-server-environment-582-750"
+  },
+  "/docs/selfhosted/self-hosted-server/launch-run-f40": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-selfhosted-self-hosted-server-launch-rund-3-e-882"
+  },
+  "/docs/selfhosted/self-hosted-server/prerequisite-062": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-selfhosted-self-hosted-server-prerequisite-3-ec-478"
+  },
+  "/docs/selfhosted/self-hosted-server/third-party-e5b": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-selfhosted-self-hosted-server-third-party-4-a-1-201"
+  },
+  "/docs/selfhosted/self-hosted-website/manage-docs-versions-999": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-selfhosted-self-hosted-website-manage-docs-versions-71-b-68b"
+  },
+  "/docs/selfhosted/self-hosted-website/translate-your-site-6db": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-selfhosted-self-hosted-website-translate-your-siteff-4-6a1"
   },
   "/docs/tutorial/intro-f1d": {
     "__comp": "__comp---theme-doc-item-178-a40",

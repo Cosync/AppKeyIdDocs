@@ -44,15 +44,15 @@ export default [
   },
   {
     path: '/docs',
-    component: ComponentCreator('/docs', 'd85'),
+    component: ComponentCreator('/docs', '1d5'),
     routes: [
       {
         path: '/docs',
-        component: ComponentCreator('/docs', '2d3'),
+        component: ComponentCreator('/docs', 'c27'),
         routes: [
           {
             path: '/docs',
-            component: ComponentCreator('/docs', 'c1b'),
+            component: ComponentCreator('/docs', '96e'),
             routes: [
               {
                 path: '/docs/category/attested-communication',
@@ -89,6 +89,18 @@ export default [
                 component: ComponentCreator('/docs/category/profile-menu', '10f'),
                 exact: true,
                 sidebar: "manualSidebar"
+              },
+              {
+                path: '/docs/category/self-hosted-server',
+                component: ComponentCreator('/docs/category/self-hosted-server', '1e3'),
+                exact: true,
+                sidebar: "selfhostedSidebar"
+              },
+              {
+                path: '/docs/category/self-hosted-website',
+                component: ComponentCreator('/docs/category/self-hosted-website', 'c4a'),
+                exact: true,
+                sidebar: "selfhostedSidebar"
               },
               {
                 path: '/docs/category/teams',
@@ -329,6 +341,54 @@ export default [
                 component: ComponentCreator('/docs/manual/teams/properties', '782'),
                 exact: true,
                 sidebar: "manualSidebar"
+              },
+              {
+                path: '/docs/selfhosted/intro',
+                component: ComponentCreator('/docs/selfhosted/intro', 'f00'),
+                exact: true,
+                sidebar: "selfhostedSidebar"
+              },
+              {
+                path: '/docs/selfhosted/self-hosted-server/cryptographc-keys',
+                component: ComponentCreator('/docs/selfhosted/self-hosted-server/cryptographc-keys', '5d8'),
+                exact: true,
+                sidebar: "selfhostedSidebar"
+              },
+              {
+                path: '/docs/selfhosted/self-hosted-server/environment',
+                component: ComponentCreator('/docs/selfhosted/self-hosted-server/environment', '75d'),
+                exact: true,
+                sidebar: "selfhostedSidebar"
+              },
+              {
+                path: '/docs/selfhosted/self-hosted-server/launch-run',
+                component: ComponentCreator('/docs/selfhosted/self-hosted-server/launch-run', 'f40'),
+                exact: true,
+                sidebar: "selfhostedSidebar"
+              },
+              {
+                path: '/docs/selfhosted/self-hosted-server/prerequisite',
+                component: ComponentCreator('/docs/selfhosted/self-hosted-server/prerequisite', '062'),
+                exact: true,
+                sidebar: "selfhostedSidebar"
+              },
+              {
+                path: '/docs/selfhosted/self-hosted-server/third-party',
+                component: ComponentCreator('/docs/selfhosted/self-hosted-server/third-party', 'e5b'),
+                exact: true,
+                sidebar: "selfhostedSidebar"
+              },
+              {
+                path: '/docs/selfhosted/self-hosted-website/manage-docs-versions',
+                component: ComponentCreator('/docs/selfhosted/self-hosted-website/manage-docs-versions', '999'),
+                exact: true,
+                sidebar: "selfhostedSidebar"
+              },
+              {
+                path: '/docs/selfhosted/self-hosted-website/translate-your-site',
+                component: ComponentCreator('/docs/selfhosted/self-hosted-website/translate-your-site', '6db'),
+                exact: true,
+                sidebar: "selfhostedSidebar"
               },
               {
                 path: '/docs/tutorial/intro',

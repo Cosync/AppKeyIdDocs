@@ -1,0 +1,231 @@
+---
+sidebar_position: 2
+---
+
+# Cryptographic Keys and Repository Setup
+
+The AppKeyId Server uses public-key cryptography to secure its operations. Before building the server, you must obtain the source code and generate a pair of RSA keys.
+
+The private key must remain confidential. The public key can be distributed to components that need to verify cryptographic signatures.
+
+This chapter explains how to clone the AppKeyId Server repository, generate a 3072-bit RSA key pair, and prepare the keys for use in the server's environment configuration.
+
+## 2.1 Clone the AppKeyId Server Repository
+
+The Docker configuration and supporting files for the AppKeyId Server are maintained in a public GitHub repository:
+
+[AppKeyId Server Docker Repository](https://github.com/Cosync/AppKeyId-Server-Docker)
+
+Open a terminal on macOS or PowerShell on Windows and clone the repository:
+
+```bash
+
+git clone https://github.com/Cosync/AppKeyId-Server-Docker.git
+
+```
+
+Change to the newly created directory:
+
+```bash
+
+cd AppKeyId-Server-Docker
+
+```
+
+The repository contains the files needed to configure and build the AppKeyId Server Docker environment.
+
+If Git is not installed, download it from [Git Downloads](https://git-scm.com/downloads).
+
+## 2.2 Generate the RSA Key Pair
+
+AppKeyId requires an RSA public/private key pair. We use **3072-bit RSA keys**, which provide a suitable security margin for modern applications.
+
+The private key is used for cryptographic operations that require a secret. The corresponding public key allows those operations to be verified without revealing the private key.
+
+We will use OpenSSL to generate the keys.
+
+### Generate the Private Key
+
+From your terminal, run:
+
+```bash
+
+openssl genpkey -algorithm RSA -pkeyopt rsa_keygen_bits:3072 -aes-256-cbc -out privatekey.pem
+
+```
+
+OpenSSL will prompt you to enter a password to encrypt the private key.
+
+Choose a strong password and keep it in a secure location. You will need it whenever the encrypted private key is loaded.
+
+The command creates a file named `privatekey.pem` in the current directory.
+
+**Important:** Never commit your private key or its password to Git. Anyone who obtains both can perform cryptographic operations using your server's identity.
+
+### Generate the Public Key
+
+Next, extract the public key from the private key:
+
+```bash
+
+openssl pkey -in privatekey.pem -pubout -out publickey.pem
+
+```
+
+OpenSSL will request the password you entered when generating the private key.
+
+The command creates a second file named `publickey.pem`.
+
+You should now have two files:
+
+| File | Purpose |
+
+|---|---|
+
+| `privatekey.pem` | Encrypted RSA private key. Must remain confidential. |
+
+| `publickey.pem` | Corresponding RSA public key. May be distributed for verification. |
+
+You can inspect the public key with:
+
+```bash
+
+openssl pkey -pubin -in publickey.pem -text -noout
+
+```
+
+The output should identify a 3072-bit RSA public key.
+
+For more information, consult the [OpenSSL documentation](https://docs.openssl.org/).
+
+## 2.3 Convert the Keys to Base64
+
+The AppKeyId Server reads its cryptographic keys from environment variables defined in a `.env` file.
+
+Environment variables are easier to manage when their values occupy a single line. Since PEM files contain multiple lines, we encode their complete contents as Base64 strings.
+
+Base64 is an encoding format, not encryption. It converts binary or text data into a representation that can be safely stored in configuration values. **A Base64-encoded private key must be protected just as carefully as the original private key.**
+
+### Using the AppKeyId Conversion Utility
+
+AppKeyId provides an online utility for converting text into Base64:
+
+[AppKeyId Base64 Utility](https://appkeyid.com/util)
+
+To convert a key:
+
+1. Open `privatekey.pem` in a text editor.
+
+2. Copy the entire contents, including the `BEGIN` and `END` lines.
+
+3. Paste the text into the AppKeyId conversion utility.
+
+4. Click **Convert**.
+
+5. Copy the resulting Base64-encoded string.
+
+6. Save the string securely for use in the server's `.env` file.
+
+Repeat the procedure for `publickey.pem`.
+
+**Security note:** For production installations, we recommend converting private keys locally rather than pasting them into a web application. This avoids unnecessarily exposing sensitive key material to a browser-based service.
+
+### Converting Keys Locally
+
+OpenSSL can perform the same conversion directly from the command line.
+
+On macOS or Linux:
+
+```bash
+
+openssl base64 -A -in privatekey.pem -out privatekey.base64
+
+openssl base64 -A -in publickey.pem -out publickey.base64
+
+```
+
+The `-A` option produces Base64 output without line breaks.
+
+The resulting files contain single-line strings suitable for environment variables.
+
+To display the encoded public key:
+
+```bash
+
+cat publickey.base64
+
+```
+
+You can use the same command to display the encoded private key, but avoid doing so in shared terminals or recorded sessions.
+
+On Windows, the same OpenSSL commands can be used if OpenSSL is installed and available in the system's `PATH`.
+
+## 2.4 Verify the Encoded Keys
+
+Before proceeding, it is useful to verify that the Base64 conversion preserved the original files.
+
+Decode the private key:
+
+```bash
+
+openssl base64 -d -A -in privatekey.base64 -out privatekey-test.pem
+
+```
+
+Compare the decoded file with the original.
+
+On macOS or Linux:
+
+```bash
+
+cmp privatekey.pem privatekey-test.pem
+
+```
+
+If the files are identical, `cmp` produces no output.
+
+The same procedure can be used for the public key.
+
+Remove the temporary test file when finished:
+
+```bash
+
+rm privatekey-test.pem
+
+```
+
+## 2.5 Protect Your Keys
+
+The security of your AppKeyId installation depends in part on how its cryptographic keys are managed.
+
+Keep the following principles in mind:
+
+- **Never publish the private key.** Do not commit it to GitHub or include it in Docker images.
+
+- **Protect the `.env` file.** Environment variables containing private keys are sensitive configuration data.
+
+- **Keep a secure backup.** Losing the private key may prevent the server from performing operations that depend on it.
+
+- **Protect the key password.** The encrypted private key is useful only when the application can decrypt it.
+
+- **Use separate keys for separate installations.** Development, testing, and production systems should not share private keys.
+
+On macOS or Linux, you can restrict access to the private key:
+
+```bash
+
+chmod 600 privatekey.pem
+
+```
+
+This permits only the file owner to read or modify it, subject to the host's access-control configuration.
+
+You should also ensure that private keys, Base64-encoded key files, and `.env` files are excluded from version control.
+
+## 2.6 Next Steps
+
+You now have the AppKeyId Server Docker repository and an RSA key pair ready for configuration.
+
+The next chapter explains how to create the `.env` file, configure the server's database connection, and supply the cryptographic keys and other settings required to start the application.
+
+Once the environment is configured, we can build and launch the AppKeyId Server using Docker Compose.

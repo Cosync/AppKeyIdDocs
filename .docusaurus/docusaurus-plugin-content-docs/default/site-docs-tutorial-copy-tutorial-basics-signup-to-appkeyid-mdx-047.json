@@ -1,0 +1,17 @@
+{
+  "id": "tutorial copy/tutorial-basics/signup-to-appkeyid",
+  "title": "Signing Up with Email",
+  "description": "This tutorial walks you through the process of creating a new AppKeyId account. AppKeyId uses FIDO2 passkeys to authenticate users and protect account access with biometric verification.",
+  "source": "@site/docs/tutorial copy/tutorial-basics/signup-to-appkeyid.mdx",
+  "sourceDirName": "tutorial copy/tutorial-basics",
+  "slug": "/tutorial copy/tutorial-basics/signup-to-appkeyid",
+  "permalink": "/docs/tutorial copy/tutorial-basics/signup-to-appkeyid",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1
+  }
+}

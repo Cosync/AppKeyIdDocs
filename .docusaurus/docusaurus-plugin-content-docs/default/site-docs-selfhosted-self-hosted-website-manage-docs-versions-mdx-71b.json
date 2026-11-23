@@ -1,0 +1,26 @@
+{
+  "id": "selfhosted/self-hosted-website/manage-docs-versions",
+  "title": "Manage Docs Versions",
+  "description": "",
+  "source": "@site/docs/selfhosted/self-hosted-website/manage-docs-versions.mdx",
+  "sourceDirName": "selfhosted/self-hosted-website",
+  "slug": "/selfhosted/self-hosted-website/manage-docs-versions",
+  "permalink": "/docs/selfhosted/self-hosted-website/manage-docs-versions",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1
+  },
+  "sidebar": "selfhostedSidebar",
+  "previous": {
+    "title": "Self-Hosted Website",
+    "permalink": "/docs/category/self-hosted-website"
+  },
+  "next": {
+    "title": "Translate your site",
+    "permalink": "/docs/selfhosted/self-hosted-website/translate-your-site"
+  }
+}

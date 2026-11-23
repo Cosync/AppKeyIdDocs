@@ -1,0 +1,389 @@
+---
+sidebar_position: 5
+---
+
+# Building and Running the AppKeyId Server
+
+With the environment variables configured, you are ready to build and start the AppKeyId Server.
+
+Docker Compose handles the build process, creates the container, and starts the application with the configuration defined in your `.env` file.
+
+This chapter explains how to start the server, verify that it is running, and rebuild it when necessary.
+
+## 5.1 Start Docker
+
+Before proceeding, make sure Docker Desktop is running.
+
+On macOS or Windows, launch the Docker Desktop application and wait until the Docker engine has started.
+
+Open a terminal and verify that Docker is available:
+
+```bash
+
+docker --version
+
+docker compose version
+
+```
+
+Both commands should display version information.
+
+You can also check whether the Docker engine is running:
+
+```bash
+
+docker info
+
+```
+
+If Docker is running correctly, the command will display information about the Docker environment.
+
+If the command reports that it cannot connect to the Docker daemon, start Docker Desktop and try again.
+
+## 5.2 Navigate to the Project Directory
+
+Open a terminal and navigate to the directory containing the AppKeyId Server Docker configuration.
+
+If you cloned the repository in Chapter 2, the directory will be named `AppKeyId-Server-Docker`.
+
+For example:
+
+```bash
+
+cd AppKeyId-Server-Docker
+
+```
+
+The directory should contain the Docker Compose configuration and the `.env` file created in Chapter 4.
+
+You can list the files to confirm that you are in the correct directory.
+
+On macOS or Linux:
+
+```bash
+
+ls -la
+
+```
+
+On Windows PowerShell:
+
+```powershell
+
+Get-ChildItem -Force
+
+```
+
+Make sure the `.env` file exists and contains your configuration values.
+
+Docker Compose must be executed from the directory containing the Compose configuration, unless you explicitly specify its location.
+
+## 5.3 Build and Start the Server
+
+To build the Docker image and start the AppKeyId Server, run:
+
+```bash
+
+docker compose up --build
+
+```
+
+This command performs several operations:
+
+1. Reads the Docker Compose configuration.
+
+2. Builds the AppKeyId Server Docker image.
+
+3. Creates the required container and network resources.
+
+4. Starts the application.
+
+5. Displays the container's console output.
+
+The first build may take several minutes because Docker must download the base images and install the application's dependencies.
+
+Subsequent builds are generally faster because Docker caches intermediate build layers.
+
+Once the build is complete, Docker Compose starts the server and displays its logs in the terminal.
+
+**Note:** This command runs Docker Compose in the foreground. The terminal remains attached to the container, allowing you to monitor its output.
+
+To stop the application, press `Ctrl+C`.
+
+### Running in the Background
+
+For an installation that should continue running after you close the terminal, use detached mode:
+
+```bash
+
+docker compose up -d --build
+
+```
+
+The `-d` option starts the containers in the background.
+
+You can then close the terminal without stopping the server.
+
+To view the running containers:
+
+```bash
+
+docker compose ps
+
+```
+
+This command displays the container names, current status, and exposed ports.
+
+## 5.4 Verify the Server Installation
+
+Once Docker has finished starting the application, open a web browser and navigate to:
+
+**http://localhost:3004**
+
+If the server is running correctly, the browser should display:
+
+> Welcome to API Services
+
+This response confirms that the AppKeyId Server is running and that its HTTP endpoint is accessible.
+
+You can perform the same test from the command line.
+
+On macOS or Linux:
+
+```bash
+
+curl http://localhost:3004
+
+```
+
+On Windows PowerShell:
+
+```powershell
+
+curl.exe http://localhost:3004
+
+```
+
+The expected response is:
+
+```text
+
+Welcome to API Services
+
+```
+
+If you receive this message, the initial server installation has succeeded.
+
+**Important:** This test verifies that the HTTP server is responding. It does not necessarily confirm that MongoDB, SendGrid, Twilio, or Amazon S3 are functioning correctly. Those integrations should be tested separately before using the server in production.
+
+## 5.5 Viewing Server Logs
+
+Docker maintains logs for each running container. These logs are useful for diagnosing startup errors, database connection failures, and other application problems.
+
+To display the logs for the AppKeyId Server:
+
+```bash
+
+docker compose logs
+
+```
+
+To follow the logs continuously:
+
+```bash
+
+docker compose logs -f
+
+```
+
+The `-f` option displays new log messages as they are generated.
+
+Press `Ctrl+C` to stop viewing the logs. This does not stop containers running in detached mode.
+
+If the server fails to start, examine the logs for error messages.
+
+Common causes include incorrect environment variables, an unavailable MongoDB database, invalid cryptographic keys, or a port already in use.
+
+## 5.6 Stopping and Restarting the Server
+
+To stop and remove the containers created by Docker Compose, run:
+
+```bash
+
+docker compose down
+
+```
+
+This stops the application and removes its containers and Compose network.
+
+Docker images are retained, so the application can be started again without downloading and rebuilding everything.
+
+To restart the server:
+
+```bash
+
+docker compose up -d
+
+```
+
+If you only need to restart the existing containers without rebuilding them, use:
+
+```bash
+
+docker compose restart
+
+```
+
+**Note:** Restarting an existing container does not necessarily apply changes made to the `.env` file. To ensure updated environment variables are loaded, recreate the container using `docker compose up -d --force-recreate`.
+
+## 5.7 Rebuilding the Docker Image
+
+You may need to rebuild the Docker image after updating the AppKeyId Server source code or changing its dependencies.
+
+First, stop the running containers:
+
+```bash
+
+docker compose down
+
+```
+
+Then rebuild and restart the application:
+
+```bash
+
+docker compose up --build
+
+```
+
+Alternatively, rebuild and start the server in the background:
+
+```bash
+
+docker compose up -d --build
+
+```
+
+Docker will reuse cached build layers whenever possible.
+
+If you need to force a complete rebuild without using the cache, run:
+
+```bash
+
+docker compose build --no-cache
+
+docker compose up -d
+
+```
+
+This is occasionally useful when troubleshooting dependency or build problems.
+
+A rebuild does not normally remove persistent database data stored outside the application container.
+
+However, avoid using `docker compose down -v` unless you intend to remove the named volumes associated with the Compose project. Doing so may permanently delete locally stored application data.
+
+## 5.8 Troubleshooting
+
+Most startup problems can be traced to a small number of configuration issues.
+
+### Docker Is Not Running
+
+If you receive an error similar to:
+
+```text
+
+Cannot connect to the Docker daemon
+
+```
+
+Start Docker Desktop and wait for the engine to become available.
+
+Then retry:
+
+```bash
+
+docker compose up --build
+
+```
+
+### Port 3004 Is Already in Use
+
+If another application is using port `3004`, Docker may report a port-binding error.
+
+On macOS or Linux, check which process is using the port:
+
+```bash
+
+lsof -i :3004
+
+```
+
+You can stop the conflicting application or change the port mapping in the Docker Compose configuration.
+
+If you change the application port itself, update the corresponding `PORT` and `SERVER_API_URL` values in `.env`.
+
+### MongoDB Connection Failure
+
+If the server cannot connect to MongoDB, verify the connection string in `.env`:
+
+```ini
+
+MONGODB_CONNECTION_STRING=mongodb://host.docker.internal:27017/AppKeyDatabaseDocker
+
+```
+
+Make sure MongoDB is running and accessible from the Docker container.
+
+If you are using MongoDB Atlas, verify the database credentials and network access settings.
+
+### Invalid Cryptographic Keys
+
+If the server reports errors loading its RSA private key, check the following:
+
+- The Base64-encoded private key is complete.
+
+- The public and private keys belong to the same key pair.
+
+- `PRIVATE_PASSKEY` matches the password used to encrypt the private key.
+
+- The Base64 strings contain no unintended spaces or line breaks.
+
+If necessary, repeat the key-generation procedure described in Chapter 2.
+
+### Server Does Not Respond
+
+If the container appears to be running but the browser cannot reach the server, check its status:
+
+```bash
+
+docker compose ps
+
+```
+
+Then inspect the logs:
+
+```bash
+
+docker compose logs --tail=100
+
+```
+
+Verify that port `3004` is published by the Docker Compose configuration and that the application has completed initialization.
+
+## 5.9 Next Steps
+
+The AppKeyId Server should now be running in a Docker container and responding to HTTP requests.
+
+You can confirm the installation by opening:
+
+**http://localhost:3004**
+
+The expected response is:
+
+> Welcome to API Services
+
+At this point, the server is ready for integration with the AppKeyId Website.
+
+The next part of the installation guide covers building and configuring the Website, connecting it to the Server API, and setting up the FIDO2 Relying Party for your organization's domain.
+
+Once both components are running, you will have a complete self-hosted AppKeyId Attested Communication system.

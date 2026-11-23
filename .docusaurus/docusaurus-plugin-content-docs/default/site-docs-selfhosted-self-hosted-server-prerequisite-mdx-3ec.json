@@ -1,0 +1,26 @@
+{
+  "id": "selfhosted/self-hosted-server/prerequisite",
+  "title": "Prerequisites and Installation",
+  "description": "Before building the AppKeyId Server, you need two tools: Docker to run the application in containers, and Node.js to build and manage the server software.",
+  "source": "@site/docs/selfhosted/self-hosted-server/prerequisite.mdx",
+  "sourceDirName": "selfhosted/self-hosted-server",
+  "slug": "/selfhosted/self-hosted-server/prerequisite",
+  "permalink": "/docs/selfhosted/self-hosted-server/prerequisite",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1
+  },
+  "sidebar": "selfhostedSidebar",
+  "previous": {
+    "title": "Self-Hosted Server",
+    "permalink": "/docs/category/self-hosted-server"
+  },
+  "next": {
+    "title": "Cryptographic Keys and Repository Setup",
+    "permalink": "/docs/selfhosted/self-hosted-server/cryptographc-keys"
+  }
+}

@@ -1,0 +1,637 @@
+---
+sidebar_position: 3
+---
+
+# Configuring Third-Party Service Providers
+
+The AppKeyId Server relies on several external services for database storage, file attachments, SMS notifications, and email delivery. Before starting the server, you must configure these services and obtain the credentials needed to access them.
+
+A self-hosted installation does not necessarily mean that every service must run on your own hardware. You can operate the AppKeyId Server locally while using managed cloud services for storage and messaging. Alternatively, some services, such as MongoDB, can run entirely within your infrastructure.
+
+This chapter describes the standard configuration using four providers:
+
+| Service | Provider | Purpose |
+
+|---|---|---|
+
+| Database | MongoDB Atlas | Stores users, Cards, acknowledgments, and application data |
+
+| Object Storage | Amazon S3 | Stores public and private file attachments |
+
+| SMS | Twilio | Sends verification codes and SMS notifications |
+
+| Email | Twilio SendGrid | Sends account verification and application emails |
+
+Each provider requires credentials that will be added to the server's `.env` configuration file in the next chapter.
+
+**Security:** Treat all API keys, database passwords, and access tokens as secrets. Never commit them to a public repository or include them in a Docker image.
+
+---
+
+## 3.1 MongoDB Atlas — Database Configuration
+
+AppKeyId uses MongoDB as its database. You can run MongoDB locally or use MongoDB Atlas, a managed cloud database service.
+
+If you are running a local MongoDB instance, you can skip this section. You will need its connection string when configuring the server.
+
+MongoDB Atlas is convenient for development and small deployments because it handles database provisioning, backups, and much of the underlying infrastructure.
+
+### Create a Database User
+
+Sign in to the [MongoDB Atlas Console](https://cloud.mongodb.com/).
+
+Select the project and database cluster that will host your AppKeyId data.
+
+In the navigation menu:
+
+1. Open **Security → Database Access**.
+
+2. Click **Add New Database User**.
+
+3. Select password authentication.
+
+4. Enter a username and generate a strong password.
+
+5. Assign the database permissions required by AppKeyId.
+
+6. Save the new user.
+
+For a production installation, grant access only to the application database rather than providing unrestricted administrative privileges.
+
+### Configure Network Access
+
+MongoDB Atlas restricts incoming database connections by IP address.
+
+Navigate to **Security → Network Access** and add the public IP address of the machine running your AppKeyId Server.
+
+For production installations, avoid allowing connections from all IP addresses (`0.0.0.0/0`) unless you have a specific reason and additional network protections.
+
+### Obtain the Connection String
+
+Return to your database cluster and click **Connect**.
+
+Select **Drivers** and copy the MongoDB connection string.
+
+It will resemble:
+
+```text
+
+mongodb+srv://<db_username>:<db_password>@passkeycluster0.f1lsv.mongodb.net/?appName=PassKeyCluster0
+
+```
+
+Replace `<db_username>` and `<db_password>` with the credentials you created.
+
+If the password contains reserved URI characters, such as `@`, `:`, `/`, or `#`, those characters must be percent-encoded.
+
+For example, a password containing `@` must use `%40` in the connection string.
+
+Save the completed connection string securely. You will use it when configuring the AppKeyId Server.
+
+For additional information, consult the [MongoDB Atlas Connection Guide](https://www.mongodb.com/docs/atlas/connect-to-database-deployment/).
+
+---
+
+## 3.2 Amazon S3 — File Attachment Storage
+
+AppKeyId uses object storage for file attachments and other application assets.
+
+The standard configuration uses Amazon Simple Storage Service (S3). We recommend creating two separate buckets:
+
+- **Private bucket:** Stores attachments and other objects that must not be publicly accessible.
+
+- **Public bucket:** Stores assets intended to be accessible without authentication.
+
+Keeping these objects separate makes access control easier to understand and maintain.
+
+### Create the S3 Buckets
+
+Sign in to the [AWS Management Console](https://console.aws.amazon.com/) using an administrative IAM identity. Avoid using the AWS root account for routine configuration.
+
+Navigate to **S3 → Create bucket**.
+
+Create the first bucket for private storage.
+
+For example:
+
+```text
+
+appkeyid-private
+
+```
+
+Keep **Block all public access** enabled. The private bucket should never allow anonymous access.
+
+Create a second bucket for public assets:
+
+```text
+
+appkeyid-public
+
+```
+
+S3 bucket names must be globally unique, so choose names appropriate to your organization.
+
+For the public bucket, you may disable Block Public Access at the bucket level if anonymous object access is required. AWS may also enforce account-level public access restrictions.
+
+**Important:** Only disable public access restrictions for a bucket specifically intended to contain public data. Never store sensitive Cards, private attachments, or user information in that bucket.
+
+### Configure the Public Bucket Policy
+
+Select the public bucket and open:
+
+**Permissions → Bucket policy → Edit**
+
+Enter the following policy, replacing `your-bucket-public` with your actual bucket name:
+
+```json
+
+{
+
+  "Version": "2012-10-17",
+
+  "Statement": [
+
+    {
+
+      "Sid": "PublicReadGetObject",
+
+      "Effect": "Allow",
+
+      "Principal": "*",
+
+      "Action": "s3:GetObject",
+
+      "Resource": "arn:aws:s3:::your-bucket-public/*"
+
+    }
+
+  ]
+
+}
+
+```
+
+This policy allows anyone to retrieve objects stored in the public bucket. It does not grant permission to upload, modify, or delete objects.
+
+Save the policy.
+
+If AWS rejects the policy, check the bucket's Block Public Access settings and any account-level restrictions.
+
+For production systems, consider using Amazon CloudFront with private S3 origins instead of allowing direct public bucket access.
+
+### Configure Cross-Origin Resource Sharing (CORS)
+
+Browsers enforce restrictions on requests made between different web origins.
+
+If the AppKeyId Website uploads or retrieves objects directly from S3, the buckets must permit requests from the Website's origin.
+
+Open each bucket and navigate to:
+
+**Permissions → Cross-origin resource sharing (CORS) → Edit**
+
+Enter the following configuration:
+
+```json
+
+[
+
+  {
+
+    "AllowedHeaders": ["*"],
+
+    "AllowedMethods": [
+
+      "GET",
+
+      "PUT",
+
+      "POST",
+
+      "DELETE",
+
+      "HEAD"
+
+    ],
+
+    "AllowedOrigins": [
+
+      "http://localhost:3000",
+
+      "https://your-full-website-domain.com"
+
+    ],
+
+    "ExposeHeaders": [
+
+      "ETag",
+
+      "x-amz-request-id",
+
+      "x-amz-id-2"
+
+    ],
+
+    "MaxAgeSeconds": 3000
+
+  }
+
+]
+
+```
+
+Replace `https://your-full-website-domain.com` with the actual domain hosting your AppKeyId Website.
+
+The `localhost` entry is useful during development. It can be removed from production configurations.
+
+Apply the CORS configuration to both buckets, adjusting the allowed methods to match their intended use. A public read-only bucket, for example, generally does not need to permit browser uploads or deletions.
+
+CORS is a browser security mechanism. It does not replace S3 access-control policies.
+
+For additional information, see [Configuring CORS for Amazon S3](https://docs.aws.amazon.com/AmazonS3/latest/userguide/enabling-cors-examples.html).
+
+### Create an IAM User for S3 Access
+
+The AppKeyId Server needs credentials to access the S3 buckets.
+
+Open the [AWS IAM Console](https://console.aws.amazon.com/iam/).
+
+Navigate to **Users → Create user**.
+
+Create a dedicated user for AppKeyId, such as:
+
+```text
+
+appkeyid-s3
+
+```
+
+Assign the permissions required to read and write objects in your two buckets.
+
+For initial testing, AWS provides the managed policy `AmazonS3FullAccess`. However, this grants access to all S3 resources in the account and is broader than necessary.
+
+For production, create a restricted policy that grants access only to the buckets used by AppKeyId.
+
+A typical policy might resemble:
+
+```json
+
+{
+
+  "Version": "2012-10-17",
+
+  "Statement": [
+
+    {
+
+      "Effect": "Allow",
+
+      "Action": [
+
+        "s3:ListBucket"
+
+      ],
+
+      "Resource": [
+
+        "arn:aws:s3:::appkeyid-private",
+
+        "arn:aws:s3:::appkeyid-public"
+
+      ]
+
+    },
+
+    {
+
+      "Effect": "Allow",
+
+      "Action": [
+
+        "s3:GetObject",
+
+        "s3:PutObject",
+
+        "s3:DeleteObject"
+
+      ],
+
+      "Resource": [
+
+        "arn:aws:s3:::appkeyid-private/*",
+
+        "arn:aws:s3:::appkeyid-public/*"
+
+      ]
+
+    }
+
+  ]
+
+}
+
+```
+
+Replace the example bucket names with your actual names.
+
+### Generate Access Keys
+
+Open the newly created IAM user.
+
+Navigate to **Security credentials → Create access key**.
+
+If your server runs outside AWS, select:
+
+**Application running outside AWS**
+
+AWS will generate two values:
+
+```text
+
+Access Key ID
+
+Secret Access Key
+
+```
+
+Copy both values and store them securely.
+
+The secret access key is displayed only when it is created. If you lose it, you must generate a replacement.
+
+If your AppKeyId Server runs on AWS infrastructure, consider using an IAM role instead of long-lived access keys.
+
+You now have the S3 bucket names, region, and credentials needed for the AppKeyId environment configuration.
+
+---
+
+## 3.3 Twilio — SMS Configuration
+
+AppKeyId uses Twilio to send SMS messages, including phone verification codes and notifications associated with Attested Communication.
+
+To use these features, you need a Twilio account and an API key.
+
+### Create a Twilio API Key
+
+Sign in to the [Twilio Console](https://console.twilio.com/).
+
+Navigate to:
+
+**Settings → Account settings → API keys & auth tokens**
+
+Open the **API Keys** section and select **Create API Key**.
+
+Enter a descriptive name, such as:
+
+```text
+
+AppKeyId Production
+
+```
+
+Select **Restricted** if the required SMS permissions are available for your integration. Otherwise, use an appropriate supported key type with the minimum necessary privileges.
+
+Configure the permissions and create the key.
+
+Twilio will provide an API key identifier and secret.
+
+Copy both values and store them securely. You will also need the appropriate Twilio Account SID when configuring the server.
+
+The secret is displayed only once.
+
+For detailed instructions, see [Managing API Keys in the Twilio Console](https://www.twilio.com/docs/iam/api-keys/keys-in-console).
+
+### Configure SMS Sending
+
+An API key authenticates requests to Twilio, but it does not by itself enable SMS delivery.
+
+You must also configure an SMS-capable sender, such as a Twilio phone number or Messaging Service.
+
+Depending on your country and messaging use case, additional registration may be required.
+
+For example, application-to-person SMS sent through US 10-digit long-code numbers generally requires A2P 10DLC registration.
+
+AppKeyId uses SMS for distinct purposes:
+
+- **Verification messages:** One-time codes used to verify a user's phone number.
+
+- **Transactional notifications:** Messages notifying users when Cards are shared or acknowledged.
+
+These uses may require different messaging configurations and consent procedures.
+
+For more information, see [Twilio Messaging Documentation](https://www.twilio.com/docs/messaging).
+
+---
+
+## 3.4 Twilio SendGrid — Email Configuration
+
+AppKeyId uses SendGrid to deliver application emails, including account verification messages and other system notifications.
+
+SendGrid provides an HTTP API for sending email without operating your own mail server.
+
+You will need a SendGrid account, an authenticated sender identity, and an API key.
+
+### Create a SendGrid API Key
+
+Sign in to the [SendGrid Dashboard](https://app.sendgrid.com/).
+
+In the navigation menu, open:
+
+**Settings → API Keys**
+
+Click **Create API Key**.
+
+Enter a descriptive name:
+
+```text
+
+AppKeyId Production
+
+```
+
+SendGrid offers several permission levels:
+
+| Permission | Description |
+
+|---|---|
+
+| Full Access | Grants broad access to SendGrid account features |
+
+| Restricted Access | Allows specific API permissions to be selected |
+
+| Read-Only | Permits reading data but does not allow sending email |
+
+For production installations, select **Restricted Access**.
+
+Enable at least the **Mail Send** permission. Additional permissions should be enabled only if required by your application.
+
+Before generating the key, configure a sender identity.
+
+### Configure Sender Authentication
+
+SendGrid requires verification of the email identity used to send messages.
+
+There are two ways to accomplish this.
+
+#### Option 1 — Single Sender Verification
+
+Single Sender Verification is the simplest method and is useful for testing.
+
+Navigate to:
+
+**Settings → Sender Authentication → Single Sender Verification**
+
+Click **Verify a Single Sender**.
+
+Complete the form with the required information:
+
+- **From Name:** The name recipients will see.
+
+- **From Email:** The email address used to send messages.
+
+- **Reply To:** The address that receives replies.
+
+- **Company Address:** Your organization's physical mailing address.
+
+- **Nickname:** An internal identifier for the sender.
+
+For example:
+
+```text
+
+From Name: AppKeyId
+
+From Email: notifications@example.com
+
+Reply To: support@example.com
+
+```
+
+Save the sender.
+
+SendGrid will send a verification email to the address you specified.
+
+Open the message and click the verification link.
+
+Once verification is complete, the sender can be used for outgoing email.
+
+Single Sender Verification is convenient for development, but domain authentication is preferable for production.
+
+#### Option 2 — Domain Authentication
+
+Domain Authentication allows SendGrid to send authenticated email on behalf of a domain you control.
+
+For example:
+
+```text
+
+example.com
+
+```
+
+This is the recommended configuration for production installations.
+
+Navigate to:
+
+**Settings → Sender Authentication → Domain Authentication**
+
+Click **Authenticate Your Domain**.
+
+Select your DNS provider, such as Cloudflare, GoDaddy, or Namecheap.
+
+Enter your domain name and continue.
+
+SendGrid will generate DNS records, typically CNAME records, that must be added to your domain's DNS configuration.
+
+The exact records depend on your SendGrid account and DNS provider.
+
+Log in to your DNS provider and create the records exactly as displayed.
+
+Return to SendGrid and click **Verify**.
+
+DNS changes may take some time to propagate. If verification fails immediately, wait a few minutes and try again.
+
+Once the domain is authenticated, SendGrid can send email using addresses associated with that domain, subject to your account configuration.
+
+For detailed instructions, see [SendGrid Domain Authentication](https://www.twilio.com/docs/sendgrid/ui/account-and-settings/how-to-set-up-domain-authentication).
+
+A video walkthrough is also available:
+
+[SendGrid Domain Authentication Tutorial](https://www.youtube.com/watch?v=gEu6gcZFVxs)
+
+### Generate and Save the API Key
+
+Once sender authentication is configured, return to:
+
+**Settings → API Keys**
+
+Create the API key with the required Mail Send permission.
+
+Click **Create & View**.
+
+SendGrid will display the API key.
+
+Copy it immediately and store it securely.
+
+The key will resemble:
+
+```text
+
+SG.xxxxxxxxxxxxxxxxxxxxx.xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+```
+
+SendGrid displays the complete key only once. If you lose it, you must create another.
+
+The key will be added to the AppKeyId Server's `.env` file in the next chapter.
+
+---
+
+## 3.5 Review Your Service Credentials
+
+Before proceeding, verify that you have the information required to configure the AppKeyId Server.
+
+| Service | Required Configuration |
+
+|---|---|
+
+| MongoDB | Database connection string |
+
+| Amazon S3 | Private bucket name |
+
+| Amazon S3 | Public bucket name |
+
+| Amazon S3 | AWS region |
+
+| Amazon S3 | Access Key ID |
+
+| Amazon S3 | Secret Access Key |
+
+| Twilio | Account SID |
+
+| Twilio | API Key SID |
+
+| Twilio | API Key Secret |
+
+| Twilio | SMS sender or Messaging Service identifier |
+
+| SendGrid | Email API key |
+
+| SendGrid | Verified sender email address |
+
+Some services may require additional configuration depending on your deployment.
+
+Store these credentials in a secure password manager or secrets-management system.
+
+Do not place credentials directly in source files or Docker images.
+
+For local development, a `.env` file provides a convenient way to supply configuration values to the application. In production, a dedicated secrets manager may offer stronger access controls and easier credential rotation.
+
+## 3.6 Next Steps
+
+The AppKeyId Server now has access to the external services it needs.
+
+You have configured a database, created storage buckets, and obtained the credentials required for SMS and email delivery.
+
+In the next chapter, we will create the server's `.env` file and connect these services to AppKeyId.
+
+Once the environment variables are configured, we can build the Docker image, start the server, and verify that the installation is working.
