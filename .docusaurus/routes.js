@@ -44,15 +44,15 @@ export default [
   },
   {
     path: '/docs',
-    component: ComponentCreator('/docs', '1d5'),
+    component: ComponentCreator('/docs', '1bb'),
     routes: [
       {
         path: '/docs',
-        component: ComponentCreator('/docs', 'c27'),
+        component: ComponentCreator('/docs', '0c2'),
         routes: [
           {
             path: '/docs',
-            component: ComponentCreator('/docs', '96e'),
+            component: ComponentCreator('/docs', '0d9'),
             routes: [
               {
                 path: '/docs/category/attested-communication',
@@ -379,14 +379,14 @@ export default [
                 sidebar: "selfhostedSidebar"
               },
               {
-                path: '/docs/selfhosted/self-hosted-website/manage-docs-versions',
-                component: ComponentCreator('/docs/selfhosted/self-hosted-website/manage-docs-versions', '999'),
+                path: '/docs/selfhosted/self-hosted-website/build-run',
+                component: ComponentCreator('/docs/selfhosted/self-hosted-website/build-run', 'be6'),
                 exact: true,
                 sidebar: "selfhostedSidebar"
               },
               {
-                path: '/docs/selfhosted/self-hosted-website/translate-your-site',
-                component: ComponentCreator('/docs/selfhosted/self-hosted-website/translate-your-site', '6db'),
+                path: '/docs/selfhosted/self-hosted-website/configure-website',
+                component: ComponentCreator('/docs/selfhosted/self-hosted-website/configure-website', 'd18'),
                 exact: true,
                 sidebar: "selfhostedSidebar"
               },

@@ -1,0 +1,65 @@
+---
+sidebar_position: 2
+---
+
+# Build and Run the Website
+
+Once the configuration is complete, the website can be built and started using Docker Compose.
+
+Make sure Docker Desktop is installed and running before proceeding.
+
+### Build and Start the Website
+
+Open a terminal and navigate to the local project directory:
+
+```bash
+
+cd AppKeyId-Website-Docker
+
+```
+
+Build the Docker image and start the container:
+
+```bash
+
+docker compose up --build
+
+```
+
+Docker Compose builds the website using the project configuration and starts the application. The initial build may take several minutes while Docker downloads dependencies and prepares the container.
+
+### Rebuild the Website
+
+If you modify the website configuration, branding, or source code, rebuild the application to apply the changes.
+
+First, stop and remove the existing containers:
+
+```bash
+
+docker compose down
+
+```
+
+Then rebuild and restart the website:
+
+```bash
+
+docker compose up --build
+
+```
+
+Docker Compose rebuilds the application and starts a new container with the updated configuration.
+
+### Verify the Installation
+
+Once the container has started, open a web browser and navigate to:
+
+**http://localhost:8080**
+
+The AppKeyId website should appear in your browser with the branding and configuration specified during installation.
+
+The website must be able to communicate with the AppKeyId API server for registration, authentication, and other application functions to work.
+
+If the website loads but cannot connect to the API server, check the `VITE_SERVER_API` setting in your `.env` file and verify that the API server is running and accessible.
+
+The local installation is complete when the website loads successfully and can communicate with the API server.

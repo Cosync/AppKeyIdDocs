@@ -1,7 +1,7 @@
 {
   "id": "selfhosted/self-hosted-website/manage-docs-versions",
-  "title": "Manage Docs Versions",
-  "description": "",
+  "title": "AppKeyId Self-Hosted Website",
+  "description": "Installation and Configuration Guide",
   "source": "@site/docs/selfhosted/self-hosted-website/manage-docs-versions.mdx",
   "sourceDirName": "selfhosted/self-hosted-website",
   "slug": "/selfhosted/self-hosted-website/manage-docs-versions",

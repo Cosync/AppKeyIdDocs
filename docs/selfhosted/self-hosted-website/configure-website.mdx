@@ -1,0 +1,313 @@
+---
+sidebar_position: 1
+---
+
+# AppKeyId Self-Hosted Website
+
+## Installation and Configuration Guide
+
+AppKeyId is a passkey-based identity and communication system built on FIDO2/WebAuthn standards. It allows users to exchange messages, acknowledge communications, and perform authenticated actions.
+
+The self-hosted version consists of two applications: an API server and a website.
+
+The API server handles authentication, application logic, and data storage. The website provides the browser-based interface through which users interact with the system.
+
+This guide explains how to install and configure the AppKeyId website and connect it to an existing AppKeyId API server.
+
+## How the Website Connects to the Server
+
+The website and API server are separate applications. They can run on the same computer or on different machines.
+
+When a user opens the website, the browser loads the application. The application then sends requests to the API server to retrieve information, authenticate users, and perform operations.
+
+For example, when a user acknowledges a message, the website initiates a passkey authentication request. The user's device signs a challenge, and the API server verifies the signature against the public key registered to the user's account.
+
+If verification succeeds, the server records the acknowledgment and returns the result to the website.
+
+The website does not communicate directly with the database. All application data is accessed through the API server.
+
+The connection between the website and API server is specified by the `VITE_SERVER_API` environment variable.
+
+For local development, the API server typically runs at:
+
+```text
+
+http://localhost:3004
+
+```
+
+For production, the website should connect to the API server through a publicly accessible HTTPS endpoint.
+
+The API server must be installed and running before the website can be fully tested. See the *AppKeyId Self-Hosted Server Installation Guide* for instructions.
+
+# Installation
+
+## Step 1: Clone the GitHub Repository
+
+The website source code is available from the Cosync GitHub repository.
+
+Open a terminal and run:
+
+```bash
+
+git clone https://github.com/Cosync/AppKeyId-Website-Docker.git
+
+```
+
+Move into the project directory:
+
+```bash
+
+cd AppKeyId-Website-Docker
+
+```
+
+The repository contains the website source code, configuration files, and assets required to build the application.
+
+## Step 2: Configure the Website Logo
+
+The website includes a default set of AppKeyId logos and icons. Replace these files with your organization's branding.
+
+Two directories contain the image assets.
+
+### Public Directory
+
+Open the `public/` directory and replace the following files:
+
+```text
+
+public/
+
+├── site-logo-76.png
+
+├── site-logo-120.png
+
+├── site-logo-152.png
+
+├── site-logo-192.png
+
+├── site-logo-512.png
+
+└── favicon.ico
+
+```
+
+Keep the original filenames and image dimensions.
+
+These files are used for browser icons, device shortcuts, and other public-facing assets.
+
+### Source Assets Directory
+
+Next, open the `src/assets/` directory and replace the following files:
+
+```text
+
+src/assets/
+
+├── site-logo-120.png
+
+├── site-logo-192.png
+
+├── site-logo-512.png
+
+├── site-logo-qr.png
+
+└── site-logo.svg
+
+```
+
+These files are used by the website interface.
+
+The `site-logo.svg` file should contain your organization's logo in SVG format. The `site-logo-qr.png` file is used where the interface displays QR-related branding.
+
+Keep the filenames unchanged. The application references these files by name.
+
+## Step 3: Configure Apple Universal Links (Optional)
+
+**Skip this step if you do not use an iOS application or do not need Apple Universal Links.**
+
+Apple Universal Links allow a website link to open a corresponding iOS application. They can also support configurations in which the website and iOS application share passkey credentials.
+
+The repository includes the following configuration file:
+
+```text
+
+public/.well-known/apple-app-site-association.json
+
+```
+
+Open this file and update it with the application identifiers and associated-domain configuration for your iOS application.
+
+The configuration must match the identifiers registered in your Apple Developer account.
+
+The file must be accessible from your production website at:
+
+```text
+
+https://yourdomain.com/.well-known/apple-app-site-association.json
+
+```
+
+It must be served over HTTPS without a redirect.
+
+If your deployment does not include an iOS application, leave the default configuration unchanged.
+
+## Step 4: Configure the Website Name and Domain
+
+The root directory contains the website's `index.html` file.
+
+Open this file in a text editor.
+
+Replace occurrences of `AppKeyId` with your organization's website name wherever they refer to the site's branding.
+
+Next, locate the hostname metadata:
+
+```html
+
+<meta name="hostname" content="appkeyid.com">
+
+```
+
+Replace `appkeyid.com` with your production website domain.
+
+For example:
+
+```html
+
+<meta name="hostname" content="identity.example.com">
+
+```
+
+The hostname should match the domain through which users will access the website.
+
+Save the file when finished.
+
+## Step 5: Configure Environment Variables
+
+The website reads its configuration from environment variables.
+
+The repository includes a template file named `.env_default`.
+
+Make a copy of this file and name it `.env`.
+
+On macOS or Linux, run:
+
+```bash
+
+cp .env_default .env
+
+```
+
+Open `.env` in a text editor and update the variables described below.
+
+### API Server Connection
+
+The `VITE_SERVER_API` variable specifies the address of the AppKeyId API server.
+
+The default configuration is:
+
+```env
+
+VITE_SERVER_API=http://localhost:3004
+
+```
+
+This address is suitable when the API server is running locally on port 3004.
+
+For production, replace it with the HTTPS address of your API server.
+
+For example:
+
+```env
+
+VITE_SERVER_API=https://api.example.com
+
+```
+
+The address must be accessible from the user's browser.
+
+**Note:** `localhost` refers to the computer running the browser. A production website should not use `localhost` unless the API server is intentionally running on each user's computer.
+
+### Apple Sign-In (Optional)
+
+Skip this section if you do not intend to offer Apple Sign-In.
+
+Apple Sign-In requires an application identifier and a configured redirect URI.
+
+Set the following variables:
+
+```env
+
+APPLE_BUNDLE_ID=io.appkey.portal
+
+APPLE_REDIRECT_URI=https://dev.appkeyid.com/login
+
+```
+
+Replace `io.appkey.portal` with the identifier configured for your application in the Apple Developer portal.
+
+Replace the redirect URI with the callback address registered for your application.
+
+For example:
+
+```env
+
+APPLE_BUNDLE_ID=com.example.identity
+
+APPLE_REDIRECT_URI=https://identity.example.com/login
+
+```
+
+The redirect URI must match the configuration registered with Apple.
+
+Apple Sign-In will not work correctly if these values are inconsistent.
+
+### Google Sign-In (Optional)
+
+Skip this section if you do not intend to offer Google Sign-In.
+
+Google Sign-In requires an OAuth client ID.
+
+The configuration should contain:
+
+```env
+
+GOOGLE_CLIENT_ID=your-google-client-id.apps.googleusercontent.com
+
+```
+
+Replace this value with the OAuth client ID assigned to your website in the Google API Console.
+
+The OAuth client must be configured to authorize your production website domain.
+
+### Configuration Summary
+
+The following example shows the environment variables for a website hosted at `identity.example.com`, with an API server at `api.example.com`.
+
+```env
+
+VITE_SERVER_API=https://api.example.com
+
+APPLE_BUNDLE_ID=com.example.identity
+
+APPLE_REDIRECT_URI=https://identity.example.com/login
+
+GOOGLE_CLIENT_ID=your-google-client-id.apps.googleusercontent.com
+
+```
+
+Replace the example values with your own configuration.
+
+If Apple or Google Sign-In is not required, the corresponding configuration can be omitted, provided the application is configured not to use those features.
+
+Save the `.env` file.
+
+The website is now configured with its branding, production domain, and API server address.
+
+# Build and Run the Website
+
+Once the configuration is complete, the website is ready to be built and started.
+
+The website runs independently of the AppKeyId API server. Both applications must be running for the system to operate.
+
+The following section will describe the Docker build and startup procedure, followed by instructions for verifying that the website can communicate with the API server.

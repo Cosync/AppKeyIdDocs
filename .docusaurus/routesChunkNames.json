@@ -49,17 +49,17 @@
     },
     "content": "content---markdown-page-4-c-6-c89"
   },
-  "/docs-1d5": {
+  "/docs-1bb": {
     "__comp": "__comp---theme-docs-root-5-e-9-0b6",
     "__context": {
       "plugin": "plugin---docsaba-d7c"
     }
   },
-  "/docs-c27": {
+  "/docs-0c2": {
     "__comp": "__comp---theme-doc-version-roota-7-b-5de",
     "__props": "__props---docs-005-788"
   },
-  "/docs-96e": {
+  "/docs-0d9": {
     "__comp": "__comp---theme-doc-roota-94-67a"
   },
   "/docs/category/attested-communication-b56": {
@@ -278,13 +278,13 @@
     "__comp": "__comp---theme-doc-item-178-a40",
     "content": "content---docs-selfhosted-self-hosted-server-third-party-4-a-1-201"
   },
-  "/docs/selfhosted/self-hosted-website/manage-docs-versions-999": {
+  "/docs/selfhosted/self-hosted-website/build-run-be6": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-selfhosted-self-hosted-website-manage-docs-versions-71-b-68b"
+    "content": "content---docs-selfhosted-self-hosted-website-build-runb-77-df2"
   },
-  "/docs/selfhosted/self-hosted-website/translate-your-site-6db": {
+  "/docs/selfhosted/self-hosted-website/configure-website-d18": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-selfhosted-self-hosted-website-translate-your-siteff-4-6a1"
+    "content": "content---docs-selfhosted-self-hosted-website-configure-website-1-f-0-ced"
   },
   "/docs/tutorial/intro-f1d": {
     "__comp": "__comp---theme-doc-item-178-a40",

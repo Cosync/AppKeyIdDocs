@@ -1,0 +1,26 @@
+{
+  "id": "selfhosted/self-hosted-website/configure-website",
+  "title": "AppKeyId Self-Hosted Website",
+  "description": "Installation and Configuration Guide",
+  "source": "@site/docs/selfhosted/self-hosted-website/configure-website.mdx",
+  "sourceDirName": "selfhosted/self-hosted-website",
+  "slug": "/selfhosted/self-hosted-website/configure-website",
+  "permalink": "/docs/selfhosted/self-hosted-website/configure-website",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1
+  },
+  "sidebar": "selfhostedSidebar",
+  "previous": {
+    "title": "Self-Hosted Website",
+    "permalink": "/docs/category/self-hosted-website"
+  },
+  "next": {
+    "title": "Build and Run the Website",
+    "permalink": "/docs/selfhosted/self-hosted-website/build-run"
+  }
+}
